@@ -85,7 +85,7 @@ class Agent(object):
         self.done = []
 
 
-    def update_policy(self):
+    def update_policy(self, baseline):
         action_log_probs = torch.stack(self.action_log_probs, dim=0).to(self.train_device).squeeze(-1)
         states = torch.stack(self.states, dim=0).to(self.train_device).squeeze(-1)
         next_states = torch.stack(self.next_states, dim=0).to(self.train_device).squeeze(-1)
@@ -97,8 +97,15 @@ class Agent(object):
         #
         # TASK 2:
         #   - compute discounted returns
+        discounted_returns = discount_rewards(rewards, self.gamma)
+        if baseline:
+          discounted_rewards -= 20
         #   - compute policy gradient loss function given actions and returns
+        loss = -(action_log_probs * discounted_returns).sum()
         #   - compute gradients and step the optimizer
+        self.optimizer.zero_grad()
+        loss.backward()
+        self.optimizer.step()
         #
 
 

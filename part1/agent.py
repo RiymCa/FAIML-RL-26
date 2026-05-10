@@ -99,7 +99,7 @@ class Agent(object):
         #   - compute discounted returns
         discounted_returns = discount_rewards(rewards, self.gamma)
         if baseline:
-          discounted_rewards -= 20
+          discounted_returns -= 20
         #   - compute policy gradient loss function given actions and returns
         loss = -(action_log_probs * discounted_returns).sum()
         #   - compute gradients and step the optimizer

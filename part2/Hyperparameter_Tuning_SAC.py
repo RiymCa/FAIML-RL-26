@@ -26,7 +26,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--timesteps",
         type=int,
-        default=100000,  # Consiglio di partire da 100k per SAC
+        default=100000,
         choices=[10000, 50000, 100000, 200000, 500000, 1000000],
         help="Number of training timesteps",
     )
@@ -36,26 +36,21 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
 
-    # Creiamo l'ambiente per l'addestramento (cieco)
     env = gym.make(
         "PandaPush-v3",
-        render_mode="rgb_array",  # Massimo della velocità
+        render_mode="rgb_array",
         type=args.env_type,
         reward_type="dense",
     )
     env = RandomizationWrapper(env, mode=args.sampling_strategy)
 
-    # Creiamo l'ambiente per fare gli esami (la valutazione)
     eval_env = gym.make("PandaPush-v3", render_mode="rgb_array", type=args.env_type, reward_type="dense")
-    eval_env = Monitor(eval_env)  # Arbitro per punteggi precisi
+    eval_env = Monitor(eval_env)
     eval_env = RandomizationWrapper(eval_env, mode=args.sampling_strategy)
 
     timesteps = args.timesteps
-    n_eval_episodes = 50  # Quanti tentativi di esame fargli fare
-
-    # ---------------------------------------------------------
-    # TEST MODELLO A (SAC Default Assoluto)
-    # ---------------------------------------------------------
+    n_eval_episodes = 50
+    
     print(f"\n--- Inizio addestramento Modello A (SAC Default) per {timesteps} step ---")
     model_A = SAC("MultiInputPolicy", env, device="cuda", verbose=0)
     print(model_A.device)
@@ -65,9 +60,6 @@ def main() -> None:
     mean_reward_A, std_reward_A = evaluate_policy(model_A, eval_env, n_eval_episodes=n_eval_episodes)
     print(f"Risultato Modello A: {mean_reward_A:.2f} +/- {std_reward_A:.2f}")
 
-    # ---------------------------------------------------------
-    # TEST MODELLO B (SAC Bilanciato - Fluid Mover)
-    # ---------------------------------------------------------
     print(f"\n--- Inizio addestramento Modello B (SAC Bilanciato) per {timesteps} step ---")
     model_B = SAC(
         "MultiInputPolicy",
@@ -76,7 +68,7 @@ def main() -> None:
         learning_rate=3e-4,
         buffer_size=1000000,
         batch_size=256,
-        ent_coef="auto",  # Curiosità dinamica
+        ent_coef="auto",
         gamma=0.99,
         tau=0.005,
         verbose=0
@@ -88,9 +80,6 @@ def main() -> None:
     mean_reward_B, std_reward_B = evaluate_policy(model_B, eval_env, n_eval_episodes=n_eval_episodes)
     print(f"Risultato Modello B: {mean_reward_B:.2f} +/- {std_reward_B:.2f}")
 
-    # ---------------------------------------------------------
-    # TEST MODELLO C (SAC Profondo - Deep Thinker)
-    # ---------------------------------------------------------
     print(f"\n--- Inizio addestramento Modello C (SAC Profondo) per {timesteps} step ---")
     model_C = SAC(
         "MultiInputPolicy",
@@ -98,11 +87,11 @@ def main() -> None:
         device="cuda",
         learning_rate=3e-4,
         buffer_size=1000000,
-        batch_size=512,  # Aggiornamenti più stabili
+        batch_size=512,
         ent_coef="auto",
         train_freq=1,
-        gradient_steps=2,  # Impara 2 volte ad ogni step
-        policy_kwargs=dict(net_arch=[256, 256, 256]),  # Rete neurale più grande
+        gradient_steps=2,
+        policy_kwargs=dict(net_arch=[256, 256, 256]),
         verbose=0
     )
     print(model_C.device)
@@ -112,18 +101,10 @@ def main() -> None:
     mean_reward_C, std_reward_C = evaluate_policy(model_C, eval_env, n_eval_episodes=n_eval_episodes)
     print(f"Risultato Modello C: {mean_reward_C:.2f} +/- {std_reward_C:.2f}")
 
-    # ---------------------------------------------------------
-    # VERDETTO FINALE DINAMICO
-    # ---------------------------------------------------------
-    print("\n" + "=" * 40)
-    print("           RISULTATI FINALI SAC")
-    print("=" * 40)
     print(f"Modello A (Base)       : {mean_reward_A:.2f}")
     print(f"Modello B (Bilanciato) : {mean_reward_B:.2f}")
     print(f"Modello C (Profondo)   : {mean_reward_C:.2f}")
-    print("-" * 40)
 
-    # Dizionario per trovare facilmente il vincitore
     risultati = {
         "Modello A (Base)": mean_reward_A,
         "Modello B (Bilanciato)": mean_reward_B,
@@ -131,7 +112,7 @@ def main() -> None:
     }
 
     vincitore = max(risultati, key=risultati.get)
-    print(f"🏆 Il vincitore assoluto è: {vincitore}! Usa questa configurazione.")
+    print(f"Il vincitore è: {vincitore}")
 
 
 if __name__ == "__main__":

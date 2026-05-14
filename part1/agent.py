@@ -46,7 +46,7 @@ class Policy(torch.nn.Module):
     def init_weights(self):
         for m in self.modules():
             if type(m) is torch.nn.Linear:
-                torch.nn.init.normal_(m.weight)
+                torch.nn.init.normal_(m.weight, 0.0, 0.1) # upd
                 torch.nn.init.zeros_(m.bias)
 
 
@@ -85,7 +85,7 @@ class Agent(object):
         self.done = []
 
 
-    def update_policy(self, baseline):
+    def update_policy(self, baseline, normalize):
         action_log_probs = torch.stack(self.action_log_probs, dim=0).to(self.train_device).squeeze(-1)
         states = torch.stack(self.states, dim=0).to(self.train_device).squeeze(-1)
         next_states = torch.stack(self.next_states, dim=0).to(self.train_device).squeeze(-1)
@@ -97,27 +97,37 @@ class Agent(object):
         #
         # TASK 2:
         #   - compute discounted returns
+        
         discounted_returns = discount_rewards(rewards, self.gamma)
         if baseline:
-          discounted_returns -= 20
+          discounted_returns -= 20.0
+        
+        if normalize:
+          discounted_returns = (discounted_returns - discounted_returns.mean()) / (1e-8 + discounted_returns.std())
+        
         #   - compute policy gradient loss function given actions and returns
-        loss = -(action_log_probs * discounted_returns).sum()
+        loss = -(action_log_probs * discounted_returns).mean()
+
+        # upd here 
+        
         #   - compute gradients and step the optimizer
         self.optimizer.zero_grad()
         loss.backward()
+        # future hp
+        #torch.nn.utils.clip_grad_norm_(self.policy.parameters(), max_norm=0.5) # upd 
         self.optimizer.step()
         #
 
 
         #
-        # TASK 3:
+        # TASK:
         #   - compute boostrapped discounted return estimates
         #   - compute advantage terms
         #   - compute actor loss and critic loss
         #   - compute gradients and step the optimizer
         #
 
-        return        
+        return loss.item()
 
 
     def get_action(self, state, evaluation=False):

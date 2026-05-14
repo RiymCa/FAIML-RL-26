@@ -1,5 +1,6 @@
 
 import gymnasium as gym
+import numpy as np
 
 class RandomizationWrapper(gym.Wrapper):
     """
@@ -8,13 +9,15 @@ class RandomizationWrapper(gym.Wrapper):
     def __init__(
         self,
         env,
-        mass_range=(1.0, 1.0),
+        mass_range=(0.1, 10.),
         mode="none",
     ):
         super().__init__(env)
 
         self.mode = mode
         self.mass_range = mass_range
+        self.mass_init = 1.0
+        self.last_sample_type = "none"
 
         # global limits
         self.mass_min_limit, self.mass_max_limit = mass_range
@@ -24,9 +27,12 @@ class RandomizationWrapper(gym.Wrapper):
     # -----------------------
 
     def _sample_mass(self):
-
         if self.mode == "none":
-            return None
+            self.last_sample_type = "default"
+            return self.mass_init
+        if self.mode == "udr" or self.last_sample_type == "adr":
+            self.last_sample_type = "uniform"
+            return np.random.uniform(self.mass_min_limit, self.mass_max_limit)
         else:
             raise NotImplementedError(f"Sampling strategy '{self.mode}' is not implemented yet.")
 
@@ -46,7 +52,7 @@ class RandomizationWrapper(gym.Wrapper):
 
     def reset(self, **kwargs):
 
-        new_mass = ... #TODO: sample new mass
+        new_mass = self._sample_mass()
 
         if new_mass is not None:
 
@@ -61,7 +67,7 @@ class RandomizationWrapper(gym.Wrapper):
 
             print(
                 f"[{self.mode}] mass={new_mass:.2f} "
-                f"range=[{self.mass_min:.2f},{self.mass_max:.2f}] "
+                f"range=[{self.mass_min_limit:.2f},{self.mass_max_limit:.2f}] "
                 f"type={self.last_sample_type}"
             )
 

@@ -38,7 +38,9 @@ class Policy(torch.nn.Module):
             Critic network
         """
         # TASK 3: critic network for actor-critic algorithm
-
+        self.fc1_critic = torch.nn.Linear(state_space, self.hidden)
+        self.fc2_critic = torch.nn.Linear(self.hidden, self.hidden)
+        self.fc3_critic  = torch.nn.Linear(self.hidden, 1)
 
         self.init_weights()
 
@@ -66,9 +68,11 @@ class Policy(torch.nn.Module):
             Critic
         """
         # TASK 3: forward in the critic network
-
+        x_critic = self.tanh(self.fc1_critic(x))
+        x_critic = self.tanh(self.fc2_critic(x_critic))
+        val = self.fc3_critic(x_critic).squeeze(-1)
         
-        return normal_dist
+        return normal_dist, val
 
 
 class Agent(object):
@@ -85,7 +89,7 @@ class Agent(object):
         self.done = []
 
 
-    def update_policy(self, baseline, normalize):
+    def update_policy(self, baseline, normalize, algorithm):
         action_log_probs = torch.stack(self.action_log_probs, dim=0).to(self.train_device).squeeze(-1)
         states = torch.stack(self.states, dim=0).to(self.train_device).squeeze(-1)
         next_states = torch.stack(self.next_states, dim=0).to(self.train_device).squeeze(-1)
@@ -94,47 +98,63 @@ class Agent(object):
 
         self.states, self.next_states, self.action_log_probs, self.rewards, self.done = [], [], [], [], []
 
-        #
-        # TASK 2:
-        #   - compute discounted returns
-        
-        discounted_returns = discount_rewards(rewards, self.gamma)
-        if baseline:
-          discounted_returns -= 20.0
-        
-        if normalize:
-          discounted_returns = (discounted_returns - discounted_returns.mean()) / (1e-8 + discounted_returns.std())
-        
-        #   - compute policy gradient loss function given actions and returns
-        loss = -(action_log_probs * discounted_returns).mean()
+        if algorithm == 'REINFORCE':
+            #
+            # TASK 2:
+            # compute discounted returns
+            discounted_returns = discount_rewards(rewards, self.gamma)
+            
+            if baseline:
+                discounted_returns -= 20.0
+            
+            if normalize:
+                discounted_returns = (discounted_returns - discounted_returns.mean()) / (1e-8 + discounted_returns.std())
+            
+            # compute policy gradient loss function given actions and returns
+            _, _ = self.policy(states) 
+            loss = -(action_log_probs * discounted_returns).mean()
 
-        # upd here 
+            # upd here 
+            
+            # compute gradients and step the optimizer
+            self.optimizer.zero_grad()
+            loss.backward()
+
+            # future hp upd 
+            #torch.nn.utils.clip_grad_norm_(self.policy.parameters(), max_norm=0.5) # upd 
+            self.optimizer.step()
+            return loss.item(), None
         
-        #   - compute gradients and step the optimizer
-        self.optimizer.zero_grad()
-        loss.backward()
-        # future hp
-        #torch.nn.utils.clip_grad_norm_(self.policy.parameters(), max_norm=0.5) # upd 
-        self.optimizer.step()
-        #
+        else:
+            # TASK 3:
+            _, values = self.policy(states)
+            with torch.no_grad():
+                _, next_values = self.policy(next_states)
+                
+            # compute boostrapped discounted return estimates
+            td_return_estimates = rewards + self.gamma * next_values * (1 - done)
+            
+            # compute advantage terms
+            advantage_terms = td_return_estimates - values  
 
+            # compute actor loss and critic loss
+            actor_loss = -(action_log_probs * advantage_terms.detach()).mean()  
+            critic_loss = F.mse_loss(values, td_return_estimates.detach())
+            total_loss = actor_loss + 0.5 * critic_loss
+            
+            # compute gradients and step the optimizer
+            self.optimizer.zero_grad()
+            total_loss.backward()
+            self.optimizer.step()
 
-        #
-        # TASK:
-        #   - compute boostrapped discounted return estimates
-        #   - compute advantage terms
-        #   - compute actor loss and critic loss
-        #   - compute gradients and step the optimizer
-        #
-
-        return loss.item()
+            return actor_loss.item(), critic_loss.item()
 
 
     def get_action(self, state, evaluation=False):
         """ state -> action (3-d), action_log_densities """
         x = torch.from_numpy(state).float().to(self.train_device)
 
-        normal_dist = self.policy(x)
+        normal_dist, _ = self.policy(x)
 
         if evaluation:  # Return mean
             return normal_dist.mean, None

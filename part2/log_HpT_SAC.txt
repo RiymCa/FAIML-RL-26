@@ -1,0 +1,36 @@
+"C:\Users\pietr\Desktop\Politecnico\2. MAGISTRALE\1. anno\2. Semestre\Fundamentals of AI and MDL\Project\FAIML-RL-26-main\.venv\Scripts\python.exe" "C:\Users\pietr\Desktop\Politecnico\2. MAGISTRALE\1. anno\2. Semestre\Fundamentals of AI and MDL\Project\FAIML-RL-26-main\part2\dump.py" 
+pybullet build time: May 12 2026 10:18:57
+argv[0]=--background_color_red=0.8745098114013672
+argv[1]=--background_color_green=0.21176470816135406
+argv[2]=--background_color_blue=0.1764705926179886
+Created object with mass: 1.0
+argv[0]=--background_color_red=0.8745098114013672
+argv[1]=--background_color_green=0.21176470816135406
+argv[2]=--background_color_blue=0.1764705926179886
+Created object with mass: 1.0
+
+--- Inizio addestramento Modello A (SAC Default) per 100000 step ---
+cuda
+Valutazione Modello A in corso...
+Risultato Modello A: -3.42 +/- 1.91
+
+--- Inizio addestramento Modello B (SAC Bilanciato) per 100000 step ---
+cuda
+Valutazione Modello B in corso...
+Risultato Modello B: -4.13 +/- 3.73
+
+--- Inizio addestramento Modello C (SAC Profondo) per 100000 step ---
+cuda
+Valutazione Modello C in corso...
+Risultato Modello C: -8.49 +/- 10.86
+
+========================================
+           RISULTATI FINALI SAC
+========================================
+Modello A (Base)       : -3.42
+Modello B (Bilanciato) : -4.13
+Modello C (Profondo)   : -8.49
+----------------------------------------
+🏆 Il vincitore assoluto è: Modello A (Base)! Usa questa configurazione.
+
+Process finished with exit code 0

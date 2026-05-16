@@ -130,7 +130,8 @@ def main() -> None:
     print(f"Modello C: Reward {mean_reward_C:.2f} | Successo: {success_rate_C:.1f}%")
 
     end_time = time.time()
-    print(f"Tempo impiegato: {int((end_time - start_time)/3600)}:{int((end_time - start_time - int((end_time - start_time)/3600))/60)}:{(end_time - start_time)%60:.2f}")
+    time_diff = end_time - start_time
+    print(f"Tempo impiegato: {int(time_diff // 3600}:{int((time_diff % 3600) // 60)}:{(time_diff % 60):.2f}")
 
 if __name__ == "__main__":
     main()

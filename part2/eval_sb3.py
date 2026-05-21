@@ -3,11 +3,10 @@ import os
 
 import gymnasium as gym
 import numpy as np
-#from stable_baselines3 import 
+from stable_baselines3 import SAC, PPO
 import panda_gym  # noqa: F401 - required so Panda envs are registered
 
-
-def evaluate(model_path: str, n_episodes: int, deterministic: bool, render: bool, env_type: str) -> None:
+def evaluate(model_path: str, n_episodes: int, deterministic: bool, render: bool, env_type: str, algo_class, base_seed: int = 42,) -> None:
     if not os.path.exists(model_path):
         raise FileNotFoundError(
             f"Model file not found: {model_path}. "
@@ -16,19 +15,21 @@ def evaluate(model_path: str, n_episodes: int, deterministic: bool, render: bool
 
     render_mode = "human" if render else "rgb_array"
     env = gym.make("PandaPush-v3", render_mode=render_mode, type=env_type, reward_type="dense")
-    #TODO: load model here
+    model = algo_class.load(model_path)
 
     episode_returns = []
     successes = []
 
     for episode in range(1, n_episodes + 1):
-        obs, info = env.reset()
+        current_seed = base_seed + episode
+        obs, info = env.reset(seed=current_seed)
+
         terminated = False
         truncated = False
         episode_return = 0.0
 
         while not (terminated or truncated):
-            action,_ = ... #TODO: get action from the model
+            action,_ = model.predict(obs, deterministic=deterministic)
             obs, reward, terminated, truncated, info = env.step(action)
             episode_return += float(reward)
 
@@ -55,17 +56,17 @@ def evaluate(model_path: str, n_episodes: int, deterministic: bool, render: bool
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Evaluate SAC on PandaPush-v3")
+    parser = argparse.ArgumentParser(description="Evaluate PPO/SAC on PandaPush-v3")
     parser.add_argument(
         "--model-path",
         type=str,
         required=True,
-        help="Path to a PPO model zip file (e.g., ppo_panda_push.zip)",
+        help="Path to a PPO/SAC model zip file (e.g., ppo_panda_push.zip)",
     )
     parser.add_argument(
         "--episodes", 
         type=int, 
-        default=500, 
+        default=50,
         help="Number of eval episodes"
     )
     parser.add_argument(
@@ -76,6 +77,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--render",
         action="store_true",
+        default=True,
+        choices=[True, False],
         help="Render with a window (render_mode='human')",
     )
     parser.add_argument(
@@ -89,6 +92,7 @@ def parse_args() -> argparse.Namespace:
 
 if __name__ == "__main__":
     args = parse_args()
+
     evaluate(
         model_path=args.model_path,
         n_episodes=args.episodes,

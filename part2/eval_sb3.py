@@ -20,7 +20,8 @@ from stable_baselines3.common.vec_env import DummyVecEnv, VecNormalize
     - Starts the evaluation phase, it is based on iterative seeds to provide an equal evaluation env to all the models.
     - Gets the results of the simulations on num_episodes and the n prints them.
 """
-def evaluate(model_path: str, stats_path: str, n_episodes: int, deterministic: bool, render: bool, env_type: str, algo_class, base_seed: int = 42,) -> None:
+def evaluate(model_path: str, stats_path: str, n_episodes: int, deterministic: bool, render: bool, env_type: str,
+             algo_class, base_seed: int = 42,) -> None:
     if not os.path.exists(model_path):
         raise FileNotFoundError(
             f"Model file not found: {model_path}. "

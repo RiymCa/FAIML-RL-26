@@ -82,7 +82,7 @@ def parse_args() -> argparse.Namespace:
 
 """
     Function for creating the different environments doing env -> randomWrapper -> Monitor, needed for the parallel
-    processing for optimizing the training of the PPO models.
+    processing for optimizing the training of the SAC models.
 """
 def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
     def _init() -> gym.Env:

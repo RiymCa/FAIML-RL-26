@@ -35,7 +35,6 @@ from custom_callback import SyncEvalCallback
     default=value.
     The only difference between PPO and SAC is that PPO can use better the parallelization since it is an in place
     algorithm, instead SAC having a buffer to look into it would cause some RAM error if they are too many.
-    Also SAC requires many timesteps less than PPO.
 """
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train Multiple PPO Models on PandaPush-v3")
@@ -62,7 +61,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--timesteps",
         type=int,
-        default=500_000,
+        default=20_000_000,
         choices=[1000, 500_000, 2_500_000, 10_000_000],
         help="Number of training timesteps",
     )
@@ -151,6 +150,8 @@ def main() -> None:
     env_a.close()
     eval_env_a.close()
 
+    del model_a, env_a, eval_env_a, callback_a
+
     # -------
     # MODEL B
     # -------
@@ -188,6 +189,8 @@ def main() -> None:
 
     env_b.close()
     eval_env_b.close()
+
+    del model_a, env_a, eval_env_a, callback_a
 
     # -------
     # MODEL C
@@ -228,6 +231,8 @@ def main() -> None:
 
     env_c.close()
     eval_env_c.close()
+
+    del model_a, env_a, eval_env_a, callback_a
 
     # -------
     # TIME AND EVALUATION

@@ -35,6 +35,7 @@ from custom_callback import SyncEvalCallback
     default=value.
     The only difference between PPO and SAC is that PPO can use better the parallelization since it is an in place
     algorithm, instead SAC having a buffer to look into it would cause some RAM error if they are too many.
+    Also SAC requires many timesteps less than PPO. 
 """
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train Multiple SAC Models on PandaPush-v3")

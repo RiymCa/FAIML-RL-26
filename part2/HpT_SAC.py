@@ -5,14 +5,37 @@ import os
 import panda_gym
 
 from stable_baselines3 import SAC
-from stable_baselines3.common.vec_env import SubprocVecEnv, DummyVecEnv, VecNormalize
-from stable_baselines3.common.monitor import Monitor
-from stable_baselines3.common.callbacks import EvalCallback
+# Wrapper for base env, done so that it works with both 'none' 'udr'/'adr'
 from rand_wrapper import RandomizationWrapper
+
+# Monitor is a wrapper for our environment on top on randomWrapper, its role it's to keep track of the true score of
+# the models, kinda acts as a safeguard preventing any errors in the update of his parameters.
+# Like a black box on a plane.
+from stable_baselines3.common.monitor import Monitor
+
+# Function to evaluate a model, refer to the file to understand its mechanism
 from eval_sb3 import evaluate
+
+# - SubprocVecEnv is an environment manager, its role is to take a single env of a model and multiply it,
+# parallelizing the model training improving efficiency.
+# - DummyVecEnv is an environment manager, since the model, after training, is tested on a single env, it makes that
+# env a vectorized one, such as SubProcEnv but with only 1 sub env. Necessary for testing for how our model is built.
+# NOTE: we don't use SubprocVecEnv with 1 sub env because it would be incredibly slow since how
+# it's built, dummyVecEnv does cover this exact role.
+# - VecNormalize is a wrapper for the previous env managers, it keeps track of every observation from our model,
+# scaling them to a normal distribution. Gets data from training and applies it in testing.
+from stable_baselines3.common.vec_env import SubprocVecEnv, DummyVecEnv, VecNormalize
+
+# SyncEvalCallback is a function that, refer to the file to understand better
 from custom_callback import SyncEvalCallback
 
 
+"""
+    Function for the parsing of the arguments, you can choose any argument you want prior to running with
+    default=value.
+    The only difference between PPO and SAC is that PPO can use better the parallelization since it is an in place
+    algorithm, instead SAC having a buffer to look into it would cause some RAM error if they are too many.
+"""
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train Multiple SAC Models on PandaPush-v3")
     parser.add_argument(
@@ -56,6 +79,10 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+"""
+    Function for creating the different environments doing env -> randomWrapper -> Monitor, needed for the parallel
+    processing for optimizing the training of the PPO models.
+"""
 def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
     def _init() -> gym.Env:
         env = gym.make(
@@ -73,10 +100,29 @@ def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
     return _init
 
 
+"""
+    The main works like this:
+    - Getting the time, the arguments, the frequencies fir the evalCallBack and setting the destination for the models.
+    - Creation of a model (for A, B and C):
+        - Creation of a folder for the single model.
+        - Creates multiple environments for training efficiency, SubprocVecEnv, and wraps then in VecNormalize that
+        manages them, you can hover over its hyperparameters to see what they are about.
+        - Creates single testing environment with dummyVecEnv to be managed by VecNormalize and set its mode
+        'training' to false. 
+        - Creates its callBack function, again refer to custom_callback to understand it better.
+        - Creates the model, setting device auto -> GPU if available otherwise CPU, and starts the training. Finally
+        closes both the training env and the eval env.
+    - After all the training of the 3 models we have their best version according to the different hyperparameters,
+    we can now print some time stats and start to evaluate them to see which is best.
+    
+    Consistently this file is the exact one of the PPO version, the main difference is that PPO is much faster and
+    less RAM heavy, so i've implemented 'del model_a, env_a, eval_env_a, callback_a' to clean some space after evry
+    model for the next one, moreover i've added som time print because total time varies between hyperparameters and
+    models.
+"""
 def main() -> None:
     start_time = time.time()
     args = parse_args()
-
     eval_freq = max(20_000 // args.num_cpus, 1)
     models_sac_dir = "./best_models_SAC"
     os.makedirs(models_sac_dir, exist_ok=True)
@@ -202,6 +248,7 @@ def main() -> None:
     )
     print(f"Device in use: {model_c.device}.")
     model_c.learn(total_timesteps=args.timesteps, callback=callback_c)
+
     env_c.close()
     eval_env_c.close()
 

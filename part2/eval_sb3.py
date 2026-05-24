@@ -1,12 +1,25 @@
 import argparse
 import os
-
 import gymnasium as gym
 import numpy as np
-from stable_baselines3 import SAC, PPO
-from stable_baselines3.common.vec_env import DummyVecEnv, VecNormalize # <-- IMPORT AGGIUNTI
 import panda_gym
+from stable_baselines3 import SAC, PPO
 
+# - DummyVecEnv is an environment manager, since the model, after training, is tested on a single env, it makes that
+# env a vectorized one.
+# - VecNormalize is a wrapper for the previous env managers, it keeps track of every observation from our model,
+# scaling them to a normal distribution. Gets data from training and applies it in testing.
+from stable_baselines3.common.vec_env import DummyVecEnv, VecNormalize
+
+
+"""
+    It works like this:
+    - Checks if the path and models really exists.
+    - Creates the dummyVecEnv and puts it inside the VecNormalize wrapper, loading the stats of the best model we had.
+    - We load the model.
+    - Starts the evaluation phase, it is based on iterative seeds to provide an equal evaluation env to all the models.
+    - Gets the results of the simulations on num_episodes and the n prints them.
+"""
 def evaluate(model_path: str, stats_path: str, n_episodes: int, deterministic: bool, render: bool, env_type: str, algo_class, base_seed: int = 42,) -> None:
     if not os.path.exists(model_path):
         raise FileNotFoundError(
@@ -22,11 +35,10 @@ def evaluate(model_path: str, stats_path: str, n_episodes: int, deterministic: b
 
     env = DummyVecEnv([make_test_env])
     env = VecNormalize.load(stats_path, env)
-    env.training = False
-    env.norm_reward = False
+    env.training = False # So the stats don't change anymore.
+    env.norm_reward = False # So that the outputs gives us unnormalized parameters, but still working with normalized ones.
 
     model = algo_class.load(model_path)
-
     episode_returns = []
     successes = []
 
@@ -67,6 +79,9 @@ def evaluate(model_path: str, stats_path: str, n_episodes: int, deterministic: b
         print(f"Success rate: {success_rate:.2%}")
 
 
+"""
+    Useless since we import the evaluate function into evry file to evaluate in place. 
+"""
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Evaluate PPO/SAC on PandaPush-v3")
     parser.add_argument(
@@ -82,8 +97,8 @@ def parse_args() -> argparse.Namespace:
         help="Path to vec_normalize.pkl"
     )
     parser.add_argument(
-        "--episodes", 
-        type=int, 
+        "--episodes",
+        type=int,
         default=50,
         help="Number of eval episodes"
     )
@@ -113,7 +128,9 @@ def parse_args() -> argparse.Namespace:
     )
     return parser.parse_args()
 
-
+"""
+    Useless since we import the evaluate function into evry file to evaluate in place. 
+"""
 if __name__ == "__main__":
     args = parse_args()
 

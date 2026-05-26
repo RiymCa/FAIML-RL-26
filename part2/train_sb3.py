@@ -4,7 +4,7 @@ import time
 import os
 import panda_gym
 
-from stable_baselines3 import SAC
+from stable_baselines3 import PPO, SAC
 # Wrapper for base env, done so that it works with both 'none' 'udr'/'adr'
 from rand_wrapper import RandomizationWrapper
 
@@ -29,34 +29,36 @@ from stable_baselines3.common.vec_env import SubprocVecEnv, DummyVecEnv, VecNorm
 # SyncEvalCallback is a function that, refer to the file to understand better
 from custom_callback import SyncEvalCallback
 
-# False = only does part 3.2 or task 5
-# True  = only does part 4 or task 6
-MAKE_TASK_6 = False
-
+# 1 = PPO e SAC both on Source -> Test both on Source e Target
+# 2 = 2 SAC models respectively on Source e Target -> Test both on Source and Target
+# 3 = 2 SAC models on Source, one with UDR and the other one with ADR -> Test both on Source and Target
+CONFIG = 1
 
 """
     Function for the parsing of the arguments, you can choose any argument you want prior to running with
     default=value.
 """
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--timesteps",
         type=int,
-        default=2_000_000,
-        help="Timesteps per each model"
+        default=1_000_000,
+        help="Timestep per ciascun modello"
     )
     parser.add_argument(
         "--num-cpus",
         type=int,
         default=8,
-        help="CPUs for SubprocVecEnv"
+        help="Numero di CPU per il parallelismo"
     )
     parser.add_argument(
         "--eval-episodes",
         type=int,
         default=50,
-        help="Number of test episodes"
+        help="Numero di episodi fissi di valutazione"
     )
     return parser.parse_args()
 
@@ -65,6 +67,8 @@ def parse_args() -> argparse.Namespace:
     Function for creating the different environments doing env -> randomWrapper -> Monitor needed for the parallel
     processing for optimizing the training of the SAC models.
 """
+
+
 def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
     def _init() -> gym.Env:
         env = gym.make(
@@ -83,14 +87,23 @@ def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
     return _init
 
 
-def train_agent(model_name: str, env_type: str, sampling_strategy: str, timesteps: int, num_cpus: int):
+"""
+    Funzione modulare e flessibile per addestrare un agente (PPO o SAC) con i migliori iperparametri
+    scoperti nell'Hyperparameter Tuning e liberare istantaneamente la RAM al termine.
+"""
+
+
+def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: str, timesteps: int, num_cpus: int):
     print(f"Starting training: {model_name}")
     print(f"Domain: {env_type.upper()} | Randomization: {sampling_strategy.upper()}")
 
-    if MAKE_TASK_6:
-        models_dir = "./final_models_task6"
-    else:
+    if CONFIG == 1:
+        models_dir = "./final_models_task4"
+    elif CONFIG == 2:
         models_dir = "./final_models_task5"
+    else:
+        models_dir = "./final_models_task6"
+
     start_time = time.time()
     os.makedirs(models_dir, exist_ok=True)
     dir_model = os.path.join(models_dir, model_name)
@@ -112,20 +125,37 @@ def train_agent(model_name: str, env_type: str, sampling_strategy: str, timestep
         deterministic=True,
     )
 
-    model = SAC(
-        "MultiInputPolicy",
-        env,
-        device="auto",
-        seed=42,
-        learning_rate=3e-4,
-        buffer_size=1000000,
-        batch_size=512,
-        ent_coef="auto",
-        train_freq=1,
-        gradient_steps=num_cpus,
-        policy_kwargs=dict(net_arch=[256, 256, 256]),
-        verbose=0
-    )
+    if algo_class == PPO:
+        model = PPO(
+            "MultiInputPolicy",
+            env,
+            device="auto",
+            seed=42,
+            learning_rate=1e-4,
+            n_steps=4096,
+            batch_size=512,
+            n_epochs=20,
+            ent_coef=0.005,
+            policy_kwargs=dict(net_arch=[256, 256]),
+            verbose=0
+        )
+    elif algo_class == SAC:
+        model = SAC(
+            "MultiInputPolicy",
+            env,
+            device="auto",
+            seed=42,
+            learning_rate=3e-4,
+            buffer_size=1000000,
+            batch_size=512,
+            ent_coef="auto",
+            train_freq=1,
+            gradient_steps=num_cpus,
+            policy_kwargs=dict(net_arch=[256, 256, 256]),
+            verbose=0
+        )
+    else:
+        raise ValueError("Algoritmo non supportato. Scegliere tra PPO e SAC.")
 
     model.learn(total_timesteps=timesteps, callback=callback)
 
@@ -134,7 +164,9 @@ def train_agent(model_name: str, env_type: str, sampling_strategy: str, timestep
 
     end_time = time.time()
     diff = end_time - start_time
-    print(f"{model_name} training completed in {int(diff // 3600)}h {int((diff % 3600) // 60)}m.")
+    ore = int(diff // 3600)
+    minuti = int((diff % 3600) // 60)
+    print(f"{model_name} training completato in {ore}h {minuti}m.")
 
     model_path = os.path.join(dir_model, "best_model.zip")
     stats_path = os.path.join(dir_model, "vec_normalize.pkl")
@@ -145,57 +177,86 @@ def train_agent(model_name: str, env_type: str, sampling_strategy: str, timestep
 
 def main() -> None:
     args = parse_args()
+    args.num_cpus = 23
 
-    if not MAKE_TASK_6:
-        # ------
-        # Task 5
-        # ------
-        print("Task 5.")
+    if CONFIG == 1:
+        # -----------------------------
+        # PPO vs SAC trained on Source
+        # -----------------------------
+        print("Task 4: PPO vs SAC trained on Source and tested on Source and Target")
 
-        path_base_source, stats_base_source = train_agent("task_5_source", "source",
-                                                          "none", args.timesteps, args.num_cpus)
-        path_base_target, stats_base_target = train_agent("task_5_target", "target",
-                                                          "none", args.timesteps,                                                          args.num_cpus)
+        path_ppo, stats_ppo = train_agent("PPO_Source", PPO, "source", "none", args.timesteps, args.num_cpus*2)
+        path_sac, stats_sac = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus)
 
-        print("\nEvaluation of the models.")
+        print(f"\nEvaluation results with {args.eval_episodes} episodes")
 
-        print("Model A, based on source, tested on source")
-        evaluate(model_path=path_base_source, stats_path=stats_base_source, n_episodes=args.eval_episodes,
+        print("PPO")
+        print("Test on Source")
+        evaluate(model_path=path_ppo, stats_path=stats_ppo, n_episodes=args.eval_episodes,
+                 deterministic=True, render=False, env_type="source", algo_class=PPO)
+        print("Test on Target")
+        evaluate(model_path=path_ppo, stats_path=stats_ppo, n_episodes=args.eval_episodes,
+                 deterministic=True, render=False, env_type="target", algo_class=PPO)
+
+        print("\nSAC")
+        print("Test on Source")
+        evaluate(model_path=path_sac, stats_path=stats_sac, n_episodes=args.eval_episodes,
                  deterministic=True, render=False, env_type="source", algo_class=SAC)
-
-        print("Model A, based on source, tested on target")
-        evaluate(model_path=path_base_source, stats_path=stats_base_source, n_episodes=args.eval_episodes,
+        print("Test on Target")
+        evaluate(model_path=path_sac, stats_path=stats_sac, n_episodes=args.eval_episodes,
                  deterministic=True, render=False, env_type="target", algo_class=SAC)
 
-        print("Model B, based on target, tested on target")
-        evaluate(model_path=path_base_target, stats_path=stats_base_target, n_episodes=args.eval_episodes,
+    elif CONFIG == 2:
+        # -----------------------------------------------------------
+        # SAC on Source vs SAC on Target tested on Source and Target
+        # -----------------------------------------------------------
+        print("Task 5: SAC on Source vs SAC on Target")
+
+        path_sac_source, stats_sac_source = train_agent("SAC_Source", SAC, "source", "none", args.timesteps,
+                                                        args.num_cpus)
+        path_sac_target, stats_sac_target = train_agent("SAC_Target", SAC, "target", "none", args.timesteps,
+                                                        args.num_cpus)
+
+        print(f"\nEvaluation results with {args.eval_episodes} episodes")
+
+        print("SAC on Source")
+        print("Test on Source")
+        evaluate(model_path=path_sac_source, stats_path=stats_sac_source, n_episodes=args.eval_episodes,
+                 deterministic=True, render=False, env_type="source", algo_class=SAC)
+        print("Test on Target")
+        evaluate(model_path=path_sac_source, stats_path=stats_sac_source, n_episodes=args.eval_episodes,
                  deterministic=True, render=False, env_type="target", algo_class=SAC)
 
-    else:
-        # -------
-        # task 6
-        # -------
-        print("Task 6.")
-
-        path_udr_source, stats_udr_source = train_agent("UDR_Source", "source", "udr",
-                                                        args.timesteps, args.num_cpus)
-        path_adr_source, stats_adr_source = train_agent("ADR_Source", "source", "adr",
-                                                        args.timesteps, args.num_cpus)
-
-        print("\nEvaluation of the models.")
-
-        print("UDR model, test on source")
-        evaluate(model_path=path_udr_source, stats_path=stats_udr_source, n_episodes=args.eval_episodes,
-                 deterministic=True, render=False, env_type="source", algo_class=SAC)
-        print("UDR model, test on target")
-        evaluate(model_path=path_udr_source, stats_path=stats_udr_source, n_episodes=args.eval_episodes,
+        print("SAC on Target")
+        print("Test on Target")
+        evaluate(model_path=path_sac_target, stats_path=stats_sac_target, n_episodes=args.eval_episodes,
                  deterministic=True, render=False, env_type="target", algo_class=SAC)
 
-        print("ADR model, test on source")
-        evaluate(model_path=path_adr_source, stats_path=stats_adr_source, n_episodes=args.eval_episodes,
+    elif CONFIG == 3:
+        # -------------------------------------------------------
+        # SAC with UDR vs SAC with ADR on both Source and Target
+        # -------------------------------------------------------
+        print("SAC with UDR vs SAC with ADR on both Source and Target")
+
+        path_udr, stats_udr = train_agent("SAC_UDR_Source", SAC, "source", "udr", args.timesteps, args.num_cpus)
+        path_adr, stats_adr = train_agent("SAC_ADR_Source", SAC, "source", "adr", args.timesteps, args.num_cpus)
+
+        print(f"\nEvaluation results with {args.eval_episodes} episodes")
+
+        print("SAC UDR on Source")
+        print("Test on source")
+        evaluate(model_path=path_udr, stats_path=stats_udr, n_episodes=args.eval_episodes,
                  deterministic=True, render=False, env_type="source", algo_class=SAC)
-        print("ADR model, test on target")
-        evaluate(model_path=path_adr_source, stats_path=stats_adr_source, n_episodes=args.eval_episodes,
+        print("Test on Target")
+        evaluate(model_path=path_udr, stats_path=stats_udr, n_episodes=args.eval_episodes,
+                 deterministic=True, render=False, env_type="target", algo_class=SAC)
+
+        print("SAC ADR on Source")
+        print("Test on Source")
+        evaluate(model_path=path_adr, stats_path=stats_adr, n_episodes=args.eval_episodes,
+                 deterministic=True, render=False, env_type="source", algo_class=SAC)
+        print("Test on Target")
+        evaluate(model_path=path_adr, stats_path=stats_adr, n_episodes=args.eval_episodes,
                  deterministic=True, render=False, env_type="target", algo_class=SAC)
 
 

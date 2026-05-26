@@ -190,7 +190,7 @@ def main() -> None:
     env_b.close()
     eval_env_b.close()
 
-    del model_a, env_a, eval_env_a, callback_a
+    del model_b, env_b, eval_env_b, callback_b
 
     # -------
     # MODEL C
@@ -232,7 +232,7 @@ def main() -> None:
     env_c.close()
     eval_env_c.close()
 
-    del model_a, env_a, eval_env_a, callback_a
+    del model_c, env_c, eval_env_c, callback_c
 
     # -------
     # TIME AND EVALUATION

@@ -38,14 +38,12 @@ CONFIG = 1
     Function for the parsing of the arguments, you can choose any argument you want prior to running with
     default=value.
 """
-
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--timesteps",
         type=int,
-        default=1_000_000,
+        default=250_000,
         help="Timestep per ciascun modello"
     )
     parser.add_argument(
@@ -67,8 +65,6 @@ def parse_args() -> argparse.Namespace:
     Function for creating the different environments doing env -> randomWrapper -> Monitor needed for the parallel
     processing for optimizing the training of the SAC models.
 """
-
-
 def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
     def _init() -> gym.Env:
         env = gym.make(
@@ -88,11 +84,8 @@ def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
 
 
 """
-    Funzione modulare e flessibile per addestrare un agente (PPO o SAC) con i migliori iperparametri
-    scoperti nell'Hyperparameter Tuning e liberare istantaneamente la RAM al termine.
+    Function to train either a PPO or SAC model with best hyperparameter tuning found earlier, also frees RAM after end.
 """
-
-
 def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: str, timesteps: int, num_cpus: int):
     print(f"Starting training: {model_name}")
     print(f"Domain: {env_type.upper()} | Randomization: {sampling_strategy.upper()}")
@@ -175,9 +168,11 @@ def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: s
     return model_path, stats_path
 
 
+"""
+    Given a global variable 'CONFIG' the main executes different path according to which task we want to complete.
+"""
 def main() -> None:
     args = parse_args()
-    args.num_cpus = 23
 
     if CONFIG == 1:
         # -----------------------------
@@ -185,7 +180,7 @@ def main() -> None:
         # -----------------------------
         print("Task 4: PPO vs SAC trained on Source and tested on Source and Target")
 
-        path_ppo, stats_ppo = train_agent("PPO_Source", PPO, "source", "none", args.timesteps, args.num_cpus*2)
+        path_ppo, stats_ppo = train_agent("PPO_Source", PPO, "source", "none", args.timesteps*50, args.num_cpus*2)
         path_sac, stats_sac = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus)
 
         print(f"\nEvaluation results with {args.eval_episodes} episodes")
@@ -212,10 +207,8 @@ def main() -> None:
         # -----------------------------------------------------------
         print("Task 5: SAC on Source vs SAC on Target")
 
-        path_sac_source, stats_sac_source = train_agent("SAC_Source", SAC, "source", "none", args.timesteps,
-                                                        args.num_cpus)
-        path_sac_target, stats_sac_target = train_agent("SAC_Target", SAC, "target", "none", args.timesteps,
-                                                        args.num_cpus)
+        path_sac_source, stats_sac_source = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus)
+        path_sac_target, stats_sac_target = train_agent("SAC_Target", SAC, "target", "none", args.timesteps, args.num_cpus)
 
         print(f"\nEvaluation results with {args.eval_episodes} episodes")
 

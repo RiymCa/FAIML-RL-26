@@ -62,8 +62,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--timesteps",
         type=int,
-        default=1_000_000,
-        choices=[1000, 100_000, 500_000, 1_000_000, 2_500_000],
+        default=250_000,
+        choices=[1000, 250_000, 500_000, 1_000_000, 2_500_000],
         help="Number of training timesteps",
     )
     parser.add_argument(
@@ -214,7 +214,8 @@ def main() -> None:
     # -------
     # MODEL C
     # -------
-    dir_model_c = os.path.join(models_sac_dir, f"sac_modelC_{args.sampling_strategy}_{args.env_type}")
+    dir_model_c = os.path.join(models_sac_dir, f"sac_modelC_{args.sampling_strategy}_{args.env_type}_{args.timesteps}")
+    print(dir_model_c)
     print(f"\nStarting SAC Model C training for {args.timesteps} steps on {args.num_cpus} CPUs.")
 
     env_c = SubprocVecEnv([make_env(args.env_type, args.sampling_strategy, i) for i in range(args.num_cpus)])
@@ -254,6 +255,7 @@ def main() -> None:
     eval_env_c.close()
 
     end_time_3 = time.time()
+    #diff3 = end_time_3 - start_time
     diff3 = end_time_3 - end_time_2
     print(f"Time spent model C: {int(diff3 // 3600)}:{int((diff3 % 3600) // 60)}:{(diff3 % 60):.2f}")
 
@@ -276,6 +278,7 @@ def main() -> None:
     print("\nEvaluating SAC model B.")
     evaluate(model_path=path_best_b, stats_path=os.path.join(dir_model_b, "vec_normalize.pkl"), n_episodes=100,
              deterministic=not args.stochastic, render=args.render, env_type=args.env_type, algo_class=SAC)
+
     print("\nEvaluating SAC model C.")
     evaluate(model_path=path_best_c, stats_path=os.path.join(dir_model_c, "vec_normalize.pkl"), n_episodes=100,
              deterministic=not args.stochastic, render=args.render, env_type=args.env_type, algo_class=SAC)

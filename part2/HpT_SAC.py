@@ -62,7 +62,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--timesteps",
         type=int,
-        default=250_000,
+        default=500_000,
         choices=[1000, 250_000, 500_000, 1_000_000, 2_500_000],
         help="Number of training timesteps",
     )
@@ -131,7 +131,7 @@ def main() -> None:
     # -------
     # MODEL A
     # -------
-    dir_model_a = os.path.join(models_sac_dir, f"sac_modelA_{args.sampling_strategy}_{args.env_type}")
+    dir_model_a = os.path.join(models_sac_dir, f"sac_modelA_{args.sampling_strategy}_{args.env_type}_{args.timesteps}")
     print(f"Starting SAC Model A training for {args.timesteps} steps on {args.num_cpus} CPUs.")
 
     env_a = SubprocVecEnv([make_env(args.env_type, args.sampling_strategy, i) for i in range(args.num_cpus)])
@@ -167,7 +167,7 @@ def main() -> None:
     # -------
     # MODEL B
     # -------
-    dir_model_b = os.path.join(models_sac_dir, f"sac_modelB_{args.sampling_strategy}_{args.env_type}")
+    dir_model_b = os.path.join(models_sac_dir, f"sac_modelB_{args.sampling_strategy}_{args.env_type}_{args.timesteps}")
     print(f"\nStarting SAC Model B training for {args.timesteps} steps on {args.num_cpus} CPUs.")
 
     env_b = SubprocVecEnv([make_env(args.env_type, args.sampling_strategy, i) for i in range(args.num_cpus)])
@@ -194,7 +194,6 @@ def main() -> None:
         learning_rate=3e-4,
         buffer_size=1000000,
         batch_size=256,
-        ent_coef="auto",
         gamma=0.99,
         tau=0.005,
         verbose=0
@@ -241,11 +240,8 @@ def main() -> None:
         seed=42,
         learning_rate=3e-4,
         buffer_size=1000000,
-        batch_size=512,
-        ent_coef="auto",
-        train_freq=1,
-        gradient_steps=args.num_cpus,
         policy_kwargs=dict(net_arch=[256, 256, 256]),
+        gradient_steps=args.num_cpus,
         verbose=0
     )
     print(f"Device in use: {model_c.device}.")
@@ -255,7 +251,6 @@ def main() -> None:
     eval_env_c.close()
 
     end_time_3 = time.time()
-    #diff3 = end_time_3 - start_time
     diff3 = end_time_3 - end_time_2
     print(f"Time spent model C: {int(diff3 // 3600)}:{int((diff3 % 3600) // 60)}:{(diff3 % 60):.2f}")
 

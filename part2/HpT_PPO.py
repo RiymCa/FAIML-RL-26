@@ -61,7 +61,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--timesteps",
         type=int,
-        default=20_000_000,
+        default=12_500_000,
         choices=[1000, 500_000, 2_500_000, 10_000_000],
         help="Number of training timesteps",
     )

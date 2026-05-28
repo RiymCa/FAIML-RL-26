@@ -4,1985 +4,1609 @@ Starting training: PPO_Source
 Domain: SOURCE | Randomization: NONE
 Created object with mass: 1.0
 
-Eval num_timesteps=20000, episode_reward=-3.50 +/- 2.10
+Eval num_timesteps=20000, episode_reward=-4.67 +/- 0.83
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+New best mean reward!
+Eval num_timesteps=40000, episode_reward=-5.37 +/- 0.79
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=60000, episode_reward=-3.25 +/- 1.67
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
 New best mean reward!
-Eval num_timesteps=40000, episode_reward=-4.10 +/- 2.12
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=60000, episode_reward=-4.85 +/- 1.17
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=80000, episode_reward=-2.51 +/- 2.16
+Eval num_timesteps=80000, episode_reward=-2.44 +/- 2.15
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
 New best mean reward!
-Eval num_timesteps=100000, episode_reward=-4.03 +/- 2.19
+Eval num_timesteps=100000, episode_reward=-3.39 +/- 1.84
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=120000, episode_reward=-3.34 +/- 1.82
+Eval num_timesteps=120000, episode_reward=-2.69 +/- 1.55
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=140000, episode_reward=-3.03 +/- 1.69
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=160000, episode_reward=-2.48 +/- 2.03
+Eval num_timesteps=140000, episode_reward=-2.60 +/- 2.09
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=160000, episode_reward=-2.08 +/- 1.71
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
 New best mean reward!
-Eval num_timesteps=180000, episode_reward=-3.65 +/- 2.18
+Eval num_timesteps=180000, episode_reward=-3.23 +/- 1.72
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=200000, episode_reward=-2.30 +/- 1.89
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-New best mean reward!
-Eval num_timesteps=220000, episode_reward=-2.53 +/- 2.06
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=240000, episode_reward=-3.65 +/- 1.95
+Eval num_timesteps=200000, episode_reward=-3.79 +/- 2.08
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=260000, episode_reward=-3.55 +/- 0.72
+Eval num_timesteps=220000, episode_reward=-3.62 +/- 2.03
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=240000, episode_reward=-3.81 +/- 1.94
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=260000, episode_reward=-3.67 +/- 0.97
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=280000, episode_reward=-3.40 +/- 1.80
+Eval num_timesteps=280000, episode_reward=-3.71 +/- 1.97
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=300000, episode_reward=-2.35 +/- 2.01
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=320000, episode_reward=-2.15 +/- 1.90
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-New best mean reward!
-Eval num_timesteps=340000, episode_reward=-3.35 +/- 1.78
+Eval num_timesteps=300000, episode_reward=-4.41 +/- 0.63
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=320000, episode_reward=-3.54 +/- 0.73
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=340000, episode_reward=-4.90 +/- 0.49
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=360000, episode_reward=-4.45 +/- 0.37
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=380000, episode_reward=-4.11 +/- 1.36
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=400000, episode_reward=-4.68 +/- 1.00
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=420000, episode_reward=-4.30 +/- 2.36
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=360000, episode_reward=-1.57 +/- 2.05
+Eval num_timesteps=440000, episode_reward=-3.59 +/- 1.83
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=460000, episode_reward=-4.32 +/- 0.43
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=480000, episode_reward=-4.97 +/- 1.07
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=500000, episode_reward=-4.50 +/- 0.90
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=520000, episode_reward=-3.19 +/- 1.71
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=540000, episode_reward=-3.32 +/- 1.85
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=560000, episode_reward=-4.36 +/- 1.31
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=580000, episode_reward=-2.51 +/- 2.05
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=600000, episode_reward=-2.99 +/- 2.42
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=620000, episode_reward=-3.24 +/- 1.82
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=640000, episode_reward=-3.70 +/- 1.08
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=660000, episode_reward=-3.18 +/- 2.61
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=680000, episode_reward=-4.94 +/- 0.62
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=700000, episode_reward=-4.29 +/- 1.11
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=720000, episode_reward=-2.89 +/- 1.45
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=740000, episode_reward=-3.42 +/- 1.78
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=760000, episode_reward=-4.00 +/- 2.04
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=780000, episode_reward=-3.50 +/- 1.81
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=800000, episode_reward=-3.24 +/- 1.67
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=820000, episode_reward=-3.93 +/- 0.74
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=840000, episode_reward=-2.31 +/- 1.90
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=860000, episode_reward=-3.18 +/- 2.08
+Episode length: 38.00 +/- 18.98
+Success rate: 40.00%
+Eval num_timesteps=880000, episode_reward=-3.96 +/- 0.96
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=900000, episode_reward=-5.11 +/- 0.61
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=920000, episode_reward=-3.71 +/- 2.02
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=940000, episode_reward=-3.93 +/- 0.54
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=960000, episode_reward=-3.40 +/- 1.72
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=980000, episode_reward=-3.47 +/- 0.81
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1000000, episode_reward=-1.42 +/- 1.72
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
 New best mean reward!
-Eval num_timesteps=380000, episode_reward=-4.62 +/- 0.68
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=400000, episode_reward=-3.51 +/- 1.85
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=420000, episode_reward=-2.33 +/- 2.01
+Eval num_timesteps=1020000, episode_reward=-2.34 +/- 2.01
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=440000, episode_reward=-4.00 +/- 2.32
+Eval num_timesteps=1040000, episode_reward=-2.59 +/- 1.38
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=460000, episode_reward=-2.21 +/- 2.70
+Eval num_timesteps=1060000, episode_reward=-3.69 +/- 1.13
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1080000, episode_reward=-3.22 +/- 1.91
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1100000, episode_reward=-4.68 +/- 0.45
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1120000, episode_reward=-1.91 +/- 2.31
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
-Eval num_timesteps=480000, episode_reward=-2.19 +/- 1.85
+Eval num_timesteps=1140000, episode_reward=-2.53 +/- 2.11
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=500000, episode_reward=-4.51 +/- 1.10
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=520000, episode_reward=-4.29 +/- 0.72
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=540000, episode_reward=-5.02 +/- 0.40
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=560000, episode_reward=-3.80 +/- 2.21
+Eval num_timesteps=1160000, episode_reward=-4.10 +/- 2.11
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=580000, episode_reward=-4.79 +/- 0.47
+Eval num_timesteps=1180000, episode_reward=-2.62 +/- 2.17
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=1200000, episode_reward=-4.11 +/- 2.12
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1220000, episode_reward=-2.89 +/- 1.61
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1240000, episode_reward=-4.77 +/- 1.32
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=600000, episode_reward=-1.22 +/- 1.46
+Eval num_timesteps=1260000, episode_reward=-1.50 +/- 1.86
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
-New best mean reward!
-Eval num_timesteps=620000, episode_reward=-4.01 +/- 1.00
+Eval num_timesteps=1280000, episode_reward=-2.99 +/- 1.69
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1300000, episode_reward=-3.82 +/- 2.08
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1320000, episode_reward=-4.79 +/- 0.91
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=640000, episode_reward=-2.47 +/- 2.02
+Eval num_timesteps=1340000, episode_reward=-4.75 +/- 1.39
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1360000, episode_reward=-4.58 +/- 1.28
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1380000, episode_reward=-2.28 +/- 1.85
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=660000, episode_reward=-1.26 +/- 1.50
+Eval num_timesteps=1400000, episode_reward=-4.66 +/- 0.88
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1420000, episode_reward=-2.96 +/- 1.53
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1440000, episode_reward=-3.36 +/- 2.87
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=1460000, episode_reward=-3.88 +/- 0.73
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1480000, episode_reward=-3.05 +/- 1.61
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1500000, episode_reward=-4.03 +/- 0.78
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1520000, episode_reward=-2.73 +/- 1.51
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1540000, episode_reward=-3.19 +/- 1.92
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1560000, episode_reward=-3.33 +/- 1.99
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1580000, episode_reward=-3.08 +/- 1.63
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1600000, episode_reward=-4.12 +/- 0.95
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1620000, episode_reward=-3.22 +/- 2.60
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=1640000, episode_reward=-3.49 +/- 1.98
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1660000, episode_reward=-3.55 +/- 2.04
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1680000, episode_reward=-4.01 +/- 0.76
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1700000, episode_reward=-5.45 +/- 0.94
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1720000, episode_reward=-1.90 +/- 2.29
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
-Eval num_timesteps=680000, episode_reward=-3.76 +/- 2.23
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=700000, episode_reward=-2.74 +/- 2.23
+Eval num_timesteps=1740000, episode_reward=-4.81 +/- 1.01
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1760000, episode_reward=-3.14 +/- 2.64
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=720000, episode_reward=-3.62 +/- 1.92
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=740000, episode_reward=-2.58 +/- 2.09
+Eval num_timesteps=1780000, episode_reward=-4.60 +/- 0.92
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1800000, episode_reward=-4.37 +/- 1.00
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=1820000, episode_reward=-3.15 +/- 2.60
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=760000, episode_reward=-4.57 +/- 1.08
+Eval num_timesteps=1840000, episode_reward=-4.55 +/- 0.88
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=780000, episode_reward=-3.16 +/- 1.61
+Eval num_timesteps=1860000, episode_reward=-4.04 +/- 2.07
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=800000, episode_reward=-3.70 +/- 2.16
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=820000, episode_reward=-2.95 +/- 1.59
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=840000, episode_reward=-4.83 +/- 1.01
+Eval num_timesteps=1880000, episode_reward=-5.05 +/- 1.32
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=860000, episode_reward=-4.62 +/- 1.25
+Eval num_timesteps=1900000, episode_reward=-3.92 +/- 2.13
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=1920000, episode_reward=-4.50 +/- 0.63
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=880000, episode_reward=-2.49 +/- 2.03
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=900000, episode_reward=-3.38 +/- 1.74
+Eval num_timesteps=1940000, episode_reward=-4.33 +/- 2.22
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=920000, episode_reward=-3.53 +/- 1.88
+Eval num_timesteps=1960000, episode_reward=-3.19 +/- 1.90
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=940000, episode_reward=-4.03 +/- 0.77
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=960000, episode_reward=-2.91 +/- 1.48
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=980000, episode_reward=-3.82 +/- 2.12
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1000000, episode_reward=-3.53 +/- 1.78
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1020000, episode_reward=-4.22 +/- 0.88
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1040000, episode_reward=-2.96 +/- 1.50
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1060000, episode_reward=-3.06 +/- 2.50
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1080000, episode_reward=-3.67 +/- 0.77
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1100000, episode_reward=-3.80 +/- 2.29
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1120000, episode_reward=-2.69 +/- 1.45
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1140000, episode_reward=-4.83 +/- 0.65
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1160000, episode_reward=-2.49 +/- 2.06
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1180000, episode_reward=-3.58 +/- 2.20
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1200000, episode_reward=-2.86 +/- 2.33
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1220000, episode_reward=-1.79 +/- 2.37
+Eval num_timesteps=1980000, episode_reward=-1.74 +/- 2.10
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
-Eval num_timesteps=1240000, episode_reward=-3.21 +/- 1.65
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1260000, episode_reward=-3.45 +/- 2.15
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1280000, episode_reward=-3.11 +/- 1.71
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1300000, episode_reward=-2.10 +/- 1.74
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1320000, episode_reward=-4.10 +/- 2.23
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1340000, episode_reward=-4.15 +/- 0.67
+Eval num_timesteps=2000000, episode_reward=-4.47 +/- 0.68
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=1360000, episode_reward=-4.35 +/- 1.05
+Eval num_timesteps=2020000, episode_reward=-3.69 +/- 2.13
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2040000, episode_reward=-4.58 +/- 1.13
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=1380000, episode_reward=-4.98 +/- 1.08
+Eval num_timesteps=2060000, episode_reward=-2.91 +/- 1.51
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2080000, episode_reward=-4.31 +/- 0.86
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=1400000, episode_reward=-3.90 +/- 0.98
+Eval num_timesteps=2100000, episode_reward=-3.50 +/- 2.00
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2120000, episode_reward=-3.94 +/- 2.01
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2140000, episode_reward=-4.18 +/- 1.25
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=1420000, episode_reward=-3.68 +/- 2.14
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1440000, episode_reward=-3.41 +/- 2.20
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1460000, episode_reward=-3.27 +/- 1.78
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1480000, episode_reward=-1.96 +/- 1.59
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1500000, episode_reward=-2.19 +/- 1.91
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1520000, episode_reward=-4.55 +/- 1.08
+Eval num_timesteps=2160000, episode_reward=-4.05 +/- 1.30
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=1540000, episode_reward=-3.97 +/- 0.53
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1560000, episode_reward=-3.12 +/- 1.65
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1580000, episode_reward=-3.36 +/- 1.82
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1600000, episode_reward=-4.24 +/- 0.97
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1620000, episode_reward=-4.24 +/- 0.48
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1640000, episode_reward=-4.83 +/- 0.62
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1660000, episode_reward=-3.09 +/- 1.55
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1680000, episode_reward=-2.11 +/- 1.78
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1700000, episode_reward=-4.77 +/- 0.30
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1720000, episode_reward=-4.27 +/- 0.82
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1740000, episode_reward=-4.05 +/- 2.02
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1760000, episode_reward=-2.12 +/- 1.83
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1780000, episode_reward=-2.66 +/- 2.15
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1800000, episode_reward=-4.13 +/- 0.43
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1820000, episode_reward=-2.82 +/- 2.50
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1840000, episode_reward=-2.79 +/- 1.53
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1860000, episode_reward=-2.48 +/- 2.14
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=1880000, episode_reward=-3.69 +/- 1.20
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1900000, episode_reward=-1.55 +/- 1.86
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=1920000, episode_reward=-3.07 +/- 1.63
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1940000, episode_reward=-4.61 +/- 1.01
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=1960000, episode_reward=-3.83 +/- 2.20
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=1980000, episode_reward=-3.76 +/- 2.13
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2000000, episode_reward=-2.77 +/- 2.41
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2020000, episode_reward=-3.36 +/- 1.72
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2040000, episode_reward=-4.05 +/- 0.51
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2060000, episode_reward=-3.83 +/- 0.70
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2080000, episode_reward=-3.54 +/- 1.81
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2100000, episode_reward=-3.83 +/- 0.71
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2120000, episode_reward=-2.45 +/- 2.01
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2140000, episode_reward=-3.48 +/- 1.81
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2160000, episode_reward=-4.28 +/- 2.15
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2180000, episode_reward=-4.29 +/- 2.21
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2200000, episode_reward=-3.16 +/- 1.95
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2220000, episode_reward=-2.55 +/- 1.41
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2240000, episode_reward=-4.15 +/- 0.92
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2260000, episode_reward=-2.41 +/- 1.96
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2280000, episode_reward=-4.15 +/- 1.12
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2300000, episode_reward=-2.62 +/- 2.14
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2320000, episode_reward=-3.17 +/- 1.62
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2340000, episode_reward=-4.10 +/- 2.18
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2360000, episode_reward=-1.95 +/- 2.64
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=2380000, episode_reward=-3.57 +/- 1.80
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2400000, episode_reward=-2.71 +/- 2.22
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2420000, episode_reward=-4.37 +/- 2.38
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2440000, episode_reward=-3.69 +/- 0.90
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2460000, episode_reward=-2.48 +/- 2.00
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2480000, episode_reward=-4.18 +/- 0.55
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2500000, episode_reward=-3.28 +/- 1.89
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2520000, episode_reward=-4.01 +/- 0.52
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2540000, episode_reward=-3.57 +/- 2.32
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2560000, episode_reward=-5.13 +/- 0.74
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2580000, episode_reward=-1.85 +/- 1.55
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2600000, episode_reward=-2.48 +/- 2.14
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2620000, episode_reward=-2.27 +/- 1.93
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2640000, episode_reward=-4.34 +/- 1.16
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2660000, episode_reward=-4.68 +/- 0.87
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2680000, episode_reward=-2.99 +/- 2.43
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2700000, episode_reward=-3.55 +/- 1.95
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2720000, episode_reward=-4.39 +/- 2.25
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2740000, episode_reward=-2.69 +/- 1.38
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2760000, episode_reward=-3.65 +/- 1.94
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2780000, episode_reward=-4.60 +/- 0.93
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2800000, episode_reward=-3.28 +/- 1.68
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2820000, episode_reward=-4.52 +/- 1.07
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=2840000, episode_reward=-2.36 +/- 1.91
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2860000, episode_reward=-4.23 +/- 2.18
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2880000, episode_reward=-2.33 +/- 1.99
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=2900000, episode_reward=-3.05 +/- 1.63
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2920000, episode_reward=-3.02 +/- 1.63
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2940000, episode_reward=-4.15 +/- 2.22
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2960000, episode_reward=-3.41 +/- 1.87
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=2980000, episode_reward=-1.68 +/- 2.04
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=3000000, episode_reward=-1.65 +/- 2.07
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=3020000, episode_reward=-2.70 +/- 2.37
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3040000, episode_reward=-3.52 +/- 2.00
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3060000, episode_reward=-1.49 +/- 1.82
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=3080000, episode_reward=-5.09 +/- 0.70
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3100000, episode_reward=-4.63 +/- 1.05
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3120000, episode_reward=-3.77 +/- 0.63
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3140000, episode_reward=-2.18 +/- 1.83
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3160000, episode_reward=-2.92 +/- 1.58
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3180000, episode_reward=-5.05 +/- 0.81
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3200000, episode_reward=-2.95 +/- 1.63
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3220000, episode_reward=-4.34 +/- 1.05
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3240000, episode_reward=-4.49 +/- 0.90
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3260000, episode_reward=-2.28 +/- 1.93
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3280000, episode_reward=-4.29 +/- 0.91
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3300000, episode_reward=-4.23 +/- 2.12
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3320000, episode_reward=-4.03 +/- 2.20
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3340000, episode_reward=-3.09 +/- 2.54
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3360000, episode_reward=-1.55 +/- 1.99
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=3380000, episode_reward=-3.46 +/- 1.93
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3400000, episode_reward=-4.03 +/- 0.54
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3420000, episode_reward=-2.48 +/- 2.13
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3440000, episode_reward=-2.22 +/- 1.83
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3460000, episode_reward=-1.76 +/- 2.34
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=3480000, episode_reward=-5.19 +/- 0.97
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3500000, episode_reward=-2.93 +/- 2.58
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3520000, episode_reward=-5.06 +/- 0.93
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3540000, episode_reward=-4.72 +/- 0.92
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3560000, episode_reward=-3.79 +/- 0.99
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3580000, episode_reward=-3.42 +/- 2.05
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3600000, episode_reward=-4.02 +/- 0.74
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3620000, episode_reward=-3.74 +/- 1.40
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3640000, episode_reward=-1.59 +/- 1.96
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=3660000, episode_reward=-5.05 +/- 1.23
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3680000, episode_reward=-3.76 +/- 1.01
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3700000, episode_reward=-2.85 +/- 2.39
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3720000, episode_reward=-2.19 +/- 1.92
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3740000, episode_reward=-1.81 +/- 1.49
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3760000, episode_reward=-4.07 +/- 2.06
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3780000, episode_reward=-3.07 +/- 1.66
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3800000, episode_reward=-3.17 +/- 2.63
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3820000, episode_reward=-3.11 +/- 1.84
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3840000, episode_reward=-2.62 +/- 2.20
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3860000, episode_reward=-2.58 +/- 2.30
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3880000, episode_reward=-3.14 +/- 2.00
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3900000, episode_reward=-3.98 +/- 3.22
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=3920000, episode_reward=-4.57 +/- 0.87
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3940000, episode_reward=-4.52 +/- 0.88
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=3960000, episode_reward=-3.74 +/- 1.93
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=3980000, episode_reward=-3.41 +/- 1.96
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4000000, episode_reward=-2.56 +/- 2.18
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=4020000, episode_reward=-1.74 +/- 2.17
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=4040000, episode_reward=-3.62 +/- 2.14
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4060000, episode_reward=-3.50 +/- 1.95
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4080000, episode_reward=-3.26 +/- 1.69
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4100000, episode_reward=-3.34 +/- 1.87
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4120000, episode_reward=-3.06 +/- 1.62
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4140000, episode_reward=-2.73 +/- 2.41
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=4160000, episode_reward=-3.37 +/- 1.87
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4180000, episode_reward=-3.62 +/- 2.09
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4200000, episode_reward=-3.96 +/- 0.43
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=4220000, episode_reward=-2.37 +/- 2.04
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=4240000, episode_reward=-3.70 +/- 2.02
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4260000, episode_reward=-0.55 +/- 1.04
+Eval num_timesteps=2180000, episode_reward=-0.69 +/- 1.32
 Episode length: 10.80 +/- 19.60
 Success rate: 80.00%
 New best mean reward!
-Eval num_timesteps=4280000, episode_reward=-4.54 +/- 1.12
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=4300000, episode_reward=-3.54 +/- 1.90
+Eval num_timesteps=2200000, episode_reward=-4.15 +/- 2.21
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=4320000, episode_reward=-4.19 +/- 0.91
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=4340000, episode_reward=-3.44 +/- 1.82
+Eval num_timesteps=2220000, episode_reward=-3.80 +/- 2.23
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=4360000, episode_reward=-2.69 +/- 2.39
+Eval num_timesteps=2240000, episode_reward=-3.23 +/- 2.06
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2260000, episode_reward=-2.86 +/- 2.32
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=4380000, episode_reward=-1.65 +/- 2.01
+Eval num_timesteps=2280000, episode_reward=-3.40 +/- 2.79
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=2300000, episode_reward=-3.39 +/- 1.79
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2320000, episode_reward=-2.92 +/- 2.39
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=2340000, episode_reward=-3.60 +/- 2.08
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2360000, episode_reward=-2.52 +/- 2.33
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=2380000, episode_reward=-3.81 +/- 1.96
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2400000, episode_reward=-3.59 +/- 1.86
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2420000, episode_reward=-5.06 +/- 1.11
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2440000, episode_reward=-5.23 +/- 0.92
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2460000, episode_reward=-4.08 +/- 2.23
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2480000, episode_reward=-4.17 +/- 1.23
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2500000, episode_reward=-2.67 +/- 2.41
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=2520000, episode_reward=-4.47 +/- 1.46
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2540000, episode_reward=-1.28 +/- 1.53
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
-Eval num_timesteps=4400000, episode_reward=-2.44 +/- 1.99
+Eval num_timesteps=2560000, episode_reward=-3.00 +/- 2.50
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=4420000, episode_reward=-3.26 +/- 1.62
+Eval num_timesteps=2580000, episode_reward=-4.10 +/- 1.00
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2600000, episode_reward=-3.62 +/- 0.56
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2620000, episode_reward=-3.25 +/- 1.97
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=4440000, episode_reward=-2.87 +/- 1.57
+Eval num_timesteps=2640000, episode_reward=-4.82 +/- 1.17
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2660000, episode_reward=-4.70 +/- 0.79
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2680000, episode_reward=-4.30 +/- 1.08
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2700000, episode_reward=-3.92 +/- 2.09
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=4460000, episode_reward=-2.07 +/- 1.66
+Eval num_timesteps=2720000, episode_reward=-2.97 +/- 1.59
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2740000, episode_reward=-4.21 +/- 0.28
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2760000, episode_reward=-3.88 +/- 0.97
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2780000, episode_reward=-2.30 +/- 1.93
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=4480000, episode_reward=-2.40 +/- 2.09
+Eval num_timesteps=2800000, episode_reward=-3.56 +/- 2.16
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2820000, episode_reward=-4.58 +/- 1.46
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=2840000, episode_reward=-3.73 +/- 1.89
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=2860000, episode_reward=-2.00 +/- 1.63
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=4500000, episode_reward=-3.47 +/- 2.05
+Eval num_timesteps=2880000, episode_reward=-3.43 +/- 1.82
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=4520000, episode_reward=-4.34 +/- 2.27
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4540000, episode_reward=-4.07 +/- 2.19
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4560000, episode_reward=-3.19 +/- 2.67
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=4580000, episode_reward=-4.43 +/- 2.40
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4600000, episode_reward=-3.26 +/- 2.63
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=4620000, episode_reward=-1.56 +/- 1.99
+Eval num_timesteps=2900000, episode_reward=-2.00 +/- 2.50
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
-Eval num_timesteps=4640000, episode_reward=-3.67 +/- 1.92
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4660000, episode_reward=-2.95 +/- 1.78
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4680000, episode_reward=-4.30 +/- 1.34
+Eval num_timesteps=2920000, episode_reward=-4.34 +/- 0.55
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=4700000, episode_reward=-4.09 +/- 2.15
+Eval num_timesteps=2940000, episode_reward=-3.74 +/- 2.11
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=4720000, episode_reward=-3.66 +/- 1.84
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4740000, episode_reward=-3.20 +/- 1.77
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4760000, episode_reward=-3.82 +/- 2.02
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4780000, episode_reward=-4.54 +/- 0.97
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=4800000, episode_reward=-2.94 +/- 1.61
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4820000, episode_reward=-2.43 +/- 2.00
+Eval num_timesteps=2960000, episode_reward=-1.94 +/- 1.65
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=4840000, episode_reward=-3.19 +/- 1.60
+Eval num_timesteps=2980000, episode_reward=-4.07 +/- 2.04
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=4860000, episode_reward=-3.64 +/- 2.07
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4880000, episode_reward=-4.15 +/- 0.57
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=4900000, episode_reward=-4.37 +/- 2.21
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4920000, episode_reward=-3.50 +/- 1.78
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4940000, episode_reward=-3.72 +/- 2.28
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4960000, episode_reward=-3.33 +/- 1.75
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=4980000, episode_reward=-3.01 +/- 2.45
+Eval num_timesteps=3000000, episode_reward=-2.43 +/- 2.06
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=5000000, episode_reward=-3.45 +/- 1.74
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5020000, episode_reward=-3.45 +/- 0.57
+Eval num_timesteps=3020000, episode_reward=-4.47 +/- 0.71
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=5040000, episode_reward=-2.88 +/- 1.52
+Eval num_timesteps=3040000, episode_reward=-3.66 +/- 1.99
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=5060000, episode_reward=-3.61 +/- 1.87
-Episode length: 40.20 +/- 19.60
+Eval num_timesteps=3060000, episode_reward=-3.96 +/- 1.78
+Episode length: 41.60 +/- 16.80
 Success rate: 20.00%
-Eval num_timesteps=5080000, episode_reward=-4.60 +/- 0.78
+Eval num_timesteps=3080000, episode_reward=-5.03 +/- 3.28
+Episode length: 41.20 +/- 17.60
+Success rate: 20.00%
+Eval num_timesteps=3100000, episode_reward=-2.56 +/- 2.09
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=3120000, episode_reward=-4.75 +/- 1.06
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=5100000, episode_reward=-2.82 +/- 2.30
+Eval num_timesteps=3140000, episode_reward=-2.59 +/- 2.19
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=5120000, episode_reward=-2.41 +/- 2.00
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=5140000, episode_reward=-2.10 +/- 2.54
+Eval num_timesteps=3160000, episode_reward=-1.91 +/- 2.30
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
-Eval num_timesteps=5160000, episode_reward=-4.27 +/- 1.13
+Eval num_timesteps=3180000, episode_reward=-2.88 +/- 1.54
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3200000, episode_reward=-4.36 +/- 0.60
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=5180000, episode_reward=-3.51 +/- 1.90
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5200000, episode_reward=-3.15 +/- 1.74
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5220000, episode_reward=-4.11 +/- 2.15
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5240000, episode_reward=-3.64 +/- 1.95
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5260000, episode_reward=-4.43 +/- 1.00
+Eval num_timesteps=3220000, episode_reward=-4.96 +/- 0.59
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=5280000, episode_reward=-4.07 +/- 0.36
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=5300000, episode_reward=-2.18 +/- 1.85
+Eval num_timesteps=3240000, episode_reward=-3.58 +/- 1.91
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3260000, episode_reward=-2.84 +/- 2.37
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=5320000, episode_reward=-2.58 +/- 2.19
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=5340000, episode_reward=-4.39 +/- 0.68
+Eval num_timesteps=3280000, episode_reward=-4.75 +/- 0.89
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=5360000, episode_reward=-2.09 +/- 1.67
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=5380000, episode_reward=-4.28 +/- 0.72
+Eval num_timesteps=3300000, episode_reward=-2.82 +/- 1.51
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3320000, episode_reward=-3.28 +/- 1.78
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3340000, episode_reward=-3.68 +/- 2.04
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3360000, episode_reward=-4.03 +/- 0.80
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=5400000, episode_reward=-4.35 +/- 2.22
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5420000, episode_reward=-2.79 +/- 2.29
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=5440000, episode_reward=-3.03 +/- 1.73
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5460000, episode_reward=-3.48 +/- 1.98
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5480000, episode_reward=-2.76 +/- 2.31
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=5500000, episode_reward=-3.06 +/- 1.80
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5520000, episode_reward=-4.40 +/- 0.97
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=5540000, episode_reward=-2.64 +/- 2.25
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=5560000, episode_reward=-3.63 +/- 1.88
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5580000, episode_reward=-4.24 +/- 0.63
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=5600000, episode_reward=-4.25 +/- 1.36
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=5620000, episode_reward=-3.78 +/- 2.29
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5640000, episode_reward=-3.66 +/- 2.13
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5660000, episode_reward=-1.57 +/- 1.95
+Eval num_timesteps=3380000, episode_reward=-1.75 +/- 2.11
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
-Eval num_timesteps=5680000, episode_reward=-2.72 +/- 2.26
+Eval num_timesteps=3400000, episode_reward=-3.92 +/- 1.99
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3420000, episode_reward=-4.30 +/- 1.28
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=3440000, episode_reward=-3.98 +/- 0.68
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=3460000, episode_reward=-4.50 +/- 0.86
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=3480000, episode_reward=-2.62 +/- 2.36
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=5700000, episode_reward=-3.83 +/- 0.79
+Eval num_timesteps=3500000, episode_reward=-4.93 +/- 1.08
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=5720000, episode_reward=-4.31 +/- 0.91
+Eval num_timesteps=3520000, episode_reward=-3.11 +/- 1.77
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3540000, episode_reward=-3.89 +/- 1.94
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3560000, episode_reward=-4.14 +/- 2.42
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3580000, episode_reward=-4.34 +/- 1.04
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=5740000, episode_reward=-2.64 +/- 2.25
+Eval num_timesteps=3600000, episode_reward=-2.44 +/- 1.97
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=5760000, episode_reward=-3.42 +/- 1.75
+Eval num_timesteps=3620000, episode_reward=-3.29 +/- 1.73
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=5780000, episode_reward=-3.08 +/- 1.57
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5800000, episode_reward=-3.98 +/- 2.01
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5820000, episode_reward=-3.32 +/- 1.84
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5840000, episode_reward=-3.46 +/- 0.70
+Eval num_timesteps=3640000, episode_reward=-4.38 +/- 1.22
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=5860000, episode_reward=-2.80 +/- 1.50
+Eval num_timesteps=3660000, episode_reward=-3.69 +/- 1.85
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=5880000, episode_reward=-3.82 +/- 0.96
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=5900000, episode_reward=-4.54 +/- 1.08
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=5920000, episode_reward=-3.85 +/- 2.00
+Eval num_timesteps=3680000, episode_reward=-3.58 +/- 1.79
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=5940000, episode_reward=-3.96 +/- 2.15
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5960000, episode_reward=-3.86 +/- 2.06
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=5980000, episode_reward=-4.49 +/- 0.72
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6000000, episode_reward=-3.37 +/- 2.83
+Eval num_timesteps=3700000, episode_reward=-3.07 +/- 2.36
+Episode length: 31.60 +/- 22.62
+Success rate: 40.00%
+Eval num_timesteps=3720000, episode_reward=-2.65 +/- 2.18
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=6020000, episode_reward=-3.58 +/- 2.03
+Eval num_timesteps=3740000, episode_reward=-3.63 +/- 1.84
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=6040000, episode_reward=-4.32 +/- 1.02
+Eval num_timesteps=3760000, episode_reward=-4.29 +/- 1.20
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=6060000, episode_reward=-4.98 +/- 1.06
+Eval num_timesteps=3780000, episode_reward=-4.18 +/- 2.13
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3800000, episode_reward=-3.68 +/- 0.74
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=6080000, episode_reward=-3.41 +/- 2.10
+Eval num_timesteps=3820000, episode_reward=-3.93 +/- 2.00
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=6100000, episode_reward=-4.32 +/- 1.08
+Eval num_timesteps=3840000, episode_reward=-3.41 +/- 1.80
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3860000, episode_reward=-3.72 +/- 1.86
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=3880000, episode_reward=-3.86 +/- 0.68
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=6120000, episode_reward=-3.59 +/- 2.05
+Eval num_timesteps=3900000, episode_reward=-4.58 +/- 0.45
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=3920000, episode_reward=-3.63 +/- 2.04
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=6140000, episode_reward=-3.47 +/- 2.12
+Eval num_timesteps=3940000, episode_reward=-3.40 +/- 1.94
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=6160000, episode_reward=-3.11 +/- 1.63
+Eval num_timesteps=3960000, episode_reward=-3.43 +/- 1.90
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=6180000, episode_reward=-3.19 +/- 1.96
+Eval num_timesteps=3980000, episode_reward=-3.28 +/- 2.55
+Episode length: 31.40 +/- 22.84
+Success rate: 40.00%
+Eval num_timesteps=4000000, episode_reward=-3.36 +/- 1.96
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=6200000, episode_reward=-2.31 +/- 1.96
+Eval num_timesteps=4020000, episode_reward=-3.97 +/- 2.25
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=4040000, episode_reward=-2.88 +/- 2.47
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=6220000, episode_reward=-2.55 +/- 2.07
+Eval num_timesteps=4060000, episode_reward=-3.85 +/- 2.04
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=4080000, episode_reward=-5.65 +/- 0.77
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=4100000, episode_reward=-3.78 +/- 1.79
+Episode length: 41.20 +/- 17.60
+Success rate: 20.00%
+Eval num_timesteps=4120000, episode_reward=-4.86 +/- 0.96
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=4140000, episode_reward=-2.71 +/- 2.29
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=6240000, episode_reward=-4.45 +/- 0.74
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6260000, episode_reward=-4.96 +/- 0.95
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6280000, episode_reward=-4.07 +/- 0.57
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6300000, episode_reward=-3.72 +/- 2.36
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6320000, episode_reward=-3.71 +/- 1.90
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6340000, episode_reward=-3.49 +/- 2.00
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6360000, episode_reward=-4.43 +/- 0.95
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6380000, episode_reward=-3.81 +/- 1.94
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6400000, episode_reward=-4.92 +/- 1.08
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6420000, episode_reward=-3.80 +/- 0.90
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6440000, episode_reward=-4.57 +/- 0.25
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6460000, episode_reward=-4.76 +/- 0.94
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6480000, episode_reward=-2.85 +/- 2.59
-Episode length: 30.40 +/- 24.00
+Eval num_timesteps=4160000, episode_reward=-2.32 +/- 2.06
+Episode length: 31.40 +/- 22.84
 Success rate: 40.00%
-Eval num_timesteps=6500000, episode_reward=-5.34 +/- 1.04
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6520000, episode_reward=-4.08 +/- 0.68
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6540000, episode_reward=-2.40 +/- 1.97
-Episode length: 30.40 +/- 24.00
+Eval num_timesteps=4180000, episode_reward=-2.67 +/- 2.00
+Episode length: 31.60 +/- 22.62
 Success rate: 40.00%
-Eval num_timesteps=6560000, episode_reward=-2.77 +/- 2.40
-Episode length: 30.40 +/- 24.00
+Eval num_timesteps=4200000, episode_reward=-3.38 +/- 1.70
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=4220000, episode_reward=-3.95 +/- 0.97
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=4240000, episode_reward=-2.18 +/- 1.72
+Episode length: 31.20 +/- 23.06
 Success rate: 40.00%
-Eval num_timesteps=6580000, episode_reward=-3.66 +/- 2.05
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6600000, episode_reward=-3.63 +/- 1.97
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6620000, episode_reward=-3.85 +/- 1.11
+Eval num_timesteps=4260000, episode_reward=-4.75 +/- 0.72
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=6640000, episode_reward=-3.22 +/- 1.68
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6660000, episode_reward=-4.23 +/- 1.00
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6680000, episode_reward=-3.87 +/- 0.97
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6700000, episode_reward=-3.19 +/- 2.67
-Episode length: 30.40 +/- 24.00
+Eval num_timesteps=4280000, episode_reward=-2.20 +/- 1.75
+Episode length: 31.20 +/- 23.06
 Success rate: 40.00%
-Eval num_timesteps=6720000, episode_reward=-3.13 +/- 1.67
+Eval num_timesteps=4300000, episode_reward=-2.96 +/- 1.68
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=6740000, episode_reward=-3.77 +/- 1.06
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6760000, episode_reward=-3.66 +/- 1.99
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6780000, episode_reward=-4.07 +/- 2.08
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6800000, episode_reward=-3.48 +/- 1.75
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6820000, episode_reward=-3.09 +/- 2.50
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=6840000, episode_reward=-3.19 +/- 1.92
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6860000, episode_reward=-3.43 +/- 1.71
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6880000, episode_reward=-3.61 +/- 1.94
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6900000, episode_reward=-4.69 +/- 0.90
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=6920000, episode_reward=-2.62 +/- 2.11
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=6940000, episode_reward=-3.52 +/- 1.95
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=6960000, episode_reward=-1.58 +/- 1.91
+Eval num_timesteps=4320000, episode_reward=-1.27 +/- 1.56
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
-Eval num_timesteps=6980000, episode_reward=-4.27 +/- 1.15
+Eval num_timesteps=4340000, episode_reward=-2.49 +/- 2.07
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=4360000, episode_reward=-2.56 +/- 2.14
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=4380000, episode_reward=-4.86 +/- 0.73
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=7000000, episode_reward=-4.61 +/- 0.79
+Eval num_timesteps=4400000, episode_reward=-4.10 +/- 1.77
+Episode length: 41.60 +/- 16.80
+Success rate: 20.00%
+Eval num_timesteps=4420000, episode_reward=-4.29 +/- 2.28
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=4440000, episode_reward=-3.67 +/- 1.87
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=4460000, episode_reward=-4.80 +/- 1.03
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=7020000, episode_reward=-4.79 +/- 0.89
+Eval num_timesteps=4480000, episode_reward=-4.13 +/- 1.87
+Episode length: 41.40 +/- 17.20
+Success rate: 20.00%
+Eval num_timesteps=4500000, episode_reward=-3.34 +/- 1.80
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=4520000, episode_reward=-4.64 +/- 0.69
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=7040000, episode_reward=-1.43 +/- 1.76
+Eval num_timesteps=4540000, episode_reward=-2.67 +/- 2.14
+Episode length: 31.20 +/- 23.06
+Success rate: 40.00%
+Eval num_timesteps=4560000, episode_reward=-1.72 +/- 2.04
+Episode length: 21.40 +/- 23.40
+Success rate: 60.00%
+Eval num_timesteps=4580000, episode_reward=-2.47 +/- 1.94
+Episode length: 31.20 +/- 23.06
+Success rate: 40.00%
+Eval num_timesteps=4600000, episode_reward=-2.25 +/- 2.75
 Episode length: 20.60 +/- 24.00
 Success rate: 60.00%
-Eval num_timesteps=7060000, episode_reward=-4.74 +/- 1.19
+Eval num_timesteps=4620000, episode_reward=-4.72 +/- 0.83
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=7080000, episode_reward=-3.08 +/- 2.50
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=7100000, episode_reward=-2.94 +/- 2.51
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=7120000, episode_reward=-3.99 +/- 2.16
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7140000, episode_reward=-4.34 +/- 0.99
+Eval num_timesteps=4640000, episode_reward=-5.72 +/- 0.65
 Episode length: 50.00 +/- 0.00
 Success rate: 0.00%
-Eval num_timesteps=7160000, episode_reward=-3.57 +/- 2.00
+Eval num_timesteps=4660000, episode_reward=-4.38 +/- 2.30
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=7180000, episode_reward=-0.84 +/- 1.59
+Eval num_timesteps=4680000, episode_reward=-3.07 +/- 1.56
+Episode length: 41.00 +/- 18.00
+Success rate: 20.00%
+Eval num_timesteps=4700000, episode_reward=-3.26 +/- 1.90
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=4720000, episode_reward=-1.59 +/- 1.34
+Episode length: 24.80 +/- 20.84
+Success rate: 60.00%
+Eval num_timesteps=4740000, episode_reward=-2.27 +/- 2.63
+Episode length: 21.40 +/- 23.40
+Success rate: 60.00%
+Eval num_timesteps=4760000, episode_reward=-2.92 +/- 2.38
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=4780000, episode_reward=-1.88 +/- 2.05
+Episode length: 22.40 +/- 22.77
+Success rate: 60.00%
+Eval num_timesteps=4800000, episode_reward=-3.48 +/- 1.57
+Episode length: 41.80 +/- 16.40
+Success rate: 20.00%
+Eval num_timesteps=4820000, episode_reward=-1.69 +/- 2.14
+Episode length: 20.60 +/- 24.00
+Success rate: 60.00%
+Eval num_timesteps=4840000, episode_reward=-3.79 +/- 1.97
+Episode length: 41.40 +/- 17.20
+Success rate: 20.00%
+Eval num_timesteps=4860000, episode_reward=-3.96 +/- 2.09
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=4880000, episode_reward=-2.62 +/- 2.97
+Episode length: 22.20 +/- 22.89
+Success rate: 60.00%
+Eval num_timesteps=4900000, episode_reward=-2.42 +/- 2.27
+Episode length: 24.60 +/- 21.10
+Success rate: 60.00%
+Eval num_timesteps=4920000, episode_reward=-2.64 +/- 1.91
+Episode length: 32.00 +/- 22.19
+Success rate: 40.00%
+Eval num_timesteps=4940000, episode_reward=-3.09 +/- 2.50
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=4960000, episode_reward=-3.86 +/- 2.02
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=4980000, episode_reward=-4.45 +/- 1.42
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=5000000, episode_reward=-1.90 +/- 2.29
+Episode length: 20.60 +/- 24.00
+Success rate: 60.00%
+Eval num_timesteps=5020000, episode_reward=-2.84 +/- 1.92
+Episode length: 34.60 +/- 18.88
+Success rate: 40.00%
+Eval num_timesteps=5040000, episode_reward=-2.48 +/- 1.83
+Episode length: 32.40 +/- 21.79
+Success rate: 40.00%
+Eval num_timesteps=5060000, episode_reward=-1.98 +/- 2.55
+Episode length: 20.60 +/- 24.00
+Success rate: 60.00%
+Eval num_timesteps=5080000, episode_reward=-1.04 +/- 1.91
+Episode length: 11.60 +/- 19.26
+Success rate: 80.00%
+Eval num_timesteps=5100000, episode_reward=-1.84 +/- 2.01
+Episode length: 21.80 +/- 23.13
+Success rate: 60.00%
+Eval num_timesteps=5120000, episode_reward=-3.81 +/- 2.06
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=5140000, episode_reward=-0.90 +/- 1.37
+Episode length: 13.00 +/- 18.98
+Success rate: 80.00%
+Eval num_timesteps=5160000, episode_reward=-2.61 +/- 1.73
+Episode length: 33.40 +/- 20.45
+Success rate: 40.00%
+Eval num_timesteps=5180000, episode_reward=-2.40 +/- 2.61
+Episode length: 22.60 +/- 22.67
+Success rate: 60.00%
+Eval num_timesteps=5200000, episode_reward=-2.08 +/- 1.27
+Episode length: 27.40 +/- 18.48
+Success rate: 60.00%
+Eval num_timesteps=5220000, episode_reward=-1.91 +/- 1.76
+Episode length: 24.00 +/- 21.46
+Success rate: 60.00%
+Eval num_timesteps=5240000, episode_reward=-2.95 +/- 2.29
+Episode length: 31.20 +/- 23.06
+Success rate: 40.00%
+Eval num_timesteps=5260000, episode_reward=-2.64 +/- 2.10
+Episode length: 31.60 +/- 22.62
+Success rate: 40.00%
+Eval num_timesteps=5280000, episode_reward=-4.03 +/- 2.02
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=5300000, episode_reward=-3.52 +/- 2.13
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=5320000, episode_reward=-2.74 +/- 1.81
+Episode length: 34.20 +/- 19.37
+Success rate: 40.00%
+Eval num_timesteps=5340000, episode_reward=-1.50 +/- 1.29
+Episode length: 23.80 +/- 21.74
+Success rate: 60.00%
+Eval num_timesteps=5360000, episode_reward=-0.25 +/- 0.30
+Episode length: 3.40 +/- 3.20
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=5380000, episode_reward=-1.53 +/- 1.60
+Episode length: 22.80 +/- 22.32
+Success rate: 60.00%
+Eval num_timesteps=5400000, episode_reward=-2.37 +/- 1.44
+Episode length: 33.40 +/- 20.33
+Success rate: 40.00%
+Eval num_timesteps=5420000, episode_reward=-1.99 +/- 1.71
+Episode length: 25.00 +/- 20.53
+Success rate: 60.00%
+Eval num_timesteps=5440000, episode_reward=-2.25 +/- 2.09
+Episode length: 26.40 +/- 20.87
+Success rate: 60.00%
+Eval num_timesteps=5460000, episode_reward=-2.66 +/- 2.24
+Episode length: 31.60 +/- 22.62
+Success rate: 40.00%
+Eval num_timesteps=5480000, episode_reward=-2.76 +/- 2.13
+Episode length: 31.20 +/- 23.06
+Success rate: 40.00%
+Eval num_timesteps=5500000, episode_reward=-3.62 +/- 3.29
+Episode length: 30.40 +/- 20.79
+Success rate: 60.00%
+Eval num_timesteps=5520000, episode_reward=-1.89 +/- 1.35
+Episode length: 27.80 +/- 18.74
+Success rate: 60.00%
+Eval num_timesteps=5540000, episode_reward=-2.25 +/- 1.65
+Episode length: 31.80 +/- 22.40
+Success rate: 40.00%
+Eval num_timesteps=5560000, episode_reward=-4.39 +/- 1.11
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=5580000, episode_reward=-2.26 +/- 1.91
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=5600000, episode_reward=-2.34 +/- 1.78
+Episode length: 31.20 +/- 23.06
+Success rate: 40.00%
+Eval num_timesteps=5620000, episode_reward=-2.57 +/- 2.04
+Episode length: 27.20 +/- 19.32
+Success rate: 60.00%
+Eval num_timesteps=5640000, episode_reward=-2.70 +/- 2.10
+Episode length: 31.40 +/- 22.84
+Success rate: 40.00%
+Eval num_timesteps=5660000, episode_reward=-3.74 +/- 1.96
+Episode length: 41.60 +/- 16.80
+Success rate: 20.00%
+Eval num_timesteps=5680000, episode_reward=-3.40 +/- 2.55
+Episode length: 32.40 +/- 21.79
+Success rate: 40.00%
+Eval num_timesteps=5700000, episode_reward=-2.80 +/- 2.37
+Episode length: 31.40 +/- 22.84
+Success rate: 40.00%
+Eval num_timesteps=5720000, episode_reward=-2.01 +/- 1.55
+Episode length: 25.60 +/- 20.73
+Success rate: 60.00%
+Eval num_timesteps=5740000, episode_reward=-0.65 +/- 0.52
+Episode length: 8.20 +/- 5.27
+Success rate: 100.00%
+Eval num_timesteps=5760000, episode_reward=-3.05 +/- 2.52
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=5780000, episode_reward=-1.46 +/- 1.32
+Episode length: 18.20 +/- 16.81
+Success rate: 80.00%
+Eval num_timesteps=5800000, episode_reward=-4.89 +/- 1.06
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=5820000, episode_reward=-0.97 +/- 1.62
+Episode length: 12.20 +/- 19.09
+Success rate: 80.00%
+Eval num_timesteps=5840000, episode_reward=-2.86 +/- 2.00
+Episode length: 33.20 +/- 20.66
+Success rate: 40.00%
+Eval num_timesteps=5860000, episode_reward=-2.40 +/- 2.69
+Episode length: 22.80 +/- 22.32
+Success rate: 60.00%
+Eval num_timesteps=5880000, episode_reward=-3.86 +/- 1.89
+Episode length: 41.20 +/- 17.60
+Success rate: 20.00%
+Eval num_timesteps=5900000, episode_reward=-0.23 +/- 0.28
+Episode length: 3.80 +/- 3.92
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=5920000, episode_reward=-3.41 +/- 2.52
+Episode length: 33.00 +/- 20.84
+Success rate: 40.00%
+Eval num_timesteps=5940000, episode_reward=-3.02 +/- 1.93
+Episode length: 33.60 +/- 20.24
+Success rate: 40.00%
+Eval num_timesteps=5960000, episode_reward=-2.36 +/- 2.44
+Episode length: 23.80 +/- 21.44
+Success rate: 60.00%
+Eval num_timesteps=5980000, episode_reward=-1.60 +/- 2.10
+Episode length: 17.00 +/- 17.17
+Success rate: 80.00%
+Eval num_timesteps=6000000, episode_reward=-1.68 +/- 1.67
+Episode length: 23.80 +/- 21.44
+Success rate: 60.00%
+Eval num_timesteps=6020000, episode_reward=-1.28 +/- 1.43
+Episode length: 21.40 +/- 23.40
+Success rate: 60.00%
+Eval num_timesteps=6040000, episode_reward=-1.58 +/- 1.89
+Episode length: 20.60 +/- 24.00
+Success rate: 60.00%
+Eval num_timesteps=6060000, episode_reward=-3.46 +/- 2.53
+Episode length: 32.60 +/- 21.59
+Success rate: 40.00%
+Eval num_timesteps=6080000, episode_reward=-2.73 +/- 2.39
+Episode length: 26.40 +/- 19.33
+Success rate: 60.00%
+Eval num_timesteps=6100000, episode_reward=-3.94 +/- 1.79
+Episode length: 42.00 +/- 16.00
+Success rate: 20.00%
+Eval num_timesteps=6120000, episode_reward=-1.08 +/- 1.04
+Episode length: 16.60 +/- 17.17
+Success rate: 80.00%
+Eval num_timesteps=6140000, episode_reward=-2.42 +/- 1.24
+Episode length: 35.00 +/- 18.40
+Success rate: 40.00%
+Eval num_timesteps=6160000, episode_reward=-0.87 +/- 1.58
+Episode length: 11.60 +/- 19.26
+Success rate: 80.00%
+Eval num_timesteps=6180000, episode_reward=-3.71 +/- 1.99
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=6200000, episode_reward=-2.52 +/- 1.34
+Episode length: 34.80 +/- 18.66
+Success rate: 40.00%
+Eval num_timesteps=6220000, episode_reward=-1.92 +/- 1.92
+Episode length: 23.40 +/- 22.31
+Success rate: 60.00%
+Eval num_timesteps=6240000, episode_reward=-1.81 +/- 1.47
+Episode length: 25.00 +/- 20.81
+Success rate: 60.00%
+Eval num_timesteps=6260000, episode_reward=-2.17 +/- 2.11
+Episode length: 23.60 +/- 22.24
+Success rate: 60.00%
+Eval num_timesteps=6280000, episode_reward=-1.30 +/- 2.11
+Episode length: 14.00 +/- 18.45
+Success rate: 80.00%
+Eval num_timesteps=6300000, episode_reward=-3.19 +/- 2.35
+Episode length: 31.80 +/- 22.40
+Success rate: 40.00%
+Eval num_timesteps=6320000, episode_reward=-2.62 +/- 1.67
+Episode length: 33.40 +/- 20.45
+Success rate: 40.00%
+Eval num_timesteps=6340000, episode_reward=-3.36 +/- 1.42
+Episode length: 42.40 +/- 15.20
+Success rate: 20.00%
+Eval num_timesteps=6360000, episode_reward=-3.79 +/- 1.83
+Episode length: 41.60 +/- 16.30
+Success rate: 40.00%
+Eval num_timesteps=6380000, episode_reward=-2.09 +/- 1.85
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=6400000, episode_reward=-4.03 +/- 2.21
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=6420000, episode_reward=-1.66 +/- 1.91
+Episode length: 21.60 +/- 23.26
+Success rate: 60.00%
+Eval num_timesteps=6440000, episode_reward=-2.12 +/- 2.41
+Episode length: 23.40 +/- 22.31
+Success rate: 60.00%
+Eval num_timesteps=6460000, episode_reward=-2.80 +/- 2.87
+Episode length: 23.20 +/- 22.39
+Success rate: 60.00%
+Eval num_timesteps=6480000, episode_reward=-3.14 +/- 2.66
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=6500000, episode_reward=-4.56 +/- 2.28
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=6520000, episode_reward=-1.44 +/- 2.37
+Episode length: 13.60 +/- 18.56
+Success rate: 80.00%
+Eval num_timesteps=6540000, episode_reward=-2.77 +/- 2.03
+Episode length: 31.80 +/- 22.40
+Success rate: 40.00%
+Eval num_timesteps=6560000, episode_reward=-1.46 +/- 1.61
+Episode length: 21.80 +/- 23.13
+Success rate: 60.00%
+Eval num_timesteps=6580000, episode_reward=-4.23 +/- 4.43
+Episode length: 31.20 +/- 23.06
+Success rate: 40.00%
+Eval num_timesteps=6600000, episode_reward=-2.55 +/- 2.65
+Episode length: 24.40 +/- 21.21
+Success rate: 60.00%
+Eval num_timesteps=6620000, episode_reward=-2.08 +/- 2.04
+Episode length: 23.40 +/- 22.31
+Success rate: 60.00%
+Eval num_timesteps=6640000, episode_reward=-3.11 +/- 1.99
+Episode length: 34.00 +/- 19.69
+Success rate: 40.00%
+Eval num_timesteps=6660000, episode_reward=-3.21 +/- 1.69
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+Eval num_timesteps=6680000, episode_reward=-2.37 +/- 2.18
+Episode length: 25.60 +/- 20.07
+Success rate: 60.00%
+Eval num_timesteps=6700000, episode_reward=-1.77 +/- 1.66
+Episode length: 23.00 +/- 22.48
+Success rate: 60.00%
+Eval num_timesteps=6720000, episode_reward=-2.23 +/- 2.59
+Episode length: 22.40 +/- 22.77
+Success rate: 60.00%
+Eval num_timesteps=6740000, episode_reward=-3.31 +/- 1.96
+Episode length: 34.80 +/- 18.66
+Success rate: 40.00%
+Eval num_timesteps=6760000, episode_reward=-0.95 +/- 0.84
+Episode length: 16.60 +/- 17.17
+Success rate: 80.00%
+Eval num_timesteps=6780000, episode_reward=-0.40 +/- 0.36
+Episode length: 5.20 +/- 3.82
+Success rate: 100.00%
+Eval num_timesteps=6800000, episode_reward=-2.91 +/- 2.29
+Episode length: 31.20 +/- 23.06
+Success rate: 40.00%
+Eval num_timesteps=6820000, episode_reward=-2.86 +/- 3.00
+Episode length: 23.20 +/- 22.39
+Success rate: 60.00%
+Eval num_timesteps=6840000, episode_reward=-1.18 +/- 1.11
+Episode length: 16.40 +/- 17.21
+Success rate: 80.00%
+Eval num_timesteps=6860000, episode_reward=-2.36 +/- 2.31
+Episode length: 23.60 +/- 21.73
+Success rate: 60.00%
+Eval num_timesteps=6880000, episode_reward=-1.48 +/- 1.13
+Episode length: 24.20 +/- 21.36
+Success rate: 60.00%
+Eval num_timesteps=6900000, episode_reward=-1.37 +/- 2.26
+Episode length: 13.80 +/- 18.28
+Success rate: 80.00%
+Eval num_timesteps=6920000, episode_reward=-1.78 +/- 2.41
+Episode length: 16.00 +/- 17.45
+Success rate: 80.00%
+Eval num_timesteps=6940000, episode_reward=-2.39 +/- 2.42
+Episode length: 23.40 +/- 21.88
+Success rate: 60.00%
+Eval num_timesteps=6960000, episode_reward=-2.23 +/- 1.89
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=6980000, episode_reward=-4.67 +/- 2.51
+Episode length: 42.80 +/- 14.40
+Success rate: 20.00%
+Eval num_timesteps=7000000, episode_reward=-0.04 +/- 0.01
+Episode length: 1.00 +/- 0.00
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=7020000, episode_reward=-2.40 +/- 2.58
+Episode length: 22.60 +/- 22.46
+Success rate: 60.00%
+Eval num_timesteps=7040000, episode_reward=-1.10 +/- 1.41
+Episode length: 14.20 +/- 18.37
+Success rate: 80.00%
+Eval num_timesteps=7060000, episode_reward=-0.40 +/- 0.36
+Episode length: 6.60 +/- 5.57
+Success rate: 100.00%
+Eval num_timesteps=7080000, episode_reward=-2.21 +/- 2.18
+Episode length: 23.80 +/- 21.63
+Success rate: 60.00%
+Eval num_timesteps=7100000, episode_reward=-3.33 +/- 2.35
+Episode length: 32.80 +/- 21.40
+Success rate: 40.00%
+Eval num_timesteps=7120000, episode_reward=-2.98 +/- 1.19
+Episode length: 41.80 +/- 16.40
+Success rate: 20.00%
+Eval num_timesteps=7140000, episode_reward=-1.10 +/- 1.34
+Episode length: 15.00 +/- 18.19
+Success rate: 80.00%
+Eval num_timesteps=7160000, episode_reward=-4.27 +/- 1.38
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=7180000, episode_reward=-1.85 +/- 2.10
+Episode length: 22.40 +/- 22.77
+Success rate: 60.00%
+Eval num_timesteps=7200000, episode_reward=-0.42 +/- 0.44
+Episode length: 5.60 +/- 4.54
+Success rate: 100.00%
+Eval num_timesteps=7220000, episode_reward=-2.37 +/- 2.14
+Episode length: 24.60 +/- 21.29
+Success rate: 60.00%
+Eval num_timesteps=7240000, episode_reward=-2.29 +/- 2.22
+Episode length: 24.80 +/- 20.99
+Success rate: 60.00%
+Eval num_timesteps=7260000, episode_reward=-1.15 +/- 1.64
+Episode length: 13.60 +/- 18.47
+Success rate: 80.00%
+Eval num_timesteps=7280000, episode_reward=-2.45 +/- 2.68
+Episode length: 22.40 +/- 22.77
+Success rate: 60.00%
+Eval num_timesteps=7300000, episode_reward=-1.20 +/- 1.62
+Episode length: 14.80 +/- 18.20
+Success rate: 80.00%
+Eval num_timesteps=7320000, episode_reward=-2.17 +/- 2.08
+Episode length: 24.40 +/- 21.30
+Success rate: 60.00%
+Eval num_timesteps=7340000, episode_reward=-1.06 +/- 1.61
+Episode length: 13.60 +/- 18.99
+Success rate: 80.00%
+Eval num_timesteps=7360000, episode_reward=-1.65 +/- 2.00
+Episode length: 16.40 +/- 18.15
+Success rate: 80.00%
+Eval num_timesteps=7380000, episode_reward=-0.47 +/- 0.40
+Episode length: 6.60 +/- 4.76
+Success rate: 100.00%
+Eval num_timesteps=7400000, episode_reward=-1.85 +/- 1.51
+Episode length: 25.40 +/- 20.65
+Success rate: 60.00%
+Eval num_timesteps=7420000, episode_reward=-2.25 +/- 1.36
+Episode length: 28.40 +/- 17.98
+Success rate: 60.00%
+Eval num_timesteps=7440000, episode_reward=-0.12 +/- 0.17
+Episode length: 2.20 +/- 2.40
+Success rate: 100.00%
+Eval num_timesteps=7460000, episode_reward=-2.96 +/- 1.51
+Episode length: 37.00 +/- 19.04
+Success rate: 40.00%
+Eval num_timesteps=7480000, episode_reward=-3.66 +/- 1.74
+Episode length: 41.40 +/- 17.20
+Success rate: 20.00%
+Eval num_timesteps=7500000, episode_reward=-1.22 +/- 1.31
+Episode length: 15.80 +/- 18.02
+Success rate: 80.00%
+Eval num_timesteps=7520000, episode_reward=-3.23 +/- 1.92
+Episode length: 34.60 +/- 18.99
+Success rate: 40.00%
+Eval num_timesteps=7540000, episode_reward=-2.58 +/- 2.17
+Episode length: 33.00 +/- 21.22
+Success rate: 40.00%
+Eval num_timesteps=7560000, episode_reward=-2.54 +/- 2.30
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=7580000, episode_reward=-1.69 +/- 1.71
+Episode length: 18.60 +/- 16.50
+Success rate: 80.00%
+Eval num_timesteps=7600000, episode_reward=-3.26 +/- 1.38
+Episode length: 42.60 +/- 14.80
+Success rate: 20.00%
+Eval num_timesteps=7620000, episode_reward=-3.55 +/- 1.16
+Episode length: 43.40 +/- 13.20
+Success rate: 20.00%
+Eval num_timesteps=7640000, episode_reward=-1.02 +/- 1.99
 Episode length: 10.80 +/- 19.60
 Success rate: 80.00%
-Eval num_timesteps=7200000, episode_reward=-4.73 +/- 0.65
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7220000, episode_reward=-3.47 +/- 1.82
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7240000, episode_reward=-3.20 +/- 1.67
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7260000, episode_reward=-4.70 +/- 1.34
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7280000, episode_reward=-3.65 +/- 0.67
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7300000, episode_reward=-2.36 +/- 2.07
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=7320000, episode_reward=-3.68 +/- 2.15
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7340000, episode_reward=-3.75 +/- 3.05
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=7360000, episode_reward=-4.56 +/- 0.83
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7380000, episode_reward=-3.15 +/- 1.66
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7400000, episode_reward=-3.18 +/- 1.82
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7420000, episode_reward=-2.77 +/- 1.50
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7440000, episode_reward=-2.75 +/- 2.32
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=7460000, episode_reward=-3.74 +/- 0.96
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7480000, episode_reward=-2.57 +/- 1.32
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7500000, episode_reward=-3.34 +/- 1.76
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7520000, episode_reward=-3.83 +/- 2.05
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7540000, episode_reward=-2.73 +/- 2.27
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=7560000, episode_reward=-2.49 +/- 1.30
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7580000, episode_reward=-3.50 +/- 1.95
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7600000, episode_reward=-3.03 +/- 1.60
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7620000, episode_reward=-4.46 +/- 1.03
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7640000, episode_reward=-3.57 +/- 0.82
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7660000, episode_reward=-1.89 +/- 2.32
-Episode length: 20.60 +/- 24.00
+Eval num_timesteps=7660000, episode_reward=-1.65 +/- 1.61
+Episode length: 23.40 +/- 21.87
 Success rate: 60.00%
-Eval num_timesteps=7680000, episode_reward=-3.58 +/- 2.07
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7700000, episode_reward=-1.92 +/- 2.40
-Episode length: 20.60 +/- 24.00
+Eval num_timesteps=7680000, episode_reward=-3.12 +/- 2.31
+Episode length: 32.60 +/- 21.59
+Success rate: 40.00%
+Eval num_timesteps=7700000, episode_reward=-2.35 +/- 2.22
+Episode length: 25.20 +/- 20.27
 Success rate: 60.00%
-Eval num_timesteps=7720000, episode_reward=-3.50 +/- 1.81
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7740000, episode_reward=-2.00 +/- 1.62
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=7760000, episode_reward=-4.01 +/- 1.01
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7780000, episode_reward=-2.39 +/- 2.08
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=7800000, episode_reward=-5.09 +/- 0.93
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7820000, episode_reward=-4.64 +/- 1.34
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7840000, episode_reward=-4.02 +/- 2.04
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7860000, episode_reward=-4.44 +/- 1.27
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7880000, episode_reward=-2.54 +/- 2.08
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=7900000, episode_reward=-3.31 +/- 1.68
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=7920000, episode_reward=-1.75 +/- 1.43
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=7940000, episode_reward=-2.05 +/- 2.46
-Episode length: 20.60 +/- 24.00
+Eval num_timesteps=7720000, episode_reward=-2.18 +/- 2.28
+Episode length: 23.20 +/- 22.07
 Success rate: 60.00%
-Eval num_timesteps=7960000, episode_reward=-3.80 +/- 0.72
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=7980000, episode_reward=-3.76 +/- 1.96
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8000000, episode_reward=-3.37 +/- 2.02
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8020000, episode_reward=-2.05 +/- 1.76
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=8040000, episode_reward=-4.19 +/- 1.20
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=8060000, episode_reward=-4.09 +/- 2.05
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8080000, episode_reward=-3.27 +/- 1.67
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8100000, episode_reward=-3.44 +/- 2.09
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8120000, episode_reward=-2.54 +/- 2.28
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=8140000, episode_reward=-3.57 +/- 2.15
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8160000, episode_reward=-2.79 +/- 2.30
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=8180000, episode_reward=-3.68 +/- 1.97
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8200000, episode_reward=-4.47 +/- 2.23
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8220000, episode_reward=-4.13 +/- 0.98
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=8240000, episode_reward=-3.23 +/- 1.69
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8260000, episode_reward=-2.43 +/- 1.99
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=8280000, episode_reward=-3.29 +/- 1.84
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8300000, episode_reward=-3.15 +/- 1.66
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8320000, episode_reward=-3.05 +/- 1.60
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8340000, episode_reward=-4.03 +/- 1.52
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=8360000, episode_reward=-2.85 +/- 2.40
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=8380000, episode_reward=-4.84 +/- 0.84
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=8400000, episode_reward=-1.57 +/- 1.89
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=8420000, episode_reward=-2.89 +/- 1.64
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8440000, episode_reward=-4.31 +/- 2.20
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8460000, episode_reward=-4.30 +/- 2.14
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8480000, episode_reward=-1.38 +/- 1.69
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=8500000, episode_reward=-3.30 +/- 1.77
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8520000, episode_reward=-3.13 +/- 1.75
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8540000, episode_reward=-4.86 +/- 1.04
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=8560000, episode_reward=-3.60 +/- 0.71
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=8580000, episode_reward=-2.31 +/- 1.91
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=8600000, episode_reward=-4.83 +/- 0.69
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=8620000, episode_reward=-2.80 +/- 1.53
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8640000, episode_reward=-4.41 +/- 1.01
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=8660000, episode_reward=-2.65 +/- 2.37
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=8680000, episode_reward=-3.89 +/- 2.04
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8700000, episode_reward=-3.93 +/- 0.98
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=8720000, episode_reward=-3.37 +/- 1.67
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8740000, episode_reward=-3.87 +/- 2.03
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8760000, episode_reward=-4.29 +/- 0.57
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=8780000, episode_reward=-4.23 +/- 2.23
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8800000, episode_reward=-3.65 +/- 1.97
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8820000, episode_reward=-3.46 +/- 1.71
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8840000, episode_reward=-2.97 +/- 1.77
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8860000, episode_reward=-3.43 +/- 1.74
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8880000, episode_reward=-2.36 +/- 2.00
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=8900000, episode_reward=-2.53 +/- 2.11
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=8920000, episode_reward=-3.10 +/- 1.70
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8940000, episode_reward=-3.55 +/- 1.81
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8960000, episode_reward=-3.48 +/- 1.84
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=8980000, episode_reward=-4.54 +/- 0.69
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9000000, episode_reward=-4.79 +/- 0.95
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9020000, episode_reward=-3.43 +/- 1.84
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9040000, episode_reward=-4.31 +/- 0.84
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9060000, episode_reward=-3.87 +/- 2.03
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9080000, episode_reward=-3.40 +/- 0.70
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9100000, episode_reward=-4.85 +/- 2.44
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9120000, episode_reward=-3.81 +/- 0.50
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9140000, episode_reward=-3.03 +/- 1.56
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9160000, episode_reward=-4.72 +/- 1.11
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9180000, episode_reward=-4.07 +/- 2.16
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9200000, episode_reward=-3.60 +/- 1.83
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9220000, episode_reward=-4.07 +/- 2.12
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9240000, episode_reward=-2.99 +/- 2.49
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=9260000, episode_reward=-2.43 +/- 2.12
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=9280000, episode_reward=-2.80 +/- 2.47
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=9300000, episode_reward=-4.13 +/- 0.50
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9320000, episode_reward=-2.37 +/- 1.91
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=9340000, episode_reward=-4.57 +/- 1.33
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9360000, episode_reward=-2.38 +/- 2.90
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=9380000, episode_reward=-3.84 +/- 0.61
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9400000, episode_reward=-2.15 +/- 1.82
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=9420000, episode_reward=-3.73 +/- 1.92
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9440000, episode_reward=-4.07 +/- 2.08
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9460000, episode_reward=-2.98 +/- 1.58
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9480000, episode_reward=-4.13 +/- 2.41
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9500000, episode_reward=-2.76 +/- 2.35
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=9520000, episode_reward=-3.90 +/- 2.15
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9540000, episode_reward=-4.49 +/- 1.22
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9560000, episode_reward=-4.27 +/- 0.45
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9580000, episode_reward=-3.71 +/- 1.91
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9600000, episode_reward=-2.76 +/- 2.25
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=9620000, episode_reward=-4.75 +/- 0.88
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9640000, episode_reward=-3.33 +/- 2.00
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9660000, episode_reward=-1.55 +/- 1.87
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=9680000, episode_reward=-2.48 +/- 1.25
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9700000, episode_reward=-4.84 +/- 0.71
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9720000, episode_reward=-4.54 +/- 0.63
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9740000, episode_reward=-2.56 +/- 2.13
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=9760000, episode_reward=-3.41 +/- 1.97
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9780000, episode_reward=-4.52 +/- 0.54
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9800000, episode_reward=-1.17 +/- 2.28
-Episode length: 10.80 +/- 19.60
+Eval num_timesteps=7740000, episode_reward=-1.60 +/- 1.58
+Episode length: 18.20 +/- 16.65
 Success rate: 80.00%
-Eval num_timesteps=9820000, episode_reward=-3.52 +/- 1.96
-Episode length: 40.20 +/- 19.60
+Eval num_timesteps=7760000, episode_reward=-4.91 +/- 2.87
+Episode length: 42.60 +/- 14.80
 Success rate: 20.00%
-Eval num_timesteps=9840000, episode_reward=-4.33 +/- 0.95
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9860000, episode_reward=-4.77 +/- 1.04
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9880000, episode_reward=-3.30 +/- 1.78
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9900000, episode_reward=-3.03 +/- 1.57
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9920000, episode_reward=-3.72 +/- 1.86
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=9940000, episode_reward=-2.76 +/- 2.52
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=9960000, episode_reward=-4.70 +/- 0.82
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=9980000, episode_reward=-3.61 +/- 1.98
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10000000, episode_reward=-4.89 +/- 0.69
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10020000, episode_reward=-2.32 +/- 1.93
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10040000, episode_reward=-4.62 +/- 1.29
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10060000, episode_reward=-3.93 +/- 1.98
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10080000, episode_reward=-2.92 +/- 2.43
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10100000, episode_reward=-3.91 +/- 0.92
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10120000, episode_reward=-2.44 +/- 2.02
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10140000, episode_reward=-4.44 +/- 0.29
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10160000, episode_reward=-2.76 +/- 2.39
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10180000, episode_reward=-5.07 +/- 0.71
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10200000, episode_reward=-3.81 +/- 2.24
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10220000, episode_reward=-3.20 +/- 2.61
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10240000, episode_reward=-2.80 +/- 1.60
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10260000, episode_reward=-4.50 +/- 1.09
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10280000, episode_reward=-1.45 +/- 1.73
-Episode length: 20.60 +/- 24.00
+Eval num_timesteps=7780000, episode_reward=-2.17 +/- 1.82
+Episode length: 25.60 +/- 20.13
 Success rate: 60.00%
-Eval num_timesteps=10300000, episode_reward=-4.25 +/- 2.20
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10320000, episode_reward=-1.66 +/- 2.05
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=10340000, episode_reward=-3.09 +/- 1.70
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10360000, episode_reward=-4.13 +/- 2.13
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10380000, episode_reward=-1.80 +/- 2.24
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=10400000, episode_reward=-4.52 +/- 0.83
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10420000, episode_reward=-4.47 +/- 1.18
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10440000, episode_reward=-4.24 +/- 0.76
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10460000, episode_reward=-2.46 +/- 2.04
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10480000, episode_reward=-3.86 +/- 2.22
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10500000, episode_reward=-2.80 +/- 2.54
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10520000, episode_reward=-1.55 +/- 1.88
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=10540000, episode_reward=-3.06 +/- 1.78
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10560000, episode_reward=-3.19 +/- 1.88
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10580000, episode_reward=-4.82 +/- 1.18
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10600000, episode_reward=-1.31 +/- 1.57
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=10620000, episode_reward=-2.82 +/- 2.33
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10640000, episode_reward=-4.12 +/- 0.66
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10660000, episode_reward=-2.00 +/- 1.64
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10680000, episode_reward=-1.93 +/- 2.34
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=10700000, episode_reward=-4.12 +/- 0.71
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10720000, episode_reward=-4.30 +/- 0.76
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10740000, episode_reward=-3.89 +/- 0.62
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10760000, episode_reward=-3.35 +/- 1.84
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10780000, episode_reward=-2.92 +/- 1.68
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10800000, episode_reward=-4.98 +/- 1.01
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10820000, episode_reward=-4.65 +/- 2.37
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10840000, episode_reward=-1.96 +/- 2.63
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-Eval num_timesteps=10860000, episode_reward=-5.27 +/- 1.04
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10880000, episode_reward=-3.70 +/- 2.07
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=10900000, episode_reward=-4.20 +/- 0.96
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10920000, episode_reward=-2.85 +/- 2.29
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10940000, episode_reward=-3.32 +/- 2.68
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=10960000, episode_reward=-5.25 +/- 0.77
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=10980000, episode_reward=-5.05 +/- 1.08
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11000000, episode_reward=-4.32 +/- 0.83
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11020000, episode_reward=-4.93 +/- 0.41
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11040000, episode_reward=-3.32 +/- 1.71
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11060000, episode_reward=-2.96 +/- 1.64
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11080000, episode_reward=-3.34 +/- 1.76
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11100000, episode_reward=-3.01 +/- 2.51
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=11120000, episode_reward=-5.03 +/- 0.69
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11140000, episode_reward=-3.02 +/- 1.77
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11160000, episode_reward=-4.34 +/- 0.88
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11180000, episode_reward=-0.96 +/- 1.86
-Episode length: 10.80 +/- 19.60
+Eval num_timesteps=7800000, episode_reward=-2.02 +/- 1.49
+Episode length: 24.20 +/- 18.30
 Success rate: 80.00%
-Eval num_timesteps=11200000, episode_reward=-4.39 +/- 0.74
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11220000, episode_reward=-3.82 +/- 2.13
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11240000, episode_reward=-3.13 +/- 1.66
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11260000, episode_reward=-3.54 +/- 2.04
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11280000, episode_reward=-4.70 +/- 0.53
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11300000, episode_reward=-4.12 +/- 1.16
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11320000, episode_reward=-2.58 +/- 2.21
-Episode length: 30.40 +/- 24.00
+Eval num_timesteps=7820000, episode_reward=-2.93 +/- 2.25
+Episode length: 32.20 +/- 21.99
 Success rate: 40.00%
-Eval num_timesteps=11340000, episode_reward=-3.02 +/- 1.55
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11360000, episode_reward=-2.03 +/- 2.44
-Episode length: 20.60 +/- 24.00
+Eval num_timesteps=7840000, episode_reward=-1.52 +/- 1.69
+Episode length: 18.40 +/- 16.60
+Success rate: 80.00%
+Eval num_timesteps=7860000, episode_reward=-1.74 +/- 1.79
+Episode length: 22.60 +/- 22.67
 Success rate: 60.00%
-Eval num_timesteps=11380000, episode_reward=-3.19 +/- 2.60
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=11400000, episode_reward=-1.90 +/- 2.52
-Episode length: 20.60 +/- 24.00
+Eval num_timesteps=7880000, episode_reward=-1.59 +/- 1.89
+Episode length: 21.80 +/- 23.13
 Success rate: 60.00%
-Eval num_timesteps=11420000, episode_reward=-4.03 +/- 2.01
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11440000, episode_reward=-4.23 +/- 1.25
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11460000, episode_reward=-3.26 +/- 1.79
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11480000, episode_reward=-5.33 +/- 0.89
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11500000, episode_reward=-3.03 +/- 2.56
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=11520000, episode_reward=-2.68 +/- 2.21
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=11540000, episode_reward=-4.10 +/- 0.50
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11560000, episode_reward=-3.71 +/- 2.01
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11580000, episode_reward=-2.76 +/- 1.43
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11600000, episode_reward=-4.49 +/- 0.90
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11620000, episode_reward=-4.52 +/- 0.58
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11640000, episode_reward=-2.50 +/- 2.02
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=11660000, episode_reward=-3.92 +/- 2.30
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11680000, episode_reward=-3.43 +/- 1.75
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11700000, episode_reward=-4.69 +/- 0.98
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11720000, episode_reward=-2.39 +/- 1.95
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=11740000, episode_reward=-2.65 +/- 2.21
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=11760000, episode_reward=-4.71 +/- 0.89
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11780000, episode_reward=-3.36 +/- 1.74
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11800000, episode_reward=-4.12 +/- 0.97
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11820000, episode_reward=-4.19 +/- 0.88
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11840000, episode_reward=-3.72 +/- 1.08
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11860000, episode_reward=-4.12 +/- 1.23
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11880000, episode_reward=-3.82 +/- 0.85
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11900000, episode_reward=-3.96 +/- 2.02
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11920000, episode_reward=-3.45 +/- 0.82
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11940000, episode_reward=-4.27 +/- 1.10
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=11960000, episode_reward=-3.29 +/- 1.79
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=11980000, episode_reward=-2.71 +/- 2.34
-Episode length: 30.40 +/- 24.00
-Success rate: 40.00%
-Eval num_timesteps=12000000, episode_reward=-3.80 +/- 1.02
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=12020000, episode_reward=-3.34 +/- 2.00
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=12040000, episode_reward=-4.03 +/- 2.12
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=12060000, episode_reward=-5.11 +/- 1.02
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=12080000, episode_reward=-1.25 +/- 1.51
-Episode length: 20.60 +/- 24.00
+Eval num_timesteps=7900000, episode_reward=-1.50 +/- 1.61
+Episode length: 17.80 +/- 16.24
+Success rate: 80.00%
+Eval num_timesteps=7920000, episode_reward=-2.46 +/- 2.12
+Episode length: 25.40 +/- 20.57
 Success rate: 60.00%
-Eval num_timesteps=12100000, episode_reward=-3.23 +/- 1.67
-Episode length: 40.20 +/- 19.60
+Eval num_timesteps=7940000, episode_reward=-2.29 +/- 2.05
+Episode length: 25.20 +/- 20.80
+Success rate: 60.00%
+Eval num_timesteps=7960000, episode_reward=-1.74 +/- 1.54
+Episode length: 24.20 +/- 21.33
+Success rate: 60.00%
+Eval num_timesteps=7980000, episode_reward=-1.23 +/- 1.86
+Episode length: 14.00 +/- 18.40
+Success rate: 80.00%
+Eval num_timesteps=8000000, episode_reward=-1.59 +/- 2.18
+Episode length: 15.60 +/- 17.79
+Success rate: 80.00%
+Eval num_timesteps=8020000, episode_reward=-3.97 +/- 1.11
+Episode length: 44.00 +/- 12.00
 Success rate: 20.00%
-Eval num_timesteps=12120000, episode_reward=-3.94 +/- 2.11
-Episode length: 40.20 +/- 19.60
+Eval num_timesteps=8040000, episode_reward=-3.61 +/- 1.80
+Episode length: 38.40 +/- 16.74
+Success rate: 40.00%
+Eval num_timesteps=8060000, episode_reward=-0.34 +/- 0.47
+Episode length: 4.60 +/- 4.80
+Success rate: 100.00%
+Eval num_timesteps=8080000, episode_reward=-1.11 +/- 0.45
+Episode length: 12.00 +/- 3.79
+Success rate: 100.00%
+Eval num_timesteps=8100000, episode_reward=-4.02 +/- 2.01
+Episode length: 41.40 +/- 17.20
 Success rate: 20.00%
-Eval num_timesteps=12140000, episode_reward=-3.57 +/- 1.92
-Episode length: 40.20 +/- 19.60
+Eval num_timesteps=8120000, episode_reward=-1.57 +/- 1.62
+Episode length: 19.00 +/- 15.81
+Success rate: 80.00%
+Eval num_timesteps=8140000, episode_reward=-2.42 +/- 1.73
+Episode length: 32.60 +/- 21.33
+Success rate: 40.00%
+Eval num_timesteps=8160000, episode_reward=-3.42 +/- 1.47
+Episode length: 43.40 +/- 13.20
 Success rate: 20.00%
-Eval num_timesteps=12160000, episode_reward=-3.45 +/- 1.87
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=12180000, episode_reward=-1.99 +/- 1.60
+Eval num_timesteps=8180000, episode_reward=-2.25 +/- 2.04
+Episode length: 26.00 +/- 20.91
+Success rate: 60.00%
+Eval num_timesteps=8200000, episode_reward=-2.21 +/- 2.25
+Episode length: 24.60 +/- 21.21
+Success rate: 60.00%
+Eval num_timesteps=8220000, episode_reward=-0.95 +/- 1.53
+Episode length: 12.20 +/- 19.09
+Success rate: 80.00%
+Eval num_timesteps=8240000, episode_reward=-2.51 +/- 3.61
+Episode length: 16.20 +/- 17.97
+Success rate: 80.00%
+Eval num_timesteps=8260000, episode_reward=-2.08 +/- 1.58
+Episode length: 20.40 +/- 16.09
+Success rate: 80.00%
+Eval num_timesteps=8280000, episode_reward=-5.44 +/- 1.76
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=8300000, episode_reward=-2.75 +/- 2.23
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=12200000, episode_reward=-2.53 +/- 2.10
+Eval num_timesteps=8320000, episode_reward=-2.28 +/- 1.93
+Episode length: 26.40 +/- 19.58
+Success rate: 60.00%
+Eval num_timesteps=8340000, episode_reward=-1.44 +/- 1.39
+Episode length: 17.60 +/- 16.89
+Success rate: 80.00%
+Eval num_timesteps=8360000, episode_reward=-1.30 +/- 1.90
+Episode length: 14.40 +/- 18.29
+Success rate: 80.00%
+Eval num_timesteps=8380000, episode_reward=-3.66 +/- 1.72
+Episode length: 39.40 +/- 14.31
+Success rate: 40.00%
+Eval num_timesteps=8400000, episode_reward=-1.53 +/- 1.96
+Episode length: 15.80 +/- 18.02
+Success rate: 80.00%
+Eval num_timesteps=8420000, episode_reward=-2.14 +/- 1.65
+Episode length: 27.40 +/- 18.59
+Success rate: 60.00%
+Eval num_timesteps=8440000, episode_reward=-0.50 +/- 0.44
+Episode length: 7.60 +/- 5.85
+Success rate: 100.00%
+Eval num_timesteps=8460000, episode_reward=-1.15 +/- 1.26
+Episode length: 16.20 +/- 17.50
+Success rate: 80.00%
+Eval num_timesteps=8480000, episode_reward=-0.85 +/- 0.37
+Episode length: 11.00 +/- 3.63
+Success rate: 100.00%
+Eval num_timesteps=8500000, episode_reward=-1.72 +/- 1.91
+Episode length: 22.60 +/- 22.67
+Success rate: 60.00%
+Eval num_timesteps=8520000, episode_reward=-4.09 +/- 0.51
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=8540000, episode_reward=-1.71 +/- 1.68
+Episode length: 17.60 +/- 17.45
+Success rate: 80.00%
+Eval num_timesteps=8560000, episode_reward=-3.26 +/- 2.06
+Episode length: 34.20 +/- 19.56
+Success rate: 40.00%
+Eval num_timesteps=8580000, episode_reward=-2.01 +/- 1.96
+Episode length: 23.40 +/- 21.87
+Success rate: 60.00%
+Eval num_timesteps=8600000, episode_reward=-2.05 +/- 1.64
+Episode length: 31.20 +/- 23.06
+Success rate: 40.00%
+Eval num_timesteps=8620000, episode_reward=-3.20 +/- 2.13
+Episode length: 33.20 +/- 20.59
+Success rate: 40.00%
+Eval num_timesteps=8640000, episode_reward=-1.37 +/- 1.62
+Episode length: 15.60 +/- 18.29
+Success rate: 80.00%
+Eval num_timesteps=8660000, episode_reward=-1.58 +/- 2.30
+Episode length: 15.60 +/- 17.61
+Success rate: 80.00%
+Eval num_timesteps=8680000, episode_reward=-1.73 +/- 1.40
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
-Eval num_timesteps=12220000, episode_reward=-3.97 +/- 2.03
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=12240000, episode_reward=-3.63 +/- 1.93
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=12260000, episode_reward=-3.81 +/- 0.71
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=12280000, episode_reward=-3.45 +/- 1.84
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=12300000, episode_reward=-4.43 +/- 0.67
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=12320000, episode_reward=-4.96 +/- 1.43
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=12340000, episode_reward=-3.10 +/- 2.58
-Episode length: 30.40 +/- 24.00
+Eval num_timesteps=8700000, episode_reward=-2.08 +/- 1.69
+Episode length: 26.00 +/- 19.81
+Success rate: 60.00%
+Eval num_timesteps=8720000, episode_reward=-0.90 +/- 0.64
+Episode length: 10.20 +/- 5.84
+Success rate: 100.00%
+Eval num_timesteps=8740000, episode_reward=-1.97 +/- 1.98
+Episode length: 23.40 +/- 22.31
+Success rate: 60.00%
+Eval num_timesteps=8760000, episode_reward=-0.87 +/- 0.31
+Episode length: 11.40 +/- 2.58
+Success rate: 100.00%
+Eval num_timesteps=8780000, episode_reward=-1.61 +/- 1.83
+Episode length: 17.00 +/- 17.29
+Success rate: 80.00%
+Eval num_timesteps=8800000, episode_reward=-2.09 +/- 2.39
+Episode length: 21.80 +/- 23.13
+Success rate: 60.00%
+Eval num_timesteps=8820000, episode_reward=-2.78 +/- 2.40
+Episode length: 31.40 +/- 22.84
 Success rate: 40.00%
-Eval num_timesteps=12360000, episode_reward=-3.41 +/- 1.95
+Eval num_timesteps=8840000, episode_reward=-2.56 +/- 1.68
+Episode length: 34.20 +/- 19.37
+Success rate: 40.00%
+Eval num_timesteps=8860000, episode_reward=-2.52 +/- 2.09
+Episode length: 31.20 +/- 23.06
+Success rate: 40.00%
+Eval num_timesteps=8880000, episode_reward=-0.80 +/- 0.60
+Episode length: 9.00 +/- 5.40
+Success rate: 100.00%
+Eval num_timesteps=8900000, episode_reward=-1.21 +/- 1.48
+Episode length: 14.80 +/- 18.26
+Success rate: 80.00%
+Eval num_timesteps=8920000, episode_reward=-3.83 +/- 2.74
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=12380000, episode_reward=-3.79 +/- 2.28
+Eval num_timesteps=8940000, episode_reward=-2.83 +/- 2.08
+Episode length: 32.00 +/- 22.19
+Success rate: 40.00%
+Eval num_timesteps=8960000, episode_reward=-1.17 +/- 1.40
+Episode length: 14.80 +/- 17.89
+Success rate: 80.00%
+Eval num_timesteps=8980000, episode_reward=-1.82 +/- 2.15
+Episode length: 17.80 +/- 16.74
+Success rate: 80.00%
+Eval num_timesteps=9000000, episode_reward=-2.42 +/- 2.15
+Episode length: 26.40 +/- 19.69
+Success rate: 60.00%
+Eval num_timesteps=9020000, episode_reward=-1.32 +/- 1.21
+Episode length: 18.60 +/- 16.64
+Success rate: 80.00%
+Eval num_timesteps=9040000, episode_reward=-3.71 +/- 1.74
+Episode length: 42.00 +/- 16.00
+Success rate: 20.00%
+Eval num_timesteps=9060000, episode_reward=-1.72 +/- 2.16
+Episode length: 21.40 +/- 23.40
+Success rate: 60.00%
+Eval num_timesteps=9080000, episode_reward=-3.23 +/- 2.03
 Episode length: 40.20 +/- 19.60
 Success rate: 20.00%
-Eval num_timesteps=12400000, episode_reward=-3.86 +/- 0.30
-Episode length: 50.00 +/- 0.00
-Success rate: 0.00%
-Eval num_timesteps=12420000, episode_reward=-3.11 +/- 1.83
-Episode length: 40.20 +/- 19.60
+Eval num_timesteps=9100000, episode_reward=-2.40 +/- 1.94
+Episode length: 26.00 +/- 20.21
+Success rate: 60.00%
+Eval num_timesteps=9120000, episode_reward=-1.61 +/- 1.37
+Episode length: 18.20 +/- 16.86
+Success rate: 80.00%
+Eval num_timesteps=9140000, episode_reward=-1.48 +/- 2.25
+Episode length: 14.40 +/- 18.26
+Success rate: 80.00%
+Eval num_timesteps=9160000, episode_reward=-1.63 +/- 1.42
+Episode length: 19.00 +/- 15.58
+Success rate: 80.00%
+Eval num_timesteps=9180000, episode_reward=-2.05 +/- 1.93
+Episode length: 23.80 +/- 21.60
+Success rate: 60.00%
+Eval num_timesteps=9200000, episode_reward=-1.71 +/- 1.65
+Episode length: 18.80 +/- 17.08
+Success rate: 80.00%
+Eval num_timesteps=9220000, episode_reward=-2.65 +/- 2.49
+Episode length: 25.40 +/- 20.35
+Success rate: 60.00%
+Eval num_timesteps=9240000, episode_reward=-1.77 +/- 2.46
+Episode length: 16.00 +/- 17.39
+Success rate: 80.00%
+Eval num_timesteps=9260000, episode_reward=-1.38 +/- 0.26
+Episode length: 15.80 +/- 2.48
+Success rate: 100.00%
+Eval num_timesteps=9280000, episode_reward=-2.17 +/- 2.21
+Episode length: 24.20 +/- 21.40
+Success rate: 60.00%
+Eval num_timesteps=9300000, episode_reward=-3.37 +/- 2.30
+Episode length: 33.20 +/- 20.59
+Success rate: 40.00%
+Eval num_timesteps=9320000, episode_reward=-2.24 +/- 2.30
+Episode length: 23.00 +/- 22.48
+Success rate: 60.00%
+Eval num_timesteps=9340000, episode_reward=-2.15 +/- 1.98
+Episode length: 24.80 +/- 20.95
+Success rate: 60.00%
+Eval num_timesteps=9360000, episode_reward=-1.92 +/- 2.30
+Episode length: 18.20 +/- 15.99
+Success rate: 80.00%
+Eval num_timesteps=9380000, episode_reward=-1.97 +/- 1.99
+Episode length: 24.20 +/- 21.33
+Success rate: 60.00%
+Eval num_timesteps=9400000, episode_reward=-1.63 +/- 1.34
+Episode length: 20.80 +/- 15.87
+Success rate: 80.00%
+Eval num_timesteps=9420000, episode_reward=-0.45 +/- 0.31
+Episode length: 6.60 +/- 3.72
+Success rate: 100.00%
+Eval num_timesteps=9440000, episode_reward=-1.27 +/- 1.51
+Episode length: 15.40 +/- 18.05
+Success rate: 80.00%
+Eval num_timesteps=9460000, episode_reward=-1.83 +/- 2.15
+Episode length: 18.60 +/- 15.92
+Success rate: 80.00%
+Eval num_timesteps=9480000, episode_reward=-2.48 +/- 2.03
+Episode length: 26.20 +/- 20.10
+Success rate: 60.00%
+Eval num_timesteps=9500000, episode_reward=-2.26 +/- 2.23
+Episode length: 24.40 +/- 21.21
+Success rate: 60.00%
+Eval num_timesteps=9520000, episode_reward=-3.51 +/- 2.28
+Episode length: 34.40 +/- 20.13
+Success rate: 40.00%
+Eval num_timesteps=9540000, episode_reward=-1.10 +/- 1.61
+Episode length: 14.00 +/- 18.14
+Success rate: 80.00%
+Eval num_timesteps=9560000, episode_reward=-3.19 +/- 0.91
+Episode length: 43.40 +/- 13.20
 Success rate: 20.00%
-Eval num_timesteps=12440000, episode_reward=-4.23 +/- 2.26
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=12460000, episode_reward=-3.20 +/- 1.80
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=12480000, episode_reward=-4.11 +/- 2.21
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=12500000, episode_reward=-3.56 +/- 1.94
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
+Eval num_timesteps=9580000, episode_reward=-2.83 +/- 2.76
+Episode length: 24.20 +/- 21.47
+Success rate: 60.00%
+Eval num_timesteps=9600000, episode_reward=-1.82 +/- 2.28
+Episode length: 17.20 +/- 16.63
+Success rate: 80.00%
+Eval num_timesteps=9620000, episode_reward=-0.44 +/- 0.66
+Episode length: 5.20 +/- 6.21
+Success rate: 100.00%
+Eval num_timesteps=9640000, episode_reward=-0.60 +/- 0.52
+Episode length: 8.40 +/- 6.22
+Success rate: 100.00%
+Eval num_timesteps=9660000, episode_reward=-1.64 +/- 1.80
+Episode length: 17.60 +/- 17.91
+Success rate: 80.00%
+Eval num_timesteps=9680000, episode_reward=-1.06 +/- 1.10
+Episode length: 16.40 +/- 17.19
+Success rate: 80.00%
+Eval num_timesteps=9700000, episode_reward=-2.59 +/- 2.02
+Episode length: 27.40 +/- 18.55
+Success rate: 60.00%
+Eval num_timesteps=9720000, episode_reward=-2.77 +/- 2.27
+Episode length: 26.40 +/- 19.99
+Success rate: 60.00%
+Eval num_timesteps=9740000, episode_reward=-1.51 +/- 1.94
+Episode length: 16.20 +/- 17.34
+Success rate: 80.00%
+Eval num_timesteps=9760000, episode_reward=-1.36 +/- 1.96
+Episode length: 15.20 +/- 18.08
+Success rate: 80.00%
+Eval num_timesteps=9780000, episode_reward=-3.38 +/- 4.46
+Episode length: 22.20 +/- 22.89
+Success rate: 60.00%
+Eval num_timesteps=9800000, episode_reward=-1.53 +/- 1.67
+Episode length: 18.20 +/- 16.92
+Success rate: 80.00%
+Eval num_timesteps=9820000, episode_reward=-1.97 +/- 1.98
+Episode length: 23.00 +/- 22.48
+Success rate: 60.00%
+Eval num_timesteps=9840000, episode_reward=-1.72 +/- 1.45
+Episode length: 25.00 +/- 20.81
+Success rate: 60.00%
+Eval num_timesteps=9860000, episode_reward=-1.58 +/- 1.53
+Episode length: 18.40 +/- 16.66
+Success rate: 80.00%
+Eval num_timesteps=9880000, episode_reward=-1.10 +/- 0.67
+Episode length: 13.60 +/- 8.87
+Success rate: 100.00%
+Eval num_timesteps=9900000, episode_reward=-1.59 +/- 1.93
+Episode length: 17.20 +/- 16.47
+Success rate: 80.00%
+Eval num_timesteps=9920000, episode_reward=-0.62 +/- 0.53
+Episode length: 7.40 +/- 5.61
+Success rate: 100.00%
+Eval num_timesteps=9940000, episode_reward=-1.02 +/- 0.82
+Episode length: 9.80 +/- 7.25
+Success rate: 100.00%
+Eval num_timesteps=9960000, episode_reward=-1.43 +/- 1.11
+Episode length: 18.20 +/- 16.73
+Success rate: 80.00%
+Eval num_timesteps=9980000, episode_reward=-2.72 +/- 1.49
+Episode length: 32.80 +/- 16.46
+Success rate: 60.00%
+Eval num_timesteps=10000000, episode_reward=-2.58 +/- 1.88
+Episode length: 32.40 +/- 21.79
+Success rate: 40.00%
+Eval num_timesteps=10020000, episode_reward=-2.10 +/- 1.83
+Episode length: 25.60 +/- 20.13
+Success rate: 60.00%
 
-PPO_Source training completato in 3h 8m.
+PPO_Source training completed in 3h 2m.
 
 
 Starting training: SAC_Source
 Domain: SOURCE | Randomization: NONE
 Created object with mass: 1.0
 
-Eval num_timesteps=20000, episode_reward=-2.71 +/- 2.23
+Eval num_timesteps=20000, episode_reward=-5.21 +/- 2.82
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+New best mean reward!
+Eval num_timesteps=40000, episode_reward=-4.37 +/- 1.13
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+New best mean reward!
+Eval num_timesteps=60000, episode_reward=-3.70 +/- 1.86
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+New best mean reward!
+Eval num_timesteps=80000, episode_reward=-2.38 +/- 2.01
 Episode length: 30.40 +/- 24.00
 Success rate: 40.00%
 New best mean reward!
-Eval num_timesteps=40000, episode_reward=-1.89 +/- 2.33
-Episode length: 20.60 +/- 24.00
-Success rate: 60.00%
-New best mean reward!
-Eval num_timesteps=60000, episode_reward=-3.19 +/- 1.89
-Episode length: 40.20 +/- 19.60
-Success rate: 20.00%
-Eval num_timesteps=80000, episode_reward=-2.06 +/- 2.40
-Episode length: 21.40 +/- 23.40
-Success rate: 60.00%
-Eval num_timesteps=100000, episode_reward=-3.07 +/- 1.85
-Episode length: 35.80 +/- 18.03
-Success rate: 40.00%
-Eval num_timesteps=120000, episode_reward=-1.26 +/- 1.41
-Episode length: 16.00 +/- 17.12
-Success rate: 80.00%
-New best mean reward!
-Eval num_timesteps=140000, episode_reward=-0.95 +/- 0.57
-Episode length: 10.40 +/- 5.24
+Eval num_timesteps=100000, episode_reward=-0.35 +/- 0.29
+Episode length: 5.40 +/- 3.83
 Success rate: 100.00%
 New best mean reward!
-Eval num_timesteps=160000, episode_reward=-0.77 +/- 0.78
-Episode length: 9.00 +/- 6.96
+Eval num_timesteps=120000, episode_reward=-0.78 +/- 0.27
+Episode length: 10.20 +/- 3.19
 Success rate: 100.00%
-New best mean reward!
-Eval num_timesteps=180000, episode_reward=-0.57 +/- 0.25
-Episode length: 7.40 +/- 1.62
+Eval num_timesteps=140000, episode_reward=-0.44 +/- 0.36
+Episode length: 5.40 +/- 3.67
 Success rate: 100.00%
-New best mean reward!
-Eval num_timesteps=200000, episode_reward=-0.52 +/- 0.29
-Episode length: 6.60 +/- 3.26
+Eval num_timesteps=160000, episode_reward=-0.46 +/- 0.36
+Episode length: 6.00 +/- 4.15
 Success rate: 100.00%
-New best mean reward!
-Eval num_timesteps=220000, episode_reward=-0.45 +/- 0.10
-Episode length: 6.00 +/- 0.63
+Eval num_timesteps=180000, episode_reward=-0.58 +/- 0.23
+Episode length: 8.00 +/- 2.61
 Success rate: 100.00%
-New best mean reward!
-Eval num_timesteps=240000, episode_reward=-0.43 +/- 0.11
-Episode length: 6.00 +/- 0.89
+Eval num_timesteps=200000, episode_reward=-0.67 +/- 0.25
+Episode length: 8.20 +/- 1.72
 Success rate: 100.00%
-New best mean reward!
-Eval num_timesteps=260000, episode_reward=-0.43 +/- 0.23
-Episode length: 5.40 +/- 2.33
+Eval num_timesteps=220000, episode_reward=-0.58 +/- 0.21
+Episode length: 7.80 +/- 1.60
 Success rate: 100.00%
-Eval num_timesteps=280000, episode_reward=-0.24 +/- 0.31
-Episode length: 3.40 +/- 3.20
+Eval num_timesteps=240000, episode_reward=-0.42 +/- 0.21
+Episode length: 6.00 +/- 2.76
 Success rate: 100.00%
-New best mean reward!
-Eval num_timesteps=300000, episode_reward=-0.36 +/- 0.28
-Episode length: 4.60 +/- 3.01
+Eval num_timesteps=260000, episode_reward=-0.46 +/- 0.35
+Episode length: 5.60 +/- 3.77
 Success rate: 100.00%
-Eval num_timesteps=320000, episode_reward=-0.59 +/- 0.48
-Episode length: 7.40 +/- 5.78
-Success rate: 100.00%
-Eval num_timesteps=340000, episode_reward=-0.22 +/- 0.16
-Episode length: 3.80 +/- 2.32
-Success rate: 100.00%
-New best mean reward!
-Eval num_timesteps=360000, episode_reward=-0.46 +/- 0.22
-Episode length: 5.80 +/- 2.56
-Success rate: 100.00%
-Eval num_timesteps=380000, episode_reward=-0.39 +/- 0.23
-Episode length: 5.00 +/- 2.19
-Success rate: 100.00%
-Eval num_timesteps=400000, episode_reward=-0.31 +/- 0.17
-Episode length: 4.60 +/- 1.96
-Success rate: 100.00%
-Eval num_timesteps=420000, episode_reward=-0.45 +/- 0.39
+Eval num_timesteps=280000, episode_reward=-0.38 +/- 0.31
 Episode length: 5.00 +/- 3.41
 Success rate: 100.00%
-Eval num_timesteps=440000, episode_reward=-0.24 +/- 0.17
-Episode length: 3.60 +/- 2.15
+Eval num_timesteps=300000, episode_reward=-0.68 +/- 0.54
+Episode length: 8.60 +/- 6.65
 Success rate: 100.00%
-Eval num_timesteps=460000, episode_reward=-0.34 +/- 0.11
-Episode length: 5.00 +/- 0.63
+Eval num_timesteps=320000, episode_reward=-0.59 +/- 0.33
+Episode length: 7.40 +/- 2.87
 Success rate: 100.00%
-Eval num_timesteps=480000, episode_reward=-0.32 +/- 0.16
-Episode length: 4.60 +/- 1.85
+Eval num_timesteps=340000, episode_reward=-0.21 +/- 0.17
+Episode length: 3.60 +/- 2.33
 Success rate: 100.00%
-Eval num_timesteps=500000, episode_reward=-0.27 +/- 0.30
-Episode length: 3.40 +/- 3.01
+New best mean reward!
+Eval num_timesteps=360000, episode_reward=-0.43 +/- 0.25
+Episode length: 5.60 +/- 2.42
+Success rate: 100.00%
+Eval num_timesteps=380000, episode_reward=-0.36 +/- 0.18
+Episode length: 5.60 +/- 1.20
+Success rate: 100.00%
+Eval num_timesteps=400000, episode_reward=-0.46 +/- 0.22
+Episode length: 5.80 +/- 2.48
+Success rate: 100.00%
+Eval num_timesteps=420000, episode_reward=-0.29 +/- 0.26
+Episode length: 4.20 +/- 2.79
+Success rate: 100.00%
+Eval num_timesteps=440000, episode_reward=-0.37 +/- 0.25
+Episode length: 5.20 +/- 2.56
+Success rate: 100.00%
+Eval num_timesteps=460000, episode_reward=-0.29 +/- 0.27
+Episode length: 4.20 +/- 2.79
+Success rate: 100.00%
+Eval num_timesteps=480000, episode_reward=-0.30 +/- 0.16
+Episode length: 4.40 +/- 1.74
+Success rate: 100.00%
+Eval num_timesteps=500000, episode_reward=-0.39 +/- 0.18
+Episode length: 6.00 +/- 1.55
 Success rate: 100.00%
 
-SAC_Source training completato in 1h 13m.
+SAC_Source training completed in 1h 28m.
 
 
 Evaluation results with 50 episodes
@@ -1990,246 +1614,250 @@ Evaluation results with 50 episodes
 PPO
 Test on Source
 Created object with mass: 1.0
+
 Episode 001 | return = -4.809
 Episode 002 | return = -4.484
 Episode 003 | return = -0.016
 Episode 004 | return = -5.859
-Episode 005 | return = -3.505
+Episode 005 | return = -0.585
 Episode 006 | return = -0.030
 Episode 007 | return = -0.033
-Episode 008 | return = -4.403
-Episode 009 | return = -4.826
+Episode 008 | return = -0.975
+Episode 009 | return = -0.928
 Episode 010 | return = -0.028
 Episode 011 | return = -5.357
-Episode 012 | return = -2.780
-Episode 013 | return = -4.976
-Episode 014 | return = -5.335
+Episode 012 | return = -2.783
+Episode 013 | return = -1.187
+Episode 014 | return = -5.334
 Episode 015 | return = -0.037
-Episode 016 | return = -4.251
-Episode 017 | return = -3.376
-Episode 018 | return = -5.043
-Episode 019 | return = -2.996
-Episode 020 | return = -2.707
-Episode 021 | return = -4.959
-Episode 022 | return = -4.443
-Episode 023 | return = -4.530
-Episode 024 | return = -4.656
-Episode 025 | return = -3.828
-Episode 026 | return = -3.487
+Episode 016 | return = -4.252
+Episode 017 | return = -0.640
+Episode 018 | return = -5.044
+Episode 019 | return = -1.052
+Episode 020 | return = -0.523
+Episode 021 | return = -0.615
+Episode 022 | return = -0.598
+Episode 023 | return = -4.531
+Episode 024 | return = -0.746
+Episode 025 | return = -3.829
+Episode 026 | return = -0.452
 Episode 027 | return = -0.017
-Episode 028 | return = -2.536
+Episode 028 | return = -1.008
 Episode 029 | return = -0.050
 Episode 030 | return = -5.979
 Episode 031 | return = -0.039
-Episode 032 | return = -3.949
-Episode 033 | return = -4.499
-Episode 034 | return = -5.741
-Episode 035 | return = -2.905
-Episode 036 | return = -4.229
+Episode 032 | return = -0.403
+Episode 033 | return = -4.500
+Episode 034 | return = -3.685
+Episode 035 | return = -0.262
+Episode 036 | return = -0.502
 Episode 037 | return = -5.996
 Episode 038 | return = -5.368
 Episode 039 | return = -2.959
-Episode 040 | return = -6.113
+Episode 040 | return = -3.923
 Episode 041 | return = -4.911
-Episode 042 | return = -4.626
-Episode 043 | return = -4.564
-Episode 044 | return = -3.446
-Episode 045 | return = -2.923
+Episode 042 | return = -1.038
+Episode 043 | return = -4.566
+Episode 044 | return = -0.795
+Episode 045 | return = -0.570
 Episode 046 | return = -3.572
-Episode 047 | return = -2.802
+Episode 047 | return = -0.554
 Episode 048 | return = -0.044
-Episode 049 | return = -4.641
-Episode 050 | return = -4.360
+Episode 049 | return = -4.640
+Episode 050 | return = -4.359
 
 === Evaluation summary ===
 Episodes: 50
-Mean return: -3.540
-Std return:  1.877
-Min return:  -6.113
+Mean return: -2.289
+Std return:  2.129
+Min return:  -5.996
 Max return:  -0.016
-Success rate: 18.00%
+Success rate: 58.00%
 
 Test on Target
 Created object with mass: 5.0
+
 Episode 001 | return = -4.809
 Episode 002 | return = -4.484
 Episode 003 | return = -0.016
 Episode 004 | return = -5.859
-Episode 005 | return = -3.505
+Episode 005 | return = -0.513
 Episode 006 | return = -0.030
 Episode 007 | return = -0.033
-Episode 008 | return = -4.403
-Episode 009 | return = -4.826
+Episode 008 | return = -1.108
+Episode 009 | return = -0.960
 Episode 010 | return = -0.028
 Episode 011 | return = -5.357
-Episode 012 | return = -2.780
-Episode 013 | return = -4.976
-Episode 014 | return = -5.335
+Episode 012 | return = -2.783
+Episode 013 | return = -1.266
+Episode 014 | return = -5.334
 Episode 015 | return = -0.037
 Episode 016 | return = -4.251
-Episode 017 | return = -3.376
-Episode 018 | return = -5.043
-Episode 019 | return = -2.996
-Episode 020 | return = -2.707
-Episode 021 | return = -4.959
-Episode 022 | return = -4.443
-Episode 023 | return = -4.530
-Episode 024 | return = -4.656
-Episode 025 | return = -3.828
-Episode 026 | return = -3.487
+Episode 017 | return = -0.655
+Episode 018 | return = -5.044
+Episode 019 | return = -1.065
+Episode 020 | return = -0.532
+Episode 021 | return = -0.705
+Episode 022 | return = -1.578
+Episode 023 | return = -4.528
+Episode 024 | return = -0.819
+Episode 025 | return = -3.827
+Episode 026 | return = -0.468
 Episode 027 | return = -0.017
-Episode 028 | return = -2.536
+Episode 028 | return = -1.011
 Episode 029 | return = -0.050
 Episode 030 | return = -5.979
 Episode 031 | return = -0.039
-Episode 032 | return = -3.949
-Episode 033 | return = -4.499
-Episode 034 | return = -5.741
-Episode 035 | return = -2.905
-Episode 036 | return = -4.229
-Episode 037 | return = -5.996
-Episode 038 | return = -5.368
-Episode 039 | return = -2.959
-Episode 040 | return = -6.113
+Episode 032 | return = -0.426
+Episode 033 | return = -4.501
+Episode 034 | return = -3.771
+Episode 035 | return = -0.273
+Episode 036 | return = -0.543
+Episode 037 | return = -5.999
+Episode 038 | return = -5.365
+Episode 039 | return = -2.958
+Episode 040 | return = -4.761
 Episode 041 | return = -4.911
-Episode 042 | return = -4.626
+Episode 042 | return = -1.112
 Episode 043 | return = -4.564
-Episode 044 | return = -3.446
-Episode 045 | return = -2.923
-Episode 046 | return = -3.572
-Episode 047 | return = -2.802
+Episode 044 | return = -0.843
+Episode 045 | return = -0.575
+Episode 046 | return = -3.571
+Episode 047 | return = -0.594
 Episode 048 | return = -0.044
-Episode 049 | return = -4.641
-Episode 050 | return = -4.360
+Episode 049 | return = -4.640
+Episode 050 | return = -4.053
 
 === Evaluation summary ===
 Episodes: 50
-Mean return: -3.540
-Std return:  1.877
-Min return:  -6.113
+Mean return: -2.334
+Std return:  2.120
+Min return:  -5.999
 Max return:  -0.016
-Success rate: 18.00%
-
+Success rate: 58.00%
 
 SAC
+
 Test on Source
 Created object with mass: 1.0
-Episode 001 | return = -0.564
-Episode 002 | return = -0.622
+
+Episode 001 | return = -0.559
+Episode 002 | return = -0.587
 Episode 003 | return = -0.016
-Episode 004 | return = -0.879
-Episode 005 | return = -0.260
+Episode 004 | return = -0.775
+Episode 005 | return = -0.445
 Episode 006 | return = -0.030
 Episode 007 | return = -0.033
-Episode 008 | return = -0.367
-Episode 009 | return = -0.511
+Episode 008 | return = -0.687
+Episode 009 | return = -0.650
 Episode 010 | return = -0.028
-Episode 011 | return = -0.622
-Episode 012 | return = -0.294
-Episode 013 | return = -0.462
-Episode 014 | return = -0.623
+Episode 011 | return = -0.782
+Episode 012 | return = -0.320
+Episode 013 | return = -0.860
+Episode 014 | return = -0.662
 Episode 015 | return = -0.037
-Episode 016 | return = -0.388
-Episode 017 | return = -0.282
+Episode 016 | return = -0.526
+Episode 017 | return = -0.308
 Episode 018 | return = -0.601
-Episode 019 | return = -0.271
-Episode 020 | return = -0.198
-Episode 021 | return = -0.523
-Episode 022 | return = -0.450
-Episode 023 | return = -0.567
-Episode 024 | return = -0.396
+Episode 019 | return = -0.276
+Episode 020 | return = -0.239
+Episode 021 | return = -0.606
+Episode 022 | return = -0.458
+Episode 023 | return = -0.653
+Episode 024 | return = -0.484
 Episode 025 | return = -0.353
-Episode 026 | return = -0.377
+Episode 026 | return = -0.317
 Episode 027 | return = -0.017
-Episode 028 | return = -0.231
+Episode 028 | return = -0.250
 Episode 029 | return = -0.050
-Episode 030 | return = -0.959
+Episode 030 | return = -0.793
 Episode 031 | return = -0.039
-Episode 032 | return = -0.387
-Episode 033 | return = -0.548
-Episode 034 | return = -0.561
-Episode 035 | return = -0.261
-Episode 036 | return = -0.428
-Episode 037 | return = -0.915
-Episode 038 | return = -0.628
-Episode 039 | return = -0.262
-Episode 040 | return = -0.666
-Episode 041 | return = -0.555
-Episode 042 | return = -0.401
-Episode 043 | return = -0.637
-Episode 044 | return = -0.307
-Episode 045 | return = -0.219
-Episode 046 | return = -0.322
-Episode 047 | return = -0.209
+Episode 032 | return = -0.411
+Episode 033 | return = -0.546
+Episode 034 | return = -0.778
+Episode 035 | return = -0.221
+Episode 036 | return = -0.500
+Episode 037 | return = -0.795
+Episode 038 | return = -0.667
+Episode 039 | return = -0.248
+Episode 040 | return = -0.923
+Episode 041 | return = -0.583
+Episode 042 | return = -0.467
+Episode 043 | return = -0.638
+Episode 044 | return = -0.298
+Episode 045 | return = -0.262
+Episode 046 | return = -0.465
+Episode 047 | return = -0.250
 Episode 048 | return = -0.044
-Episode 049 | return = -0.475
-Episode 050 | return = -0.466
+Episode 049 | return = -0.629
+Episode 050 | return = -0.464
 
 === Evaluation summary ===
 Episodes: 50
-Mean return: -0.387
-Std return:  0.237
-Min return:  -0.959
+Mean return: -0.433
+Std return:  0.256
+Min return:  -0.923
 Max return:  -0.016
 Success rate: 100.00%
 
 Test on Target
 Created object with mass: 5.0
-Episode 001 | return = -0.607
-Episode 002 | return = -0.660
+
+Episode 001 | return = -0.599
+Episode 002 | return = -0.618
 Episode 003 | return = -0.016
-Episode 004 | return = -1.018
-Episode 005 | return = -0.424
+Episode 004 | return = -0.811
+Episode 005 | return = -0.560
 Episode 006 | return = -0.030
 Episode 007 | return = -0.033
-Episode 008 | return = -0.710
-Episode 009 | return = -0.623
+Episode 008 | return = -0.592
+Episode 009 | return = -0.642
 Episode 010 | return = -0.028
-Episode 011 | return = -1.011
-Episode 012 | return = -0.307
-Episode 013 | return = -0.799
-Episode 014 | return = -0.705
+Episode 011 | return = -0.840
+Episode 012 | return = -0.326
+Episode 013 | return = -0.689
+Episode 014 | return = -0.740
 Episode 015 | return = -0.037
-Episode 016 | return = -0.450
-Episode 017 | return = -0.312
-Episode 018 | return = -0.883
-Episode 019 | return = -0.286
-Episode 020 | return = -0.208
-Episode 021 | return = -0.976
-Episode 022 | return = -0.514
-Episode 023 | return = -0.635
-Episode 024 | return = -1.027
-Episode 025 | return = -0.410
-Episode 026 | return = -1.075
+Episode 016 | return = -0.542
+Episode 017 | return = -0.342
+Episode 018 | return = -0.743
+Episode 019 | return = -0.287
+Episode 020 | return = -0.253
+Episode 021 | return = -0.678
+Episode 022 | return = -0.477
+Episode 023 | return = -0.663
+Episode 024 | return = -0.554
+Episode 025 | return = -0.409
+Episode 026 | return = -0.363
 Episode 027 | return = -0.017
-Episode 028 | return = -0.248
+Episode 028 | return = -0.251
 Episode 029 | return = -0.050
-Episode 030 | return = -1.158
+Episode 030 | return = -0.874
 Episode 031 | return = -0.039
-Episode 032 | return = -0.419
-Episode 033 | return = -0.556
-Episode 034 | return = -0.995
-Episode 035 | return = -0.266
-Episode 036 | return = -0.575
-Episode 037 | return = -0.991
-Episode 038 | return = -0.713
-Episode 039 | return = -0.280
-Episode 040 | return = -1.589
-Episode 041 | return = -0.845
-Episode 042 | return = -1.070
-Episode 043 | return = -0.658
+Episode 032 | return = -0.420
+Episode 033 | return = -0.573
+Episode 034 | return = -0.919
+Episode 035 | return = -0.267
+Episode 036 | return = -0.525
+Episode 037 | return = -0.833
+Episode 038 | return = -0.744
+Episode 039 | return = -0.267
+Episode 040 | return = -0.986
+Episode 041 | return = -0.642
+Episode 042 | return = -0.597
+Episode 043 | return = -0.708
 Episode 044 | return = -0.352
-Episode 045 | return = -0.273
-Episode 046 | return = -0.387
-Episode 047 | return = -0.260
+Episode 045 | return = -0.277
+Episode 046 | return = -0.476
+Episode 047 | return = -0.264
 Episode 048 | return = -0.044
-Episode 049 | return = -0.526
-Episode 050 | return = -0.647
+Episode 049 | return = -0.713
+Episode 050 | return = -0.506
 
 === Evaluation summary ===
 Episodes: 50
-Mean return: -0.535
-Std return:  0.370
-Min return:  -1.589
+Mean return: -0.464
+Std return:  0.273
+Min return:  -0.986
 Max return:  -0.016
 Success rate: 100.00%

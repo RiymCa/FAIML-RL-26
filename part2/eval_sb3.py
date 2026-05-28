@@ -4,6 +4,7 @@ import gymnasium as gym
 import numpy as np
 import panda_gym
 from stable_baselines3 import SAC, PPO
+from rand_wrapper import RandomizationWrapper
 
 # - DummyVecEnv is an environment manager, since the model, after training, is tested on a single env, it makes that
 # env a vectorized one.
@@ -32,7 +33,12 @@ def evaluate(model_path: str, stats_path: str, n_episodes: int, deterministic: b
     render_mode = "human" if render else "rgb_array"
 
     def make_test_env():
-        return gym.make("PandaPush-v3", render_mode=render_mode, type=env_type, reward_type="dense")
+        env = gym.make("PandaPush-v3", render_mode=render_mode, type=env_type, reward_type="dense")
+        sim = env.unwrapped.task.sim
+        object_body_id = sim._bodies_idx["object"]
+        mass = sim.physics_client.getDynamicsInfo(object_body_id, -1)[0]
+
+        return RandomizationWrapper(env, mass, mode="none", env_type=env_type)
 
     env = DummyVecEnv([make_test_env])
     env = VecNormalize.load(stats_path, env)

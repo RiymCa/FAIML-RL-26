@@ -2,10 +2,10 @@ import numpy as np
 import gymnasium as gym
 from collections import deque
 
-class RandomizationWrapper(gym.Wrapper):
-    """
+"""
     Wrapper che applica Domain Randomization (UDR o ADR) all'ambiente Panda-Gym.
-    """
+"""
+class RandomizationWrapper(gym.Wrapper):
     def __init__(
             self,
             env,
@@ -111,10 +111,10 @@ class RandomizationWrapper(gym.Wrapper):
     # Reset: Applicazione Fisica
     # -----------------------
     def reset(self, *, seed=None, options=None):
+        obs, info = super().reset(seed=seed, options=options)
+
         if seed is not None:
             self.np_random = np.random.default_rng(seed)
-
-        obs, info = super().reset(seed=seed, options=options)
 
         new_mass = self._sample_mass()
 

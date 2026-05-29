@@ -121,6 +121,8 @@ def main() -> None:
     models_ppo_dir = "./best_models_PPO"
     os.makedirs(models_ppo_dir, exist_ok=True)
 
+    test_env_type = "target"
+
     # -------
     # MODEL A
     # -------
@@ -138,7 +140,7 @@ def main() -> None:
         eval_env=eval_env_a,
         vec_env=env_a,
         best_model_save_path=dir_model_a,
-        n_eval_episodes=5,
+        n_eval_episodes=20,
         eval_freq=eval_freq,
         deterministic=True,
     )
@@ -160,7 +162,7 @@ def main() -> None:
     env_b = SubprocVecEnv([make_env(args.env_type, args.sampling_strategy, i) for i in range(args.num_cpus)])
     env_b = VecNormalize(env_b, norm_obs=True, norm_reward=True, clip_obs=10.)
 
-    eval_env_b = DummyVecEnv([make_env(args.env_type, "none", 0)])
+    eval_env_b = DummyVecEnv([make_env(args.env_type, args.sampling_strategy, 0)])
     eval_env_b = VecNormalize(eval_env_b, norm_obs=True, norm_reward=False, clip_obs=10.0)
     eval_env_b.training = False
 
@@ -168,7 +170,7 @@ def main() -> None:
         eval_env=eval_env_b,
         vec_env=env_b,
         best_model_save_path=dir_model_b,
-        n_eval_episodes=5,
+        n_eval_episodes=20,
         eval_freq=eval_freq,
         deterministic=True,
     )
@@ -200,7 +202,7 @@ def main() -> None:
     env_c = SubprocVecEnv([make_env(args.env_type, args.sampling_strategy, i) for i in range(args.num_cpus)])
     env_c = VecNormalize(env_c, norm_obs=True, norm_reward=True, clip_obs=10.)
 
-    eval_env_c = DummyVecEnv([make_env(args.env_type, "none", 0)])
+    eval_env_c = DummyVecEnv([make_env(args.env_type, args.sampling_strategy, 0)])
     eval_env_c = VecNormalize(eval_env_c, norm_obs=True, norm_reward=False, clip_obs=10.0)
     eval_env_c.training = False
 
@@ -208,7 +210,7 @@ def main() -> None:
         eval_env=eval_env_c,
         vec_env=env_c,
         best_model_save_path=dir_model_c,
-        n_eval_episodes=5,
+        n_eval_episodes=20,
         eval_freq=eval_freq,
         deterministic=True,
     )
@@ -248,15 +250,32 @@ def main() -> None:
     path_best_b = os.path.join(dir_model_b, "best_model.zip")
     path_best_c = os.path.join(dir_model_c, "best_model.zip")
 
-    print("\nEvaluating PPO model A.")
-    evaluate(model_path=path_best_a, stats_path=os.path.join(dir_model_a, "vec_normalize.pkl"), n_episodes=100,
-             deterministic=not args.stochastic, render=args.render, env_type=args.env_type, algo_class=PPO)
-    print("\nEvaluating PPO model B.")
-    evaluate(model_path=path_best_b, stats_path=os.path.join(dir_model_b, "vec_normalize.pkl"), n_episodes=100,
-             deterministic=not args.stochastic, render=args.render, env_type=args.env_type, algo_class=PPO)
-    print("\nEvaluating PPO model C.")
-    evaluate(model_path=path_best_c, stats_path=os.path.join(dir_model_c, "vec_normalize.pkl"), n_episodes=100,
-             deterministic=not args.stochastic, render=args.render, env_type=args.env_type, algo_class=PPO)
+    for label, path in [("A", path_best_a), ("B", path_best_b), ("C", path_best_c)]:
+        stats = os.path.join(
+            {"A": dir_model_a, "B": dir_model_b, "C": dir_model_c}[label],
+            "vec_normalize.pkl"
+        )
+        print(f"\nEvaluating PPO model {label} — SOURCE")
+        evaluate(
+            model_path=path,
+            stats_path=stats,
+            n_episodes=100,
+            deterministic=not args.stochastic,
+            render=args.render,
+            env_type=args.env_type,
+            algo_class=PPO,
+        )
+        print(f"\nEvaluating PPO model {label} - TARGET")
+        evaluate(
+            model_path=path,
+            stats_path=stats,
+            n_episodes=100,
+            deterministic=not args.stochastic,
+            render=args.render,
+            env_type=test_env_type,
+            algo_class=PPO,
+        )
+
 
 if __name__ == "__main__":
     main()

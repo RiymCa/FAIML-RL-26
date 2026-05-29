@@ -57,7 +57,7 @@ def parse_args() -> argparse.Namespace:
         "--render",
         default=False,
         choices=[True, False],
-        help="Render with a window (render_mode='human')",
+        help="Render with a window (render_mode  ='human')",
     )
     parser.add_argument(
         "--timesteps",
@@ -128,6 +128,8 @@ def main() -> None:
     models_sac_dir = "./best_models_SAC"
     os.makedirs(models_sac_dir, exist_ok=True)
 
+    test_env_type = "target"
+
     # -------
     # MODEL A
     # -------
@@ -137,7 +139,7 @@ def main() -> None:
     env_a = SubprocVecEnv([make_env(args.env_type, args.sampling_strategy, i) for i in range(args.num_cpus)])
     env_a = VecNormalize(env_a, norm_obs=True, norm_reward=True, clip_obs=10.)
 
-    eval_env_a = DummyVecEnv([make_env(args.env_type, "none", 0)])
+    eval_env_a = DummyVecEnv([make_env(args.env_type, args.sampling_strategy, 0)])
     eval_env_a = VecNormalize(eval_env_a, norm_obs=True, norm_reward=False, clip_obs=10.0)
     eval_env_a.training = False
 
@@ -145,7 +147,7 @@ def main() -> None:
         eval_env=eval_env_a,
         vec_env=env_a,
         best_model_save_path=dir_model_a,
-        n_eval_episodes=5,
+        n_eval_episodes=20,
         eval_freq=eval_freq,
         deterministic=True,
     )
@@ -173,7 +175,7 @@ def main() -> None:
     env_b = SubprocVecEnv([make_env(args.env_type, args.sampling_strategy, i) for i in range(args.num_cpus)])
     env_b = VecNormalize(env_b, norm_obs=True, norm_reward=True, clip_obs=10.)
 
-    eval_env_b = DummyVecEnv([make_env(args.env_type, "none", 0)])
+    eval_env_b = DummyVecEnv([make_env(args.env_type, args.sampling_strategy, 0)])
     eval_env_b = VecNormalize(eval_env_b, norm_obs=True, norm_reward=False, clip_obs=10.0)
     eval_env_b.training = False
 
@@ -181,7 +183,7 @@ def main() -> None:
         eval_env=eval_env_b,
         vec_env=env_b,
         best_model_save_path=dir_model_b,
-        n_eval_episodes=5,
+        n_eval_episodes=20,
         eval_freq=eval_freq,
         deterministic=True,
     )
@@ -214,13 +216,12 @@ def main() -> None:
     # MODEL C
     # -------
     dir_model_c = os.path.join(models_sac_dir, f"sac_modelC_{args.sampling_strategy}_{args.env_type}_{args.timesteps}")
-    print(dir_model_c)
     print(f"\nStarting SAC Model C training for {args.timesteps} steps on {args.num_cpus} CPUs.")
 
     env_c = SubprocVecEnv([make_env(args.env_type, args.sampling_strategy, i) for i in range(args.num_cpus)])
     env_c = VecNormalize(env_c, norm_obs=True, norm_reward=True, clip_obs=10.)
 
-    eval_env_c = DummyVecEnv([make_env(args.env_type, "none", 0)])
+    eval_env_c = DummyVecEnv([make_env(args.env_type, args.sampling_strategy, 0)])
     eval_env_c = VecNormalize(eval_env_c, norm_obs=True, norm_reward=False, clip_obs=10.0)
     eval_env_c.training = False
 
@@ -228,7 +229,7 @@ def main() -> None:
         eval_env=eval_env_c,
         vec_env=env_c,
         best_model_save_path=dir_model_c,
-        n_eval_episodes=5,
+        n_eval_episodes=20,
         eval_freq=eval_freq,
         deterministic=True,
     )
@@ -267,16 +268,34 @@ def main() -> None:
     path_best_b = os.path.join(dir_model_b, "best_model.zip")
     path_best_c = os.path.join(dir_model_c, "best_model.zip")
 
-    print("\nEvaluating SAC model A.")
-    evaluate(model_path=path_best_a, stats_path=os.path.join(dir_model_a, "vec_normalize.pkl"), n_episodes=100,
-             deterministic=not args.stochastic, render=args.render, env_type=args.env_type, algo_class=SAC)
-    print("\nEvaluating SAC model B.")
-    evaluate(model_path=path_best_b, stats_path=os.path.join(dir_model_b, "vec_normalize.pkl"), n_episodes=100,
-             deterministic=not args.stochastic, render=args.render, env_type=args.env_type, algo_class=SAC)
+    dirs = {"A": dir_model_a, "B": dir_model_b, "C": dir_model_c}
+    paths = {"A": path_best_a, "B": path_best_b, "C": path_best_c}
 
-    print("\nEvaluating SAC model C.")
-    evaluate(model_path=path_best_c, stats_path=os.path.join(dir_model_c, "vec_normalize.pkl"), n_episodes=100,
-             deterministic=not args.stochastic, render=args.render, env_type=args.env_type, algo_class=SAC)
+    for label in ["A", "B", "C"]:
+        stats = os.path.join(dirs[label], "vec_normalize.pkl")
+
+        print(f"\nEvaluating SAC model {label} — SOURCE")
+        evaluate(
+            model_path=paths[label],
+            stats_path=stats,
+            n_episodes=100,
+            deterministic=not args.stochastic,
+            render=args.render,
+            env_type=args.env_type,
+            algo_class=SAC
+        )
+
+        print(f"\nEvaluating SAC model {label} — TARGET")
+        evaluate(
+            model_path=paths[label],
+            stats_path=stats,
+            n_episodes=100,
+            deterministic=not args.stochastic,
+            render=args.render,
+            env_type=test_env_type,
+            algo_class=SAC
+        )
+
 
 if __name__ == "__main__":
     main()

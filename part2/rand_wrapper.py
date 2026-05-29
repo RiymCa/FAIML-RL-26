@@ -65,7 +65,9 @@ class RandomizationWrapper(gym.Wrapper):
                     self.last_sample_type = "high_boundary"
                     return self.current_mass_max
 
-        # UDR
+            self.last_sample_type = "interior"
+            return self.np_random.uniform(self.current_mass_min, self.current_mass_max)
+
         self.last_sample_type = "uniform"
         return self.np_random.uniform(self.current_mass_min, self.current_mass_max)
 
@@ -111,10 +113,10 @@ class RandomizationWrapper(gym.Wrapper):
     # Reset: Applicazione Fisica
     # -----------------------
     def reset(self, *, seed=None, options=None):
-        obs, info = super().reset(seed=seed, options=options)
-
         if seed is not None:
             self.np_random = np.random.default_rng(seed)
+
+        obs, info = super().reset(seed=seed, options=options)
 
         new_mass = self._sample_mass()
 

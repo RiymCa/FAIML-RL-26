@@ -43,7 +43,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--timesteps",
         type=int,
-        default=250_000,
+        default=500_000,
         help="Timestep per ciascun modello"
     )
     parser.add_argument(
@@ -124,12 +124,6 @@ def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: s
             env,
             device="auto",
             seed=42,
-            learning_rate=1e-4,
-            n_steps=4096,
-            batch_size=512,
-            n_epochs=20,
-            ent_coef=0.005,
-            policy_kwargs=dict(net_arch=[256, 256]),
             verbose=0
         )
     elif algo_class == SAC:
@@ -140,15 +134,12 @@ def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: s
             seed=42,
             learning_rate=3e-4,
             buffer_size=1000000,
-            batch_size=512,
-            ent_coef="auto",
-            train_freq=1,
-            gradient_steps=num_cpus,
             policy_kwargs=dict(net_arch=[256, 256, 256]),
+            gradient_steps=num_cpus,
             verbose=0
         )
     else:
-        raise ValueError("Algoritmo non supportato. Scegliere tra PPO e SAC.")
+        raise ValueError("Algorithm not supported. Choose between PPO e SAC.")
 
     model.learn(total_timesteps=timesteps, callback=callback)
 
@@ -159,7 +150,7 @@ def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: s
     diff = end_time - start_time
     ore = int(diff // 3600)
     minuti = int((diff % 3600) // 60)
-    print(f"{model_name} training completato in {ore}h {minuti}m.")
+    print(f"{model_name} training completed in {ore}h {minuti}m.")
 
     model_path = os.path.join(dir_model, "best_model.zip")
     stats_path = os.path.join(dir_model, "vec_normalize.pkl")
@@ -180,7 +171,7 @@ def main() -> None:
         # -----------------------------
         print("Task 4: PPO vs SAC trained on Source and tested on Source and Target")
 
-        path_ppo, stats_ppo = train_agent("PPO_Source", PPO, "source", "none", args.timesteps*50, args.num_cpus*2)
+        path_ppo, stats_ppo = train_agent("PPO_Source", PPO, "source", "none", args.timesteps*20, args.num_cpus*2)
         path_sac, stats_sac = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus)
 
         print(f"\nEvaluation results with {args.eval_episodes} episodes")

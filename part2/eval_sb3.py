@@ -51,6 +51,7 @@ def evaluate(model_path: str, stats_path: str, n_episodes: int, deterministic: b
 
     for episode in range(1, n_episodes + 1):
         current_seed = base_seed + episode
+
         env.seed(current_seed)
         obs = env.reset()
 
@@ -141,6 +142,9 @@ def parse_args() -> argparse.Namespace:
 if __name__ == "__main__":
     args = parse_args()
 
+    algo_map = {"ppo": PPO, "sac": SAC}
+    algo_class = algo_map[args.algo]
+
     evaluate(
         model_path=args.model_path,
         stats_path=args.stats_path,
@@ -148,5 +152,5 @@ if __name__ == "__main__":
         deterministic=not args.stochastic,
         render=args.render,
         env_type=args.env_type,
-        algo_class=args.algo
+        algo_class=algo_class
     )

@@ -100,6 +100,7 @@ def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: s
     start_time = time.time()
     os.makedirs(models_dir, exist_ok=True)
     dir_model = os.path.join(models_dir, model_name)
+    os.makedirs(dir_model, exist_ok=True)
     eval_freq = max(20_000 // num_cpus, 1)
 
     env = SubprocVecEnv([make_env(env_type, sampling_strategy, i) for i in range(num_cpus)])

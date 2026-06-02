@@ -193,11 +193,8 @@ def main() -> None:
         env_b,
         device="auto",
         seed=42,
-        learning_rate=3e-4,
-        buffer_size=1000000,
-        batch_size=256,
-        gamma=0.99,
-        tau=0.005,
+        gamma=0.98,
+        tau=0.01,
         verbose=0
     )
     print(f"Device in use: {model_b.device}.")

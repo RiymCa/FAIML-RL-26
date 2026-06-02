@@ -114,7 +114,7 @@ def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: s
         eval_env=eval_env,
         vec_env=env,
         best_model_save_path=dir_model,
-        n_eval_episodes=5,
+        n_eval_episodes=20,
         eval_freq=eval_freq,
         deterministic=True,
     )
@@ -125,6 +125,12 @@ def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: s
             env,
             device="auto",
             seed=42,
+            learning_rate=1e-4,
+            n_steps=4096,
+            batch_size=512,
+            n_epochs=20,
+            ent_coef=0.005,
+            policy_kwargs=dict(net_arch=[256, 256]),
             verbose=0
         )
     elif algo_class == SAC:
@@ -172,7 +178,7 @@ def main() -> None:
         # -----------------------------
         print("Task 4: PPO vs SAC trained on Source and tested on Source and Target")
 
-        path_ppo, stats_ppo = train_agent("PPO_Source", PPO, "source", "none", args.timesteps*20, args.num_cpus*2)
+        path_ppo, stats_ppo = train_agent("PPO_Source", PPO, "source", "none", args.timesteps*20, args.num_cpus)
         path_sac, stats_sac = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus)
 
         print(f"\nEvaluation results with {args.eval_episodes} episodes")

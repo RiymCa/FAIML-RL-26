@@ -1,3 +1,5 @@
+#   DA PROVARE CON 8 CPU AL POSTO DI 16
+
 import argparse
 import gymnasium as gym
 import time
@@ -73,7 +75,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--num-cpus",
         type=int,
-        default=16,
+        default=8,
         help="Number of parallel environments (CPUs) to use for training",
     )
     return parser.parse_args()

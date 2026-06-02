@@ -38,7 +38,9 @@ class Policy(torch.nn.Module):
             Critic network
         """
         # TASK 3: critic network for actor-critic algorithm
-
+        self.fc1_critic = torch.nn.Linear(state_space, self.hidden)
+        self.fc2_critic = torch.nn.Linear(self.hidden, self.hidden)
+        self.fc3_critic  = torch.nn.Linear(self.hidden, 1)
 
         self.init_weights()
 
@@ -46,7 +48,7 @@ class Policy(torch.nn.Module):
     def init_weights(self):
         for m in self.modules():
             if type(m) is torch.nn.Linear:
-                torch.nn.init.normal_(m.weight)
+                torch.nn.init.normal_(m.weight, 0.0, 0.1) # upd
                 torch.nn.init.zeros_(m.bias)
 
 
@@ -66,18 +68,36 @@ class Policy(torch.nn.Module):
             Critic
         """
         # TASK 3: forward in the critic network
-
+        x_critic = self.tanh(self.fc1_critic(x))
+        x_critic = self.tanh(self.fc2_critic(x_critic))
+        val = self.fc3_critic(x_critic).squeeze(-1)
         
-        return normal_dist
+        return normal_dist, val
+    
+    # define and rturn separate parameters for the two distinct optimization problems
+    # used for the actor updates
+    def actor_parameters(self):
+        return (list(self.fc1_actor.parameters()) +
+                list(self.fc2_actor.parameters()) +
+                list(self.fc3_actor_mean.parameters()) +
+                [self.sigma])
+
+    # used for the critic updates
+    def critic_parameters(self):
+        return (list(self.fc1_critic.parameters()) +
+                list(self.fc2_critic.parameters()) +
+                list(self.fc3_critic.parameters()))
 
 
 class Agent(object):
-    def __init__(self, policy, device='cpu'):
+    def __init__(self, policy, gamma=0.999, actor_lr=1e-4, critic_lr=3e-3, device='cpu'):
         self.train_device = device
         self.policy = policy.to(self.train_device)
-        self.optimizer = torch.optim.Adam(policy.parameters(), lr=1e-3)
+        # separate optimizers, one for critic and one for the actor
+        self.actor_optimizer = torch.optim.Adam(self.policy.actor_parameters(), lr=actor_lr)
+        self.critic_optimizer = torch.optim.Adam(self.policy.critic_parameters(), lr=critic_lr)
+        self.gamma = gamma
 
-        self.gamma = 0.99
         self.states = []
         self.next_states = []
         self.action_log_probs = []
@@ -85,7 +105,7 @@ class Agent(object):
         self.done = []
 
 
-    def update_policy(self):
+    def update_policy(self, baseline, algorithm):
         action_log_probs = torch.stack(self.action_log_probs, dim=0).to(self.train_device).squeeze(-1)
         states = torch.stack(self.states, dim=0).to(self.train_device).squeeze(-1)
         next_states = torch.stack(self.next_states, dim=0).to(self.train_device).squeeze(-1)
@@ -94,30 +114,62 @@ class Agent(object):
 
         self.states, self.next_states, self.action_log_probs, self.rewards, self.done = [], [], [], [], []
 
-        #
-        # TASK 2:
-        #   - compute discounted returns
-        #   - compute policy gradient loss function given actions and returns
-        #   - compute gradients and step the optimizer
-        #
+        if algorithm == 'REINFORCE':
+            #
+            # TASK 2:
+            # compute discounted returns
+            discounted_returns = discount_rewards(rewards, self.gamma)
+            
+            if baseline:
+                discounted_returns -= 20.0
+                
+            # compute policy gradient loss function given actions and returns
+            loss = -(action_log_probs * discounted_returns).mean()
+            
+            # compute gradients and step the optimizer
+            self.actor_optimizer.zero_grad()
+            loss.backward()
+
+            # future hp upd 
+            self.actor_optimizer.step()
+            return loss.item(), None
+        
+        else:
+            # TASK 3:
+            _, values = self.policy(states)
+            with torch.no_grad():
+                _, next_values = self.policy(next_states)
+                
+            # compute boostrapped discounted return estimates
+            td_return_estimates = rewards + self.gamma * next_values * (1 - done)
+            
+            # compute advantage terms
+            advantage_terms = td_return_estimates - values  
+
+            # compute actor loss and critic loss
+            actor_loss = -(action_log_probs * advantage_terms.detach()).mean()  
+            critic_loss = F.mse_loss(values, td_return_estimates.detach())
+            
+            # compute gradients and step the optimizer
+            # actor opt. 
+            self.actor_optimizer.zero_grad()
+            actor_loss.backward()
+            self.actor_optimizer.step()
+
+            # critic opt.
+            self.critic_optimizer.zero_grad()
+            critic_loss.backward()
+            self.critic_optimizer.step()
 
 
-        #
-        # TASK 3:
-        #   - compute boostrapped discounted return estimates
-        #   - compute advantage terms
-        #   - compute actor loss and critic loss
-        #   - compute gradients and step the optimizer
-        #
-
-        return        
+            return actor_loss.item(), critic_loss.item()
 
 
     def get_action(self, state, evaluation=False):
         """ state -> action (3-d), action_log_densities """
         x = torch.from_numpy(state).float().to(self.train_device)
 
-        normal_dist = self.policy(x)
+        normal_dist, _ = self.policy(x)
 
         if evaluation:  # Return mean
             return normal_dist.mean, None

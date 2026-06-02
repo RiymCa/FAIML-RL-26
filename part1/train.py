@@ -9,15 +9,14 @@ import gymnasium as gym
 import torch
 import numpy as np
 import wandb
-import matplotlib.pyplot as plt
-
+import time
 
 
 from agent import Agent, Policy
-SEED = 42
+SEED = 43
 
-os.makedirs("plots", exist_ok=True)
 all_configs = {}
+time_tracking = {}
 
 def main():
 
@@ -25,17 +24,17 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("training on device: ", device)
 
-    n_episodes = 60000
-    algorithms = ['Actor-Critic', 'REINFORCE']
+    n_episodes = 50000
+    algorithms = ['REINFORCE', 'Actor-Critic']
     run_id = 0 
 
     for alg in algorithms:  
 
-        flag_baseline = [True, False] if alg == 'REINFORCE' else [False]
+        flag_baseline = [False, True] if alg == 'REINFORCE' else [False]
         
         for baseline in flag_baseline: 
 
-            # set seeds to ensure repr.
+            # set seeds to ensure reprod.
             current_seed = SEED + run_id
             run_id += 1
             np.random.seed(current_seed)
@@ -54,8 +53,9 @@ def main():
                         "baseline": baseline,
                         "n_episodes": n_episodes,
                         })
-
-
+            
+            start_time = time.time()
+            
             env = gym.make('Hopper-v4')
                             
             print('State space:', env.observation_space)  # state-space
@@ -76,7 +76,6 @@ def main():
                 state, info = env.reset(seed=current_seed + ep)  # Reset environment to initial state
                 ep_reward = 0.0
                 n_steps_inside_episode = 0
-                    
 
                 while not done:  # Until the episode is over
                         
@@ -88,6 +87,7 @@ def main():
 
                     agent.store_outcome(state, next_state, action_log_probs, reward, done)  
 
+                    # updates 
                     state = next_state
                     ep_reward += reward
                     n_steps_tot += 1
@@ -126,48 +126,25 @@ def main():
             torch.save(agent.policy.state_dict(), filename)
             print(f"Saved trained weights to {filename}")
 
+            end_time = time.time()
+            tot_duration = end_time - start_time
+
+            print(f"Total duration of the current run: {tot_duration:.4f} seconds ({tot_duration/60:.4f} minutes)")
+            time_tracking[f'{alg}_bl_{baseline}'] = tot_duration / 60.0
             env.close()
             wandb.finish()
 
-            # PLOTTING PART
-            window = 500
-            rewards_arr = np.array(ep_rewards_list)
-            rolling_mean = np.convolve(rewards_arr, np.ones(window) / window, mode='valid')
 
-            fig, ax = plt.subplots()
-            ax.plot(rewards_arr, alpha=0.3, color='steelblue', label='Episode reward')
-            ax.plot(range(window - 1, len(rewards_arr)),
-                    rolling_mean, 
-                    color='steelblue', 
-                    label=f'Moving Mean (w={window})')
-            ax.set_xlabel('Episode number')
-            ax.set_ylabel('Reward')
-            if alg == 'REINFORCE':
-                ax.set_title(f'{alg} — Baseline: {baseline}')
-            else:
-                ax.set_title(f'{alg}')
-            ax.legend()
-            ax.grid(alpha=0.3)
-            fig.savefig(f'plots/{alg}_baseline_{baseline}.pdf')
-            plt.close(fig)
-            all_configs[f'{alg}_bl{baseline}'] = rewards_arr
+            all_configs[f'{alg}_bl_{baseline}'] = np.array(ep_rewards_list)
 
-    # plot finale con confronto tutte configurazioni
-    colors = ['steelblue', 'darkorange', 'green']
-    fig, ax = plt.subplots()
-    for i, (name, rewards_arr) in enumerate(all_configs.items()):
-        rolling_mean = np.convolve(rewards_arr, np.ones(500) / 500, mode='valid')
-        ax.plot(range(499, len(rewards_arr)), rolling_mean,
-                color=colors[i % len(colors)], label=name)
-    ax.set_xlabel('Episode number')
-    ax.set_ylabel('Reward moving mean')
-    ax.set_title('Comparison of all configurations')
-    ax.legend()
-    ax.grid(alpha=0.3)
-    fig.savefig('plots/comparison.pdf')
-    plt.close(fig)
     print("\n\n\nDone!")
 
+    print("\n\n Final results of last 5k episodes")
+    print(f"{'Configuration':<35} {'Mean':>15} {'Stddev':>8} {'Max':>8} {'Time(m)':>10}")
+    for name, arr in all_configs.items():
+        last = arr[-5000:]
+        mins = time_tracking[name]
+        print(f"{name:<35} {np.mean(last):>15.1f} {np.std(last):>8.1f} {np.max(arr):>8.1f} {mins:>10.1f}")
     os.system("pmset sleepnow")
 
 if __name__ == '__main__':

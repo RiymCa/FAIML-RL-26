@@ -90,14 +90,14 @@ class Policy(torch.nn.Module):
 
 
 class Agent(object):
-    def __init__(self, policy, device='cpu'):
+    def __init__(self, policy, gamma=0.999, actor_lr=1e-4, critic_lr=3e-3, device='cpu'):
         self.train_device = device
         self.policy = policy.to(self.train_device)
         # separate optimizers, one for critic and one for the actor
-        self.actor_optimizer = torch.optim.Adam(self.policy.actor_parameters(), lr=1e-4) # lr chosen w. hptuning
-        self.critic_optimizer = torch.optim.Adam(self.policy.critic_parameters(), lr=3e-3) # lr chosen w. hptuning
-        self.gamma = 0.999 # gamma chosen w. hptuning
-        
+        self.actor_optimizer = torch.optim.Adam(self.policy.actor_parameters(), lr=actor_lr)
+        self.critic_optimizer = torch.optim.Adam(self.policy.critic_parameters(), lr=critic_lr)
+        self.gamma = gamma
+
         self.states = []
         self.next_states = []
         self.action_log_probs = []
@@ -122,22 +122,15 @@ class Agent(object):
             
             if baseline:
                 discounted_returns -= 20.0
-            
-            # normalization of the returns 
-            discounted_returns = (discounted_returns - discounted_returns.mean()) / (1e-8 + discounted_returns.std())
-            
+                
             # compute policy gradient loss function given actions and returns
             loss = -(action_log_probs * discounted_returns).mean()
-
-            # upd here 
             
             # compute gradients and step the optimizer
             self.actor_optimizer.zero_grad()
             loss.backward()
 
             # future hp upd 
-            # clipping of gradient 
-            torch.nn.utils.clip_grad_norm_(self.policy.actor_parameters(), max_norm=0.5)  
             self.actor_optimizer.step()
             return loss.item(), None
         
@@ -153,9 +146,6 @@ class Agent(object):
             # compute advantage terms
             advantage_terms = td_return_estimates - values  
 
-            advantage_terms = (advantage_terms.detach() - advantage_terms.detach().mean()) / \
-                              (advantage_terms.detach().std() + 1e-8)
-            
             # compute actor loss and critic loss
             actor_loss = -(action_log_probs * advantage_terms.detach()).mean()  
             critic_loss = F.mse_loss(values, td_return_estimates.detach())
@@ -164,13 +154,11 @@ class Agent(object):
             # actor opt. 
             self.actor_optimizer.zero_grad()
             actor_loss.backward()
-            torch.nn.utils.clip_grad_norm_(self.policy.actor_parameters(), max_norm=0.5)
             self.actor_optimizer.step()
 
             # critic opt.
             self.critic_optimizer.zero_grad()
             critic_loss.backward()
-            torch.nn.utils.clip_grad_norm_(self.policy.critic_parameters(), max_norm=0.5)
             self.critic_optimizer.step()
 
 

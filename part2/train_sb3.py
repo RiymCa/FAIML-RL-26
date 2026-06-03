@@ -1,4 +1,5 @@
 import argparse
+
 import gymnasium as gym
 import time
 import os
@@ -32,7 +33,7 @@ from custom_callback import SyncEvalCallback
 # 1 = PPO e SAC both on Source -> Test both on Source e Target
 # 2 = 2 SAC models respectively on Source e Target -> Test both on Source and Target
 # 3 = 2 SAC models on Source, one with UDR and the other one with ADR -> Test both on Source and Target
-CONFIG = 1
+CONFIG = 3
 
 """
     Function for the parsing of the arguments, you can choose any argument you want prior to running with
@@ -58,6 +59,12 @@ def parse_args() -> argparse.Namespace:
         default=50,
         help="Numero di episodi fissi di valutazione"
     )
+    parser.add_argument(
+        "--mass_range",
+        type=tuple,
+        default=(0.5, 2.0),
+        help="Range to try UDR and ADR"
+    )
     return parser.parse_args()
 
 
@@ -65,7 +72,7 @@ def parse_args() -> argparse.Namespace:
     Function for creating the different environments doing env -> randomWrapper -> Monitor needed for the parallel
     processing for optimizing the training of the SAC models.
 """
-def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
+def make_env(env_type: str, sampling_strategy: str, rank: int, mass_range: tuple, seed: int = 42):
     def _init() -> gym.Env:
         env = gym.make(
             "PandaPush-v3",
@@ -77,7 +84,7 @@ def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
         sim = env.unwrapped.task.sim
         object_body_id = sim._bodies_idx["object"]
         mass = sim.physics_client.getDynamicsInfo(object_body_id, -1)[0]
-        wrapped_env = RandomizationWrapper(env, mass, mode=sampling_strategy)
+        wrapped_env = RandomizationWrapper(env, mass, mode=sampling_strategy, mass_range=mass_range)
         return Monitor(wrapped_env)
 
     return _init
@@ -86,7 +93,7 @@ def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
 """
     Function to train either a PPO or SAC model with best hyperparameter tuning found earlier, also frees RAM after end.
 """
-def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: str, timesteps: int, num_cpus: int):
+def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: str, timesteps: int, num_cpus: int, mass_range: tuple):
     print(f"Starting training: {model_name}")
     print(f"Domain: {env_type.upper()} | Randomization: {sampling_strategy.upper()}")
 
@@ -103,10 +110,10 @@ def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: s
     os.makedirs(dir_model, exist_ok=True)
     eval_freq = max(20_000 // num_cpus, 1)
 
-    env = SubprocVecEnv([make_env(env_type, sampling_strategy, i) for i in range(num_cpus)])
+    env = SubprocVecEnv([make_env(env_type, sampling_strategy, i, mass_range) for i in range(num_cpus)])
     env = VecNormalize(env, norm_obs=True, norm_reward=True, clip_obs=10.)
 
-    eval_env = DummyVecEnv([make_env(env_type, "none", 0)])
+    eval_env = DummyVecEnv([make_env(env_type, "none", 0, mass_range)])
     eval_env = VecNormalize(eval_env, norm_obs=True, norm_reward=False, clip_obs=10.0)
     eval_env.training = False
 
@@ -139,8 +146,6 @@ def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: s
             env,
             device="auto",
             seed=42,
-            learning_rate=3e-4,
-            buffer_size=1000000,
             policy_kwargs=dict(net_arch=[256, 256, 256]),
             gradient_steps=num_cpus,
             verbose=0
@@ -178,8 +183,8 @@ def main() -> None:
         # -----------------------------
         print("Task 4: PPO vs SAC trained on Source and tested on Source and Target")
 
-        path_ppo, stats_ppo = train_agent("PPO_Source", PPO, "source", "none", args.timesteps*20, args.num_cpus)
-        path_sac, stats_sac = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus)
+        path_ppo, stats_ppo = train_agent("PPO_Source", PPO, "source", "none", args.timesteps*20, args.num_cpus, args.mass_range)
+        path_sac, stats_sac = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus, args.mass_range)
 
         print(f"\nEvaluation results with {args.eval_episodes} episodes")
 
@@ -205,8 +210,8 @@ def main() -> None:
         # -----------------------------------------------------------
         print("Task 5: SAC on Source vs SAC on Target")
 
-        path_sac_source, stats_sac_source = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus)
-        path_sac_target, stats_sac_target = train_agent("SAC_Target", SAC, "target", "none", args.timesteps, args.num_cpus)
+        path_sac_source, stats_sac_source = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus, args.mass_range)
+        path_sac_target, stats_sac_target = train_agent("SAC_Target", SAC, "target", "none", args.timesteps, args.num_cpus, args.mass_range)
 
         print(f"\nEvaluation results with {args.eval_episodes} episodes")
 
@@ -227,10 +232,11 @@ def main() -> None:
         # -------------------------------------------------------
         # SAC with UDR vs SAC with ADR on both Source and Target
         # -------------------------------------------------------
+
         print("SAC with UDR vs SAC with ADR on both Source and Target")
 
-        path_udr, stats_udr = train_agent("SAC_UDR_Source", SAC, "source", "udr", args.timesteps, args.num_cpus)
-        path_adr, stats_adr = train_agent("SAC_ADR_Source", SAC, "source", "adr", args.timesteps, args.num_cpus)
+        path_udr, stats_udr = train_agent("SAC_UDR_Source", SAC, "source", "udr", args.timesteps, args.num_cpus, args.mass_range)
+        path_adr, stats_adr = train_agent("SAC_ADR_Source", SAC, "source", "adr", args.timesteps, args.num_cpus, args.mass_range)
 
         print(f"\nEvaluation results with {args.eval_episodes} episodes")
 

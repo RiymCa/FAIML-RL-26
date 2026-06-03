@@ -10,7 +10,7 @@ class RandomizationWrapper(gym.Wrapper):
             self,
             env,
             mass_init,
-            mass_range=(0.1, 10.0),
+            mass_range=(0.5, 2.0),
             mode="none",  # "none", "udr", o "adr"
             env_type="source", # "source" o "target"
             p_b=0.5,  # Probabilità di campionare ai bordi (ADR)
@@ -22,6 +22,7 @@ class RandomizationWrapper(gym.Wrapper):
     ):
         super().__init__(env)
 
+        self.reset_count = 0
         self.verbose = verbose
         self.mode = "none" if mode not in ["udr", "adr", "none"] else mode
         self.env_type = "source" if env_type not in ["source", "target"] else env_type
@@ -128,7 +129,9 @@ class RandomizationWrapper(gym.Wrapper):
             mass=float(new_mass),
         )
 
-        if self.verbose:
+        self.reset_count += 1
+
+        if self.verbose and self.reset_count % 100 == 0:
             width = self.current_mass_max - self.current_mass_min
             print(
                 f"[{self.mode}] mass={new_mass:.2f} | "

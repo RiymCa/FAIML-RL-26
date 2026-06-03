@@ -1,0 +1,1193 @@
+Starting SAC UDR Model A training, Range: (0.5, 2.0) for 500000 steps on 8 CPUs.
+
+[udr] mass=1.16 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.56 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.60 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.90 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.18 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.28 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.33 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.66 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.90 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.16 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.77 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.67 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.64 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.31 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.21 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.73 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.72 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.74 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.54 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.46 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.40 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.93 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.69 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.11 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.25 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.31 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.22 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.71 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.80 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.65 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.63 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.43 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.39 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.46 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.11 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.43 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.20 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.57 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.40 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.38 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.12 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.50 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.17 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.35 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.24 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.86 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.21 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.97 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.16 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.06 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.06 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.22 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.71 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.31 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.98 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.45 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.83 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.13 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.91 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.10 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.85 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.16 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.33 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.16 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.59 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.63 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.71 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.76 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.79 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.14 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=2.00 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.81 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.93 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.89 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.21 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.96 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.69 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.52 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=0.73 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.38 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.41 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.78 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.31 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.95 | range=[0.50, 2.00] | type=uniform       | width=1.50
+[udr] mass=1.30 | range=[0.50, 2.00] | type=uniform       | width=1.50
+
+Eval num_timesteps=20000, episode_reward=-3.66 +/- 2.60
+Episode length: 37.00 +/- 20.49
+Success rate: 30.00%
+New best mean reward!
+Eval num_timesteps=40000, episode_reward=-4.27 +/- 5.78
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+Eval num_timesteps=60000, episode_reward=-3.48 +/- 1.98
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+New best mean reward!
+Eval num_timesteps=80000, episode_reward=-2.15 +/- 1.99
+Episode length: 26.10 +/- 22.02
+Success rate: 55.00%
+New best mean reward!
+Eval num_timesteps=100000, episode_reward=-1.48 +/- 2.34
+Episode length: 14.50 +/- 15.79
+Success rate: 85.00%
+New best mean reward!
+Eval num_timesteps=120000, episode_reward=-0.61 +/- 0.57
+Episode length: 7.90 +/- 6.16
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=140000, episode_reward=-0.58 +/- 0.49
+Episode length: 7.35 +/- 5.01
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=160000, episode_reward=-0.66 +/- 0.47
+Episode length: 8.05 +/- 4.39
+Success rate: 100.00%
+Eval num_timesteps=180000, episode_reward=-0.55 +/- 0.50
+Episode length: 6.65 +/- 5.16
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=200000, episode_reward=-0.52 +/- 0.51
+Episode length: 6.50 +/- 5.53
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=220000, episode_reward=-0.43 +/- 0.31
+Episode length: 5.75 +/- 3.10
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=240000, episode_reward=-0.39 +/- 0.29
+Episode length: 5.10 +/- 2.77
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=260000, episode_reward=-0.45 +/- 0.23
+Episode length: 5.85 +/- 2.39
+Success rate: 100.00%
+Eval num_timesteps=280000, episode_reward=-0.74 +/- 1.21
+Episode length: 8.20 +/- 10.01
+Success rate: 95.00%
+Eval num_timesteps=300000, episode_reward=-0.44 +/- 0.36
+Episode length: 5.45 +/- 3.26
+Success rate: 100.00%
+Eval num_timesteps=320000, episode_reward=-0.44 +/- 0.20
+Episode length: 5.95 +/- 2.01
+Success rate: 100.00%
+Eval num_timesteps=340000, episode_reward=-0.50 +/- 0.27
+Episode length: 6.25 +/- 2.36
+Success rate: 100.00%
+Eval num_timesteps=360000, episode_reward=-0.55 +/- 0.35
+Episode length: 6.60 +/- 3.18
+Success rate: 100.00%
+Eval num_timesteps=380000, episode_reward=-0.43 +/- 0.22
+Episode length: 5.75 +/- 2.02
+Success rate: 100.00%
+Eval num_timesteps=400000, episode_reward=-0.36 +/- 0.41
+Episode length: 5.30 +/- 5.58
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=420000, episode_reward=-0.44 +/- 0.23
+Episode length: 5.85 +/- 2.20
+Success rate: 100.00%
+Eval num_timesteps=440000, episode_reward=-0.31 +/- 0.19
+Episode length: 4.55 +/- 2.18
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=460000, episode_reward=-0.47 +/- 0.25
+Episode length: 5.95 +/- 2.38
+Success rate: 100.00%
+Eval num_timesteps=480000, episode_reward=-0.47 +/- 0.33
+Episode length: 5.80 +/- 3.19
+Success rate: 100.00%
+Eval num_timesteps=500000, episode_reward=-0.30 +/- 0.20
+Episode length: 4.65 +/- 2.63
+Success rate: 100.00%
+New best mean reward!
+
+Time spent model A: 1:15:39.28
+
+
+Starting SAC UDR Model B training, Range: (0.5, 6.0) for 500000 steps on 8 CPUs.
+
+[udr] mass=4.19 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.87 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.19 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.52 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.67 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=0.74 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.70 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.16 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.56 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.63 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.35 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.84 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.38 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.58 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.32 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.40 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.86 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.74 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.28 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.48 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=0.67 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.27 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.36 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.49 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.67 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.97 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.75 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.29 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.48 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.37 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.05 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.96 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.63 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.65 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=0.92 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.67 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.25 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.54 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.36 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.03 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=6.00 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.82 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.78 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.65 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.49 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.73 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.73 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.81 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.63 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.87 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.91 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.07 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.04 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.45 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.37 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.99 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.62 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=0.86 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.56 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.20 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.88 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.23 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.38 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=0.91 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.17 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=0.50 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.71 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=0.88 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.06 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.11 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.57 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.30 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.96 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=4.73 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=0.67 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.09 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=2.38 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=0.87 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.37 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.72 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.29 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=3.72 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=1.97 | range=[0.50, 6.00] | type=uniform       | width=5.50
+[udr] mass=5.93 | range=[0.50, 6.00] | type=uniform       | width=5.50
+
+Eval num_timesteps=20000, episode_reward=-3.16 +/- 2.02
+Episode length: 37.75 +/- 21.22
+Success rate: 25.00%
+New best mean reward!
+Eval num_timesteps=40000, episode_reward=-2.79 +/- 2.02
+Episode length: 35.30 +/- 22.45
+Success rate: 30.00%
+New best mean reward!
+Eval num_timesteps=60000, episode_reward=-3.66 +/- 2.26
+Episode length: 38.10 +/- 20.66
+Success rate: 25.00%
+Eval num_timesteps=80000, episode_reward=-4.02 +/- 4.49
+Episode length: 29.30 +/- 23.06
+Success rate: 45.00%
+Eval num_timesteps=100000, episode_reward=-1.53 +/- 1.52
+Episode length: 19.60 +/- 16.81
+Success rate: 80.00%
+New best mean reward!
+Eval num_timesteps=120000, episode_reward=-0.77 +/- 0.79
+Episode length: 10.00 +/- 10.21
+Success rate: 95.00%
+New best mean reward!
+Eval num_timesteps=140000, episode_reward=-0.86 +/- 0.93
+Episode length: 10.45 +/- 9.37
+Success rate: 95.00%
+Eval num_timesteps=160000, episode_reward=-0.76 +/- 0.95
+Episode length: 9.50 +/- 9.74
+Success rate: 95.00%
+New best mean reward!
+Eval num_timesteps=180000, episode_reward=-0.70 +/- 0.73
+Episode length: 9.30 +/- 10.13
+Success rate: 95.00%
+New best mean reward!
+Eval num_timesteps=200000, episode_reward=-0.52 +/- 0.34
+Episode length: 6.75 +/- 3.37
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=220000, episode_reward=-0.57 +/- 0.27
+Episode length: 7.20 +/- 2.54
+Success rate: 100.00%
+Eval num_timesteps=240000, episode_reward=-0.38 +/- 0.29
+Episode length: 5.10 +/- 3.22
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=260000, episode_reward=-0.46 +/- 0.35
+Episode length: 6.15 +/- 3.44
+Success rate: 100.00%
+Eval num_timesteps=280000, episode_reward=-0.34 +/- 0.23
+Episode length: 5.00 +/- 2.59
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=300000, episode_reward=-0.48 +/- 0.32
+Episode length: 6.05 +/- 3.12
+Success rate: 100.00%
+Eval num_timesteps=320000, episode_reward=-0.54 +/- 0.59
+Episode length: 6.60 +/- 5.72
+Success rate: 100.00%
+Eval num_timesteps=340000, episode_reward=-0.86 +/- 1.83
+Episode length: 7.90 +/- 10.08
+Success rate: 95.00%
+Eval num_timesteps=360000, episode_reward=-0.34 +/- 0.27
+Episode length: 4.70 +/- 2.85
+Success rate: 100.00%
+Eval num_timesteps=380000, episode_reward=-0.38 +/- 0.28
+Episode length: 5.10 +/- 2.74
+Success rate: 100.00%
+Eval num_timesteps=400000, episode_reward=-0.56 +/- 0.28
+Episode length: 6.65 +/- 2.37
+Success rate: 100.00%
+Eval num_timesteps=420000, episode_reward=-0.50 +/- 0.33
+Episode length: 6.45 +/- 3.69
+Success rate: 100.00%
+Eval num_timesteps=440000, episode_reward=-0.45 +/- 0.25
+Episode length: 5.95 +/- 2.22
+Success rate: 100.00%
+Eval num_timesteps=460000, episode_reward=-0.51 +/- 0.42
+Episode length: 7.05 +/- 5.37
+Success rate: 100.00%
+Eval num_timesteps=480000, episode_reward=-0.50 +/- 0.67
+Episode length: 6.20 +/- 5.46
+Success rate: 100.00%
+Eval num_timesteps=500000, episode_reward=-0.41 +/- 0.34
+Episode length: 5.25 +/- 2.95
+Success rate: 100.00%
+
+Time spent model B: 1:16:28.84
+
+
+Starting SAC UDR Model C training, Range: (0.1, 10.0) for 500000 steps on 8 CPUs.
+
+[udr] mass=4.48 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=7.11 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=7.37 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=8.34 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=2.72 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=5.25 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=5.60 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=7.73 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=9.32 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.44 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=1.89 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=7.81 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=3.61 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=7.60 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=5.47 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.80 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=8.21 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=8.16 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=1.67 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=6.96 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=6.04 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=9.53 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=7.98 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.15 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=5.04 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=5.46 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.86 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=8.07 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=8.70 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=7.60 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=1.07 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=0.98 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=6.21 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=5.96 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=6.40 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.15 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=6.26 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.72 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=7.17 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=6.06 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=5.94 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=6.70 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.53 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=5.72 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.96 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=9.08 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.80 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=3.22 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=6.84 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.46 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=3.77 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=3.80 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.88 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=1.50 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=5.42 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=3.25 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=6.37 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=8.86 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.26 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=2.78 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.08 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=3.04 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=2.43 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.44 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=4.49 | range=[0.10, 10.00] | type=uniform       | width=9.90
+[udr] mass=7.27 | range=[0.10, 10.00] | type=uniform       | width=9.90
+
+Eval num_timesteps=20000, episode_reward=-3.58 +/- 1.79
+Episode length: 42.65 +/- 17.50
+Success rate: 15.00%
+New best mean reward!
+Eval num_timesteps=40000, episode_reward=-4.19 +/- 1.53
+Episode length: 45.10 +/- 14.70
+Success rate: 10.00%
+Eval num_timesteps=60000, episode_reward=-4.43 +/- 3.15
+Episode length: 45.10 +/- 14.70
+Success rate: 10.00%
+Eval num_timesteps=80000, episode_reward=-3.26 +/- 2.15
+Episode length: 36.60 +/- 20.65
+Success rate: 30.00%
+New best mean reward!
+Eval num_timesteps=100000, episode_reward=-1.70 +/- 1.76
+Episode length: 22.10 +/- 21.25
+Success rate: 65.00%
+New best mean reward!
+Eval num_timesteps=120000, episode_reward=-1.95 +/- 2.60
+Episode length: 18.95 +/- 20.73
+Success rate: 70.00%
+Eval num_timesteps=140000, episode_reward=-1.08 +/- 1.11
+Episode length: 15.05 +/- 15.15
+Success rate: 85.00%
+New best mean reward!
+Eval num_timesteps=160000, episode_reward=-0.75 +/- 0.74
+Episode length: 10.05 +/- 10.24
+Success rate: 95.00%
+New best mean reward!
+Eval num_timesteps=180000, episode_reward=-1.11 +/- 2.30
+Episode length: 9.95 +/- 10.71
+Success rate: 95.00%
+Eval num_timesteps=200000, episode_reward=-0.66 +/- 0.45
+Episode length: 8.60 +/- 4.36
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=220000, episode_reward=-0.76 +/- 1.00
+Episode length: 9.30 +/- 10.67
+Success rate: 95.00%
+Eval num_timesteps=240000, episode_reward=-0.47 +/- 0.38
+Episode length: 6.35 +/- 3.99
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=260000, episode_reward=-0.55 +/- 0.31
+Episode length: 7.10 +/- 3.24
+Success rate: 100.00%
+Eval num_timesteps=280000, episode_reward=-0.53 +/- 0.46
+Episode length: 6.95 +/- 4.76
+Success rate: 100.00%
+Eval num_timesteps=300000, episode_reward=-0.52 +/- 0.27
+Episode length: 6.60 +/- 2.71
+Success rate: 100.00%
+Eval num_timesteps=320000, episode_reward=-0.37 +/- 0.24
+Episode length: 5.25 +/- 2.62
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=340000, episode_reward=-0.60 +/- 0.66
+Episode length: 8.05 +/- 10.08
+Success rate: 95.00%
+Eval num_timesteps=360000, episode_reward=-0.47 +/- 0.31
+Episode length: 6.05 +/- 3.15
+Success rate: 100.00%
+Eval num_timesteps=380000, episode_reward=-0.48 +/- 0.21
+Episode length: 6.40 +/- 1.74
+Success rate: 100.00%
+Eval num_timesteps=400000, episode_reward=-0.47 +/- 0.19
+Episode length: 6.20 +/- 1.66
+Success rate: 100.00%
+Eval num_timesteps=420000, episode_reward=-1.28 +/- 1.65
+Episode length: 14.90 +/- 17.70
+Success rate: 80.00%
+Eval num_timesteps=440000, episode_reward=-0.44 +/- 0.25
+Episode length: 5.95 +/- 2.50
+Success rate: 100.00%
+Eval num_timesteps=460000, episode_reward=-0.44 +/- 0.28
+Episode length: 5.85 +/- 2.78
+Success rate: 100.00%
+Eval num_timesteps=480000, episode_reward=-0.65 +/- 0.35
+Episode length: 7.45 +/- 2.96
+Success rate: 100.00%
+Eval num_timesteps=500000, episode_reward=-0.36 +/- 0.34
+Episode length: 4.70 +/- 3.52
+Success rate: 100.00%
+New best mean reward!
+
+Time spent model C: 1:42:48.76
+
+Total time spent: 4:14:56.88
+
+
+Evaluating SAC UDR model A Range (0.5, 2.0)
+
+Test on SOURCE
+Created object with mass: 1.0
+
+Episode 001 | return = -0.523
+Episode 002 | return = -0.536
+Episode 003 | return = -0.016
+Episode 004 | return = -0.583
+Episode 005 | return = -0.254
+Episode 006 | return = -0.030
+Episode 007 | return = -0.033
+Episode 008 | return = -0.457
+Episode 009 | return = -0.482
+Episode 010 | return = -0.028
+Episode 011 | return = -0.567
+Episode 012 | return = -0.273
+Episode 013 | return = -0.571
+Episode 014 | return = -0.633
+Episode 015 | return = -0.037
+Episode 016 | return = -0.414
+Episode 017 | return = -0.305
+Episode 018 | return = -0.573
+Episode 019 | return = -0.277
+Episode 020 | return = -0.199
+Episode 021 | return = -0.525
+Episode 022 | return = -0.404
+Episode 023 | return = -0.467
+Episode 024 | return = -0.491
+Episode 025 | return = -0.337
+Episode 026 | return = -0.320
+Episode 027 | return = -0.017
+Episode 028 | return = -0.251
+Episode 029 | return = -0.050
+Episode 030 | return = -0.739
+Episode 031 | return = -0.039
+Episode 032 | return = -0.355
+Episode 033 | return = -0.539
+Episode 034 | return = -0.876
+Episode 035 | return = -0.224
+Episode 036 | return = -0.386
+Episode 037 | return = -0.600
+Episode 038 | return = -0.632
+Episode 039 | return = -0.258
+Episode 040 | return = -0.980
+Episode 041 | return = -0.563
+Episode 042 | return = -0.470
+Episode 043 | return = -0.778
+Episode 044 | return = -0.314
+Episode 045 | return = -0.251
+Episode 046 | return = -0.380
+Episode 047 | return = -0.217
+Episode 048 | return = -0.044
+Episode 049 | return = -0.463
+Episode 050 | return = -0.393
+Episode 051 | return = -0.460
+Episode 052 | return = -0.360
+Episode 053 | return = -0.413
+Episode 054 | return = -0.234
+Episode 055 | return = -0.037
+Episode 056 | return = -0.846
+Episode 057 | return = -0.013
+Episode 058 | return = -0.306
+Episode 059 | return = -0.449
+Episode 060 | return = -0.378
+Episode 061 | return = -0.309
+Episode 062 | return = -0.346
+Episode 063 | return = -0.577
+Episode 064 | return = -0.815
+Episode 065 | return = -0.030
+Episode 066 | return = -0.346
+Episode 067 | return = -0.323
+Episode 068 | return = -0.390
+Episode 069 | return = -0.662
+Episode 070 | return = -0.542
+Episode 071 | return = -0.780
+Episode 072 | return = -0.385
+Episode 073 | return = -0.045
+Episode 074 | return = -0.510
+Episode 075 | return = -0.526
+Episode 076 | return = -1.034
+Episode 077 | return = -0.731
+Episode 078 | return = -0.574
+Episode 079 | return = -0.048
+Episode 080 | return = -0.465
+Episode 081 | return = -0.501
+Episode 082 | return = -0.361
+Episode 083 | return = -0.313
+Episode 084 | return = -0.894
+Episode 085 | return = -0.805
+Episode 086 | return = -0.032
+Episode 087 | return = -0.254
+Episode 088 | return = -0.416
+Episode 089 | return = -0.036
+Episode 090 | return = -0.542
+Episode 091 | return = -0.440
+Episode 092 | return = -0.432
+Episode 093 | return = -0.045
+Episode 094 | return = -0.795
+Episode 095 | return = -0.426
+Episode 096 | return = -0.253
+Episode 097 | return = -0.023
+Episode 098 | return = -0.041
+Episode 099 | return = -0.732
+Episode 100 | return = -0.879
+
+=== Evaluation summary ===
+Episodes: 100
+Mean return: -0.403
+Std return:  0.251
+Min return:  -1.034
+Max return:  -0.013
+Success rate: 100.00%
+
+Test on TARGET
+Created object with mass: 5.0
+
+Episode 001 | return = -0.597
+Episode 002 | return = -0.555
+Episode 003 | return = -0.016
+Episode 004 | return = -0.741
+Episode 005 | return = -0.315
+Episode 006 | return = -0.030
+Episode 007 | return = -0.033
+Episode 008 | return = -0.682
+Episode 009 | return = -0.550
+Episode 010 | return = -0.028
+Episode 011 | return = -0.961
+Episode 012 | return = -0.317
+Episode 013 | return = -0.665
+Episode 014 | return = -0.709
+Episode 015 | return = -0.037
+Episode 016 | return = -0.455
+Episode 017 | return = -0.318
+Episode 018 | return = -0.621
+Episode 019 | return = -0.288
+Episode 020 | return = -0.209
+Episode 021 | return = -0.719
+Episode 022 | return = -0.451
+Episode 023 | return = -0.549
+Episode 024 | return = -0.553
+Episode 025 | return = -0.397
+Episode 026 | return = -0.365
+Episode 027 | return = -0.017
+Episode 028 | return = -0.253
+Episode 029 | return = -0.050
+Episode 030 | return = -1.155
+Episode 031 | return = -0.039
+Episode 032 | return = -0.390
+Episode 033 | return = -0.617
+Episode 034 | return = -0.871
+Episode 035 | return = -0.328
+Episode 036 | return = -0.448
+Episode 037 | return = -0.759
+Episode 038 | return = -0.712
+Episode 039 | return = -0.275
+Episode 040 | return = -0.822
+Episode 041 | return = -0.608
+Episode 042 | return = -0.540
+Episode 043 | return = -1.100
+Episode 044 | return = -0.351
+Episode 045 | return = -0.269
+Episode 046 | return = -0.457
+Episode 047 | return = -0.261
+Episode 048 | return = -0.044
+Episode 049 | return = -0.532
+Episode 050 | return = -0.463
+Episode 051 | return = -0.505
+Episode 052 | return = -0.413
+Episode 053 | return = -0.442
+Episode 054 | return = -0.280
+Episode 055 | return = -0.037
+Episode 056 | return = -0.852
+Episode 057 | return = -0.013
+Episode 058 | return = -0.323
+Episode 059 | return = -0.481
+Episode 060 | return = -0.391
+Episode 061 | return = -0.350
+Episode 062 | return = -0.452
+Episode 063 | return = -0.797
+Episode 064 | return = -2.008
+Episode 065 | return = -0.030
+Episode 066 | return = -0.386
+Episode 067 | return = -0.367
+Episode 068 | return = -0.434
+Episode 069 | return = -0.680
+Episode 070 | return = -0.617
+Episode 071 | return = -0.917
+Episode 072 | return = -0.438
+Episode 073 | return = -0.045
+Episode 074 | return = -0.602
+Episode 075 | return = -1.210
+Episode 076 | return = -1.357
+Episode 077 | return = -0.690
+Episode 078 | return = -0.663
+Episode 079 | return = -0.048
+Episode 080 | return = -0.550
+Episode 081 | return = -0.549
+Episode 082 | return = -0.541
+Episode 083 | return = -0.329
+Episode 084 | return = -0.934
+Episode 085 | return = -0.790
+Episode 086 | return = -0.032
+Episode 087 | return = -0.270
+Episode 088 | return = -0.451
+Episode 089 | return = -0.036
+Episode 090 | return = -0.625
+Episode 091 | return = -0.489
+Episode 092 | return = -0.480
+Episode 093 | return = -0.045
+Episode 094 | return = -0.973
+Episode 095 | return = -0.450
+Episode 096 | return = -0.271
+Episode 097 | return = -0.023
+Episode 098 | return = -0.041
+Episode 099 | return = -0.884
+Episode 100 | return = -1.023
+
+=== Evaluation summary ===
+Episodes: 100
+Mean return: -0.481
+Std return:  0.340
+Min return:  -2.008
+Max return:  -0.013
+Success rate: 100.00%
+
+
+Evaluating SAC UDR model B Range (0.5, 6.0)
+
+Test on SOURCE
+Created object with mass: 1.0
+
+Episode 001 | return = -0.594
+Episode 002 | return = -0.626
+Episode 003 | return = -0.016
+Episode 004 | return = -0.925
+Episode 005 | return = -0.487
+Episode 006 | return = -0.030
+Episode 007 | return = -0.033
+Episode 008 | return = -0.529
+Episode 009 | return = -0.551
+Episode 010 | return = -0.028
+Episode 011 | return = -0.837
+Episode 012 | return = -0.263
+Episode 013 | return = -0.600
+Episode 014 | return = -0.782
+Episode 015 | return = -0.037
+Episode 016 | return = -0.455
+Episode 017 | return = -0.310
+Episode 018 | return = -0.586
+Episode 019 | return = -0.256
+Episode 020 | return = -0.245
+Episode 021 | return = -0.657
+Episode 022 | return = -0.398
+Episode 023 | return = -0.654
+Episode 024 | return = -0.488
+Episode 025 | return = -0.382
+Episode 026 | return = -0.322
+Episode 027 | return = -0.017
+Episode 028 | return = -0.236
+Episode 029 | return = -0.050
+Episode 030 | return = -1.671
+Episode 031 | return = -0.039
+Episode 032 | return = -0.345
+Episode 033 | return = -0.531
+Episode 034 | return = -0.767
+Episode 035 | return = -0.247
+Episode 036 | return = -0.487
+Episode 037 | return = -0.958
+Episode 038 | return = -0.726
+Episode 039 | return = -0.279
+Episode 040 | return = -1.293
+Episode 041 | return = -0.550
+Episode 042 | return = -0.528
+Episode 043 | return = -0.705
+Episode 044 | return = -0.322
+Episode 045 | return = -0.265
+Episode 046 | return = -0.387
+Episode 047 | return = -0.253
+Episode 048 | return = -0.044
+Episode 049 | return = -0.613
+Episode 050 | return = -0.473
+Episode 051 | return = -0.439
+Episode 052 | return = -0.397
+Episode 053 | return = -0.447
+Episode 054 | return = -0.415
+Episode 055 | return = -0.037
+Episode 056 | return = -0.830
+Episode 057 | return = -0.013
+Episode 058 | return = -0.313
+Episode 059 | return = -0.485
+Episode 060 | return = -0.388
+Episode 061 | return = -0.340
+Episode 062 | return = -0.473
+Episode 063 | return = -0.634
+Episode 064 | return = -1.011
+Episode 065 | return = -0.030
+Episode 066 | return = -0.349
+Episode 067 | return = -0.315
+Episode 068 | return = -0.385
+Episode 069 | return = -0.610
+Episode 070 | return = -0.706
+Episode 071 | return = -0.889
+Episode 072 | return = -0.454
+Episode 073 | return = -0.045
+Episode 074 | return = -0.613
+Episode 075 | return = -0.615
+Episode 076 | return = -1.009
+Episode 077 | return = -0.746
+Episode 078 | return = -1.837
+Episode 079 | return = -0.048
+Episode 080 | return = -0.558
+Episode 081 | return = -0.657
+Episode 082 | return = -0.507
+Episode 083 | return = -0.303
+Episode 084 | return = -4.387
+Episode 085 | return = -0.846
+Episode 086 | return = -0.032
+Episode 087 | return = -0.281
+Episode 088 | return = -0.443
+Episode 089 | return = -0.036
+Episode 090 | return = -0.653
+Episode 091 | return = -0.428
+Episode 092 | return = -0.422
+Episode 093 | return = -0.045
+Episode 094 | return = -0.796
+Episode 095 | return = -0.443
+Episode 096 | return = -0.268
+Episode 097 | return = -0.023
+Episode 098 | return = -0.041
+Episode 099 | return = -0.768
+Episode 100 | return = -3.447
+
+=== Evaluation summary ===
+Episodes: 100
+Mean return: -0.531
+Std return:  0.589
+Min return:  -4.387
+Max return:  -0.013
+Success rate: 98.00%
+
+Test on TARGET
+Created object with mass: 5.0
+
+Episode 001 | return = -0.603
+Episode 002 | return = -0.656
+Episode 003 | return = -0.016
+Episode 004 | return = -0.869
+Episode 005 | return = -0.498
+Episode 006 | return = -0.030
+Episode 007 | return = -0.033
+Episode 008 | return = -0.524
+Episode 009 | return = -0.514
+Episode 010 | return = -0.027
+Episode 011 | return = -0.879
+Episode 012 | return = -0.270
+Episode 013 | return = -0.665
+Episode 014 | return = -0.751
+Episode 015 | return = -0.037
+Episode 016 | return = -0.510
+Episode 017 | return = -0.359
+Episode 018 | return = -0.730
+Episode 019 | return = -0.279
+Episode 020 | return = -0.257
+Episode 021 | return = -0.697
+Episode 022 | return = -0.432
+Episode 023 | return = -0.671
+Episode 024 | return = -0.533
+Episode 025 | return = -0.417
+Episode 026 | return = -0.371
+Episode 027 | return = -0.017
+Episode 028 | return = -0.243
+Episode 029 | return = -0.050
+Episode 030 | return = -0.965
+Episode 031 | return = -0.039
+Episode 032 | return = -0.365
+Episode 033 | return = -0.561
+Episode 034 | return = -0.837
+Episode 035 | return = -0.260
+Episode 036 | return = -0.535
+Episode 037 | return = -0.906
+Episode 038 | return = -0.755
+Episode 039 | return = -0.317
+Episode 040 | return = -0.864
+Episode 041 | return = -0.591
+Episode 042 | return = -0.562
+Episode 043 | return = -0.745
+Episode 044 | return = -0.375
+Episode 045 | return = -0.280
+Episode 046 | return = -0.398
+Episode 047 | return = -0.268
+Episode 048 | return = -0.044
+Episode 049 | return = -0.668
+Episode 050 | return = -0.516
+Episode 051 | return = -0.482
+Episode 052 | return = -0.418
+Episode 053 | return = -0.483
+Episode 054 | return = -0.464
+Episode 055 | return = -0.037
+Episode 056 | return = -0.844
+Episode 057 | return = -0.013
+Episode 058 | return = -0.320
+Episode 059 | return = -0.492
+Episode 060 | return = -0.398
+Episode 061 | return = -0.365
+Episode 062 | return = -0.431
+Episode 063 | return = -0.670
+Episode 064 | return = -1.000
+Episode 065 | return = -0.030
+Episode 066 | return = -0.367
+Episode 067 | return = -0.365
+Episode 068 | return = -0.417
+Episode 069 | return = -0.748
+Episode 070 | return = -0.790
+Episode 071 | return = -0.956
+Episode 072 | return = -0.515
+Episode 073 | return = -0.045
+Episode 074 | return = -0.701
+Episode 075 | return = -0.668
+Episode 076 | return = -1.285
+Episode 077 | return = -0.613
+Episode 078 | return = -1.395
+Episode 079 | return = -0.048
+Episode 080 | return = -0.548
+Episode 081 | return = -0.668
+Episode 082 | return = -0.478
+Episode 083 | return = -0.323
+Episode 084 | return = -4.101
+Episode 085 | return = -0.901
+Episode 086 | return = -0.032
+Episode 087 | return = -0.322
+Episode 088 | return = -0.493
+Episode 089 | return = -0.036
+Episode 090 | return = -0.659
+Episode 091 | return = -0.470
+Episode 092 | return = -0.468
+Episode 093 | return = -0.045
+Episode 094 | return = -0.940
+Episode 095 | return = -0.455
+Episode 096 | return = -0.283
+Episode 097 | return = -0.023
+Episode 098 | return = -0.041
+Episode 099 | return = -0.774
+Episode 100 | return = -1.137
+
+=== Evaluation summary ===
+Episodes: 100
+Mean return: -0.514
+Std return:  0.472
+Min return:  -4.101
+Max return:  -0.013
+Success rate: 99.00%
+
+
+Evaluating SAC UDR model C Range (0.1, 10.0)
+
+Test on SOURCE
+Created object with mass: 1.0
+
+Episode 001 | return = -0.576
+Episode 002 | return = -0.617
+Episode 003 | return = -0.016
+Episode 004 | return = -0.716
+Episode 005 | return = -0.391
+Episode 006 | return = -0.030
+Episode 007 | return = -0.033
+Episode 008 | return = -0.542
+Episode 009 | return = -0.563
+Episode 010 | return = -0.028
+Episode 011 | return = -0.746
+Episode 012 | return = -0.260
+Episode 013 | return = -0.621
+Episode 014 | return = -0.715
+Episode 015 | return = -0.037
+Episode 016 | return = -0.510
+Episode 017 | return = -0.377
+Episode 018 | return = -0.582
+Episode 019 | return = -0.286
+Episode 020 | return = -0.299
+Episode 021 | return = -0.596
+Episode 022 | return = -0.461
+Episode 023 | return = -0.584
+Episode 024 | return = -0.491
+Episode 025 | return = -0.350
+Episode 026 | return = -0.378
+Episode 027 | return = -0.017
+Episode 028 | return = -0.285
+Episode 029 | return = -0.050
+Episode 030 | return = -0.810
+Episode 031 | return = -0.039
+Episode 032 | return = -0.363
+Episode 033 | return = -0.530
+Episode 034 | return = -0.804
+Episode 035 | return = -0.247
+Episode 036 | return = -0.522
+Episode 037 | return = -0.737
+Episode 038 | return = -0.708
+Episode 039 | return = -0.265
+Episode 040 | return = -1.346
+Episode 041 | return = -0.514
+Episode 042 | return = -0.572
+Episode 043 | return = -0.586
+Episode 044 | return = -0.308
+Episode 045 | return = -0.318
+Episode 046 | return = -0.403
+Episode 047 | return = -0.303
+Episode 048 | return = -0.044
+Episode 049 | return = -0.582
+Episode 050 | return = -0.464
+Episode 051 | return = -0.460
+Episode 052 | return = -0.433
+Episode 053 | return = -0.505
+Episode 054 | return = -0.364
+Episode 055 | return = -0.037
+Episode 056 | return = -0.930
+Episode 057 | return = -0.013
+Episode 058 | return = -0.317
+Episode 059 | return = -0.490
+Episode 060 | return = -0.370
+Episode 061 | return = -0.310
+Episode 062 | return = -0.394
+Episode 063 | return = -0.637
+Episode 064 | return = -1.362
+Episode 065 | return = -0.030
+Episode 066 | return = -0.348
+Episode 067 | return = -0.379
+Episode 068 | return = -0.451
+Episode 069 | return = -0.955
+Episode 070 | return = -0.647
+Episode 071 | return = -0.923
+Episode 072 | return = -0.445
+Episode 073 | return = -0.045
+Episode 074 | return = -0.619
+Episode 075 | return = -0.685
+Episode 076 | return = -1.196
+Episode 077 | return = -0.591
+Episode 078 | return = -0.772
+Episode 079 | return = -0.048
+Episode 080 | return = -0.531
+Episode 081 | return = -0.597
+Episode 082 | return = -0.515
+Episode 083 | return = -0.314
+Episode 084 | return = -0.908
+Episode 085 | return = -0.764
+Episode 086 | return = -0.032
+Episode 087 | return = -0.266
+Episode 088 | return = -0.452
+Episode 089 | return = -0.036
+Episode 090 | return = -0.607
+Episode 091 | return = -0.488
+Episode 092 | return = -0.482
+Episode 093 | return = -0.045
+Episode 094 | return = -1.148
+Episode 095 | return = -0.447
+Episode 096 | return = -0.319
+Episode 097 | return = -0.023
+Episode 098 | return = -0.041
+Episode 099 | return = -0.830
+Episode 100 | return = -1.236
+
+=== Evaluation summary ===
+Episodes: 100
+Mean return: -0.465
+Std return:  0.306
+Min return:  -1.362
+Max return:  -0.013
+Success rate: 100.00%
+
+Test on TARGET
+Created object with mass: 5.0
+
+Episode 001 | return = -0.638
+Episode 002 | return = -0.640
+Episode 003 | return = -0.016
+Episode 004 | return = -0.777
+Episode 005 | return = -0.568
+Episode 006 | return = -0.030
+Episode 007 | return = -0.033
+Episode 008 | return = -0.611
+Episode 009 | return = -0.517
+Episode 010 | return = -0.028
+Episode 011 | return = -0.751
+Episode 012 | return = -0.268
+Episode 013 | return = -0.692
+Episode 014 | return = -0.720
+Episode 015 | return = -0.037
+Episode 016 | return = -0.544
+Episode 017 | return = -0.411
+Episode 018 | return = -0.668
+Episode 019 | return = -0.331
+Episode 020 | return = -0.311
+Episode 021 | return = -0.669
+Episode 022 | return = -0.463
+Episode 023 | return = -0.621
+Episode 024 | return = -0.539
+Episode 025 | return = -0.404
+Episode 026 | return = -0.393
+Episode 027 | return = -0.017
+Episode 028 | return = -0.294
+Episode 029 | return = -0.050
+Episode 030 | return = -0.824
+Episode 031 | return = -0.039
+Episode 032 | return = -0.391
+Episode 033 | return = -0.734
+Episode 034 | return = -0.841
+Episode 035 | return = -0.255
+Episode 036 | return = -0.578
+Episode 037 | return = -0.881
+Episode 038 | return = -0.720
+Episode 039 | return = -0.281
+Episode 040 | return = -1.015
+Episode 041 | return = -0.579
+Episode 042 | return = -0.633
+Episode 043 | return = -0.618
+Episode 044 | return = -0.353
+Episode 045 | return = -0.332
+Episode 046 | return = -0.441
+Episode 047 | return = -0.318
+Episode 048 | return = -0.044
+Episode 049 | return = -0.620
+Episode 050 | return = -0.492
+Episode 051 | return = -0.502
+Episode 052 | return = -0.491
+Episode 053 | return = -0.537
+Episode 054 | return = -0.420
+Episode 055 | return = -0.037
+Episode 056 | return = -1.022
+Episode 057 | return = -0.013
+Episode 058 | return = -0.313
+Episode 059 | return = -0.489
+Episode 060 | return = -0.380
+Episode 061 | return = -0.353
+Episode 062 | return = -0.398
+Episode 063 | return = -0.715
+Episode 064 | return = -1.467
+Episode 065 | return = -0.030
+Episode 066 | return = -0.353
+Episode 067 | return = -0.416
+Episode 068 | return = -0.449
+Episode 069 | return = -0.675
+Episode 070 | return = -0.713
+Episode 071 | return = -0.939
+Episode 072 | return = -0.490
+Episode 073 | return = -0.045
+Episode 074 | return = -0.700
+Episode 075 | return = -0.689
+Episode 076 | return = -1.324
+Episode 077 | return = -0.657
+Episode 078 | return = -0.920
+Episode 079 | return = -0.048
+Episode 080 | return = -0.490
+Episode 081 | return = -0.669
+Episode 082 | return = -0.508
+Episode 083 | return = -0.316
+Episode 084 | return = -1.067
+Episode 085 | return = -0.811
+Episode 086 | return = -0.032
+Episode 087 | return = -0.278
+Episode 088 | return = -0.454
+Episode 089 | return = -0.036
+Episode 090 | return = -0.647
+Episode 091 | return = -0.495
+Episode 092 | return = -0.487
+Episode 093 | return = -0.045
+Episode 094 | return = -1.236
+Episode 095 | return = -0.462
+Episode 096 | return = -0.335
+Episode 097 | return = -0.023
+Episode 098 | return = -0.041
+Episode 099 | return = -0.776
+Episode 100 | return = -1.370
+
+=== Evaluation summary ===
+Episodes: 100
+Mean return: -0.492
+Std return:  0.320
+Min return:  -1.467
+Max return:  -0.013
+Success rate: 100.00%

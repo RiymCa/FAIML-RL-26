@@ -84,7 +84,10 @@ def make_env(env_type: str, sampling_strategy: str, rank: int, mass_range: tuple
         sim = env.unwrapped.task.sim
         object_body_id = sim._bodies_idx["object"]
         mass = sim.physics_client.getDynamicsInfo(object_body_id, -1)[0]
-        wrapped_env = RandomizationWrapper(env, mass, mode=sampling_strategy, mass_range=mass_range)
+
+        is_verbose = (rank == 1)
+
+        wrapped_env = RandomizationWrapper(env, mass, mass_range=mass_range, mode=sampling_strategy, verbose=is_verbose)
         return Monitor(wrapped_env)
 
     return _init

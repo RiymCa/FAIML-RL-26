@@ -14,10 +14,10 @@ class RandomizationWrapper(gym.Wrapper):
             mode="none",  # "none", "udr", o "adr"
             env_type="source", # "source" o "target"
             p_b=0.5,  # Probabilità di campionare ai bordi (ADR)
-            buffer_size=10,  # Dimensione della memoria per valutare la difficoltà 30/50
-            high_threshold=0.8,  # Soglia di successo per espandere la difficoltà  0.7
-            low_threshold=0.2,  # Soglia di fallimento per ridurre la difficoltà
-            step_size=0.2,  # Quanto allargare/stringere il range ad ogni step     0.05
+            buffer_size=100,  # Dimensione della memoria per valutare la difficoltà
+            high_threshold=0.9,  # Soglia di successo per espandere la difficoltà
+            low_threshold=0.7,  # Soglia di fallimento per ridurre la difficoltà
+            step_size=0.1,  # Quanto allargare/stringere il range ad ogni step
             verbose=False
     ):
         super().__init__(env)
@@ -131,7 +131,8 @@ class RandomizationWrapper(gym.Wrapper):
 
         self.reset_count += 1
 
-        if self.verbose and self.reset_count % 100 == 0:
+        var_temp = 10 if self.mode == "adr" else 100
+        if self.verbose and self.reset_count % var_temp == 0:
             width = self.current_mass_max - self.current_mass_min
             print(
                 f"[{self.mode}] mass={new_mass:.2f} | "

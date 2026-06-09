@@ -43,7 +43,7 @@ def evaluate(model_path: str, stats_path: str, n_episodes: int, deterministic: b
     env = DummyVecEnv([make_test_env])
     env = VecNormalize.load(stats_path, env)
     env.training = False # So the stats don't change anymore.
-    env.norm_reward = False # So that the outputs gives us unnormalized parameters, but still working with normalized ones.
+    env.norm_reward = False # So that the outputs gives us un normalized parameters, but still working with normalized ones.
 
     model = algo_class.load(model_path)
     episode_returns = []

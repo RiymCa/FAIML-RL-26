@@ -7,16 +7,21 @@ from stable_baselines3.common.vec_env import VecNormalize
 
 """
     This class has the same goal of EvalCallback, saving the model, but it allows us to save also the normalization
-    file, so that the statistics acquired in training can be applied to the testing environment too.
+    file.
+    
+    How it works: 
+        - the model receives the spatial coordinates of the position of the arm, the block and the target spot,
+        then it normalizes them keeping track of mean and std of each one, that both changes during training.
+        - It outputs a choice of distances [dx, dy, dz] not normalized, normal.
+        - After a while it gets evaluated here, if it performs better than the previous one we save the model and the
+        stats. (Note that the stats and the model weights keep changing later in the training, in the testing phase
+        we only take the best performing model with the stats)
     
     The idea behind it is that sometimes during training the models reach an optimum solution, but if it keeps trying
     it might start to explore other actions or overfitting causing it to modify its parameter and loosing accuracy,
     in this way we save the best model and everytime compare it to a new one. 
 """
 class SyncEvalCallback(EvalCallback):
-    """
-        Initialization of parent class, saves current environment.
-    """
     def __init__(self, eval_env, best_model_save_path, vec_env, **kwargs):
         super().__init__(eval_env, best_model_save_path=best_model_save_path, **kwargs)
         self.vec_env = vec_env

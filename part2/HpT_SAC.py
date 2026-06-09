@@ -117,7 +117,7 @@ def make_env(env_type: str, sampling_strategy: str, rank: int, seed: int = 42):
     we can now print some time stats and start to evaluate them to see which is best.
     
     Consistently this file is the exact one of the PPO version, the main difference is that PPO is much faster and
-    less RAM heavy, so i've implemented 'del model_a, env_a, eval_env_a, callback_a' to clean some space after evry
+    less RAM heavy, also i've implemented 'del model_a, env_a, eval_env_a, callback_a' to clean some space after every
     model for the next one, moreover i've added som time print because total time varies between hyperparameters and
     models.
 """
@@ -236,8 +236,6 @@ def main() -> None:
         env_c,
         device="auto",
         seed=42,
-        learning_rate=3e-4,
-        buffer_size=1000000,
         policy_kwargs=dict(net_arch=[256, 256, 256]),
         gradient_steps=args.num_cpus,
         verbose=0

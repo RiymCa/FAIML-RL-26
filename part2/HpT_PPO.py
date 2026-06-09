@@ -1,5 +1,3 @@
-#   DA PROVARE CON 8 CPU AL POSTO DI 16
-
 import argparse
 import gymnasium as gym
 import time
@@ -182,8 +180,6 @@ def main() -> None:
         env_b,
         device="auto",
         seed=42,
-        learning_rate=3e-4,
-        n_steps=2048,
         batch_size=256,
         ent_coef=0.01,
         verbose=0

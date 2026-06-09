@@ -24,11 +24,15 @@ from eval_sb3 import evaluate
 # NOTE: we don't use SubprocVecEnv with 1 sub env because it would be incredibly slow since how it's built,
 # dummyVecEnv does cover this exact role.
 # - VecNormalize is a wrapper for the previous env managers, it keeps track of every observation from our model,
-# scaling them to a normal distribution. Gets data from training and applies it in testing.
+# scaling them to a normal distribution, avoiding a gradient upgrade too big (gradient explosion). Gets data from 
+# training and applies it in testing.
 from stable_baselines3.common.vec_env import SubprocVecEnv, DummyVecEnv, VecNormalize
 
 # SyncEvalCallback is a function that, refer to the file to understand better
 from custom_callback import SyncEvalCallback
+
+# NOTE -> To understand better how and why VecNormalize and SyncEvalCallback are implemented refer to the 
+# custom_callback.py file, where it is explained exactly how it works.
 
 # 1 = PPO e SAC both on Source -> Test both on Source e Target
 # 2 = 2 SAC models respectively on Source e Target -> Test both on Source and Target
@@ -70,7 +74,7 @@ def parse_args() -> argparse.Namespace:
 
 """
     Function for creating the different environments doing env -> randomWrapper -> Monitor needed for the parallel
-    processing for optimizing the training of the SAC models.
+    processing for optimizing the training of the PPO/SAC models.
 """
 def make_env(env_type: str, sampling_strategy: str, rank: int, mass_range: tuple, seed: int = 42):
     def _init() -> gym.Env:
@@ -96,7 +100,8 @@ def make_env(env_type: str, sampling_strategy: str, rank: int, mass_range: tuple
 """
     Function to train either a PPO or SAC model with best hyperparameter tuning found earlier, also frees RAM after end.
 """
-def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: str, timesteps: int, num_cpus: int, mass_range: tuple):
+def train_agent(model_name: str, algo_class, env_type: str, sampling_strategy: str, timesteps: int, num_cpus: int, 
+                mass_range: tuple):
     print(f"Starting training: {model_name}")
     print(f"Domain: {env_type.upper()} | Randomization: {sampling_strategy.upper()}")
 
@@ -186,8 +191,20 @@ def main() -> None:
         # -----------------------------
         print("Task 4: PPO vs SAC trained on Source and tested on Source and Target")
 
-        path_ppo, stats_ppo = train_agent("PPO_Source", PPO, "source", "none", args.timesteps*20, args.num_cpus, args.mass_range)
-        path_sac, stats_sac = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus, args.mass_range)
+        path_ppo, stats_ppo = train_agent("PPO_Source", 
+                                          PPO, 
+                                          "source",
+                                          "none", 
+                                          args.timesteps*20,
+                                          args.num_cpus, 
+                                          args.mass_range)
+        path_sac, stats_sac = train_agent("SAC_Source",
+                                          SAC,
+                                          "source",
+                                          "none", 
+                                          args.timesteps, 
+                                          args.num_cpus,
+                                          args.mass_range)
 
         print(f"\nEvaluation results with {args.eval_episodes} episodes")
 
@@ -213,8 +230,20 @@ def main() -> None:
         # -----------------------------------------------------------
         print("Task 5: SAC on Source vs SAC on Target")
 
-        path_sac_source, stats_sac_source = train_agent("SAC_Source", SAC, "source", "none", args.timesteps, args.num_cpus, args.mass_range)
-        path_sac_target, stats_sac_target = train_agent("SAC_Target", SAC, "target", "none", args.timesteps, args.num_cpus, args.mass_range)
+        path_sac_source, stats_sac_source = train_agent("SAC_Source",
+                                                        SAC, 
+                                                        "source", 
+                                                        "none", 
+                                                        args.timesteps, 
+                                                        args.num_cpus, 
+                                                        args.mass_range)
+        path_sac_target, stats_sac_target = train_agent("SAC_Target", 
+                                                        SAC, 
+                                                        "target", 
+                                                        "none",
+                                                        args.timesteps,
+                                                        args.num_cpus, 
+                                                        args.mass_range)
 
         print(f"\nEvaluation results with {args.eval_episodes} episodes")
 
@@ -238,8 +267,20 @@ def main() -> None:
 
         print("SAC with UDR vs SAC with ADR on both Source and Target")
 
-        path_udr, stats_udr = train_agent("SAC_UDR_Source", SAC, "source", "udr", args.timesteps, args.num_cpus, args.mass_range)
-        path_adr, stats_adr = train_agent("SAC_ADR_Source", SAC, "source", "adr", args.timesteps, args.num_cpus, args.mass_range)
+        path_udr, stats_udr = train_agent("SAC_UDR_Source", 
+                                          SAC,
+                                          "source",
+                                          "udr",
+                                          args.timesteps,
+                                          args.num_cpus,
+                                          args.mass_range)
+        path_adr, stats_adr = train_agent("SAC_ADR_Source",
+                                          SAC, 
+                                          "source",
+                                          "adr",
+                                          args.timesteps,
+                                          args.num_cpus,
+                                          args.mass_range)
 
         print(f"\nEvaluation results with {args.eval_episodes} episodes")
 

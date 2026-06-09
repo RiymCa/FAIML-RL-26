@@ -1,0 +1,371 @@
+Task 5: SAC on Source vs SAC on Target
+
+Starting training: SAC_Source
+Domain: SOURCE | Randomization: NONE
+Created object with mass: 1.0
+
+Eval num_timesteps=20000, episode_reward=-8.21 +/- 8.35
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+New best mean reward!
+Eval num_timesteps=40000, episode_reward=-3.69 +/- 0.72
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+New best mean reward!
+Eval num_timesteps=60000, episode_reward=-4.15 +/- 0.77
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+Eval num_timesteps=80000, episode_reward=-3.16 +/- 1.88
+Episode length: 40.20 +/- 19.60
+Success rate: 20.00%
+New best mean reward!
+Eval num_timesteps=100000, episode_reward=-0.51 +/- 0.65
+Episode length: 6.40 +/- 7.47
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=120000, episode_reward=-1.28 +/- 1.09
+Episode length: 19.00 +/- 15.85
+Success rate: 80.00%
+Eval num_timesteps=140000, episode_reward=-0.87 +/- 0.67
+Episode length: 11.20 +/- 9.11
+Success rate: 100.00%
+Eval num_timesteps=160000, episode_reward=-0.29 +/- 0.34
+Episode length: 3.80 +/- 3.66
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=180000, episode_reward=-0.50 +/- 0.19
+Episode length: 7.20 +/- 1.60
+Success rate: 100.00%
+Eval num_timesteps=200000, episode_reward=-0.69 +/- 0.35
+Episode length: 7.60 +/- 2.42
+Success rate: 100.00%
+Eval num_timesteps=220000, episode_reward=-0.97 +/- 1.15
+Episode length: 14.60 +/- 17.90
+Success rate: 80.00%
+Eval num_timesteps=240000, episode_reward=-0.51 +/- 0.15
+Episode length: 6.40 +/- 1.02
+Success rate: 100.00%
+Eval num_timesteps=260000, episode_reward=-0.55 +/- 0.33
+Episode length: 6.60 +/- 3.38
+Success rate: 100.00%
+Eval num_timesteps=280000, episode_reward=-0.40 +/- 0.38
+Episode length: 5.00 +/- 3.74
+Success rate: 100.00%
+Eval num_timesteps=300000, episode_reward=-0.38 +/- 0.06
+Episode length: 5.60 +/- 0.49
+Success rate: 100.00%
+Eval num_timesteps=320000, episode_reward=-0.39 +/- 0.28
+Episode length: 5.20 +/- 2.71
+Success rate: 100.00%
+Eval num_timesteps=340000, episode_reward=-0.38 +/- 0.21
+Episode length: 5.20 +/- 2.23
+Success rate: 100.00%
+Eval num_timesteps=360000, episode_reward=-0.35 +/- 0.26
+Episode length: 4.40 +/- 2.80
+Success rate: 100.00%
+Eval num_timesteps=380000, episode_reward=-0.53 +/- 0.09
+Episode length: 6.60 +/- 0.49
+Success rate: 100.00%
+Eval num_timesteps=400000, episode_reward=-0.50 +/- 0.14
+Episode length: 6.40 +/- 1.36
+Success rate: 100.00%
+Eval num_timesteps=420000, episode_reward=-0.33 +/- 0.27
+Episode length: 4.40 +/- 2.87
+Success rate: 100.00%
+Eval num_timesteps=440000, episode_reward=-0.19 +/- 0.12
+Episode length: 3.40 +/- 1.96
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=460000, episode_reward=-0.41 +/- 0.20
+Episode length: 5.60 +/- 1.74
+Success rate: 100.00%
+Eval num_timesteps=480000, episode_reward=-0.35 +/- 0.35
+Episode length: 4.40 +/- 3.07
+Success rate: 100.00%
+Eval num_timesteps=500000, episode_reward=-0.30 +/- 0.34
+Episode length: 3.40 +/- 3.01
+Success rate: 100.00%
+
+SAC_Source training completed in 1h 28m.
+
+
+Starting training: SAC_Target
+Domain: TARGET | Randomization: NONE
+Created object with mass: 5.0
+
+Eval num_timesteps=20000, episode_reward=-6.05 +/- 8.22
+Episode length: 30.40 +/- 24.00
+Success rate: 40.00%
+New best mean reward!
+Eval num_timesteps=40000, episode_reward=-4.26 +/- 0.48
+Episode length: 50.00 +/- 0.00
+Success rate: 0.00%
+New best mean reward!
+Eval num_timesteps=60000, episode_reward=-3.68 +/- 1.43
+Episode length: 44.40 +/- 11.20
+Success rate: 20.00%
+New best mean reward!
+Eval num_timesteps=80000, episode_reward=-1.48 +/- 1.89
+Episode length: 15.80 +/- 17.52
+Success rate: 80.00%
+New best mean reward!
+Eval num_timesteps=100000, episode_reward=-1.27 +/- 0.86
+Episode length: 19.20 +/- 15.56
+Success rate: 80.00%
+New best mean reward!
+Eval num_timesteps=120000, episode_reward=-0.50 +/- 0.27
+Episode length: 6.20 +/- 2.93
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=140000, episode_reward=-0.44 +/- 0.33
+Episode length: 6.20 +/- 4.45
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=160000, episode_reward=-0.52 +/- 0.20
+Episode length: 7.20 +/- 1.72
+Success rate: 100.00%
+Eval num_timesteps=180000, episode_reward=-0.50 +/- 0.23
+Episode length: 6.60 +/- 1.62
+Success rate: 100.00%
+Eval num_timesteps=200000, episode_reward=-0.64 +/- 0.23
+Episode length: 7.80 +/- 2.14
+Success rate: 100.00%
+Eval num_timesteps=220000, episode_reward=-0.41 +/- 0.27
+Episode length: 5.60 +/- 2.87
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=240000, episode_reward=-0.41 +/- 0.12
+Episode length: 6.00 +/- 1.10
+Success rate: 100.00%
+Eval num_timesteps=260000, episode_reward=-0.63 +/- 0.28
+Episode length: 7.40 +/- 1.74
+Success rate: 100.00%
+Eval num_timesteps=280000, episode_reward=-0.42 +/- 0.45
+Episode length: 6.60 +/- 6.59
+Success rate: 100.00%
+Eval num_timesteps=300000, episode_reward=-0.88 +/- 0.44
+Episode length: 11.40 +/- 5.57
+Success rate: 100.00%
+Eval num_timesteps=320000, episode_reward=-0.44 +/- 0.25
+Episode length: 5.60 +/- 2.50
+Success rate: 100.00%
+Eval num_timesteps=340000, episode_reward=-1.65 +/- 2.41
+Episode length: 14.80 +/- 17.61
+Success rate: 80.00%
+Eval num_timesteps=360000, episode_reward=-0.51 +/- 0.29
+Episode length: 6.40 +/- 3.20
+Success rate: 100.00%
+Eval num_timesteps=380000, episode_reward=-0.44 +/- 0.37
+Episode length: 5.20 +/- 3.60
+Success rate: 100.00%
+Eval num_timesteps=400000, episode_reward=-0.41 +/- 0.16
+Episode length: 6.00 +/- 1.10
+Success rate: 100.00%
+Eval num_timesteps=420000, episode_reward=-0.28 +/- 0.15
+Episode length: 4.40 +/- 1.85
+Success rate: 100.00%
+New best mean reward!
+Eval num_timesteps=440000, episode_reward=-0.38 +/- 0.22
+Episode length: 5.20 +/- 2.32
+Success rate: 100.00%
+Eval num_timesteps=460000, episode_reward=-0.35 +/- 0.14
+Episode length: 5.20 +/- 1.17
+Success rate: 100.00%
+Eval num_timesteps=480000, episode_reward=-0.45 +/- 0.31
+Episode length: 5.40 +/- 2.65
+Success rate: 100.00%
+Eval num_timesteps=500000, episode_reward=-0.60 +/- 0.18
+Episode length: 7.20 +/- 1.17
+Success rate: 100.00%
+
+SAC_Target training completed in 1h 28m.
+
+Evaluation results with 50 episodes
+
+SAC on Source
+Test on Source
+Created object with mass: 1.0
+
+Episode 001 | return = -0.585
+Episode 002 | return = -0.626
+Episode 003 | return = -0.016
+Episode 004 | return = -0.858
+Episode 005 | return = -0.284
+Episode 006 | return = -0.030
+Episode 007 | return = -0.033
+Episode 008 | return = -0.368
+Episode 009 | return = -0.490
+Episode 010 | return = -0.028
+Episode 011 | return = -0.543
+Episode 012 | return = -0.254
+Episode 013 | return = -0.456
+Episode 014 | return = -0.841
+Episode 015 | return = -0.037
+Episode 016 | return = -0.387
+Episode 017 | return = -0.290
+Episode 018 | return = -0.572
+Episode 019 | return = -0.217
+Episode 020 | return = -0.203
+Episode 021 | return = -0.526
+Episode 022 | return = -0.438
+Episode 023 | return = -0.455
+Episode 024 | return = -0.386
+Episode 025 | return = -0.349
+Episode 026 | return = -0.314
+Episode 027 | return = -0.017
+Episode 028 | return = -0.193
+Episode 029 | return = -0.050
+Episode 030 | return = -0.798
+Episode 031 | return = -0.039
+Episode 032 | return = -0.375
+Episode 033 | return = -0.497
+Episode 034 | return = -0.558
+Episode 035 | return = -0.219
+Episode 036 | return = -0.429
+Episode 037 | return = -0.879
+Episode 038 | return = -0.849
+Episode 039 | return = -0.275
+Episode 040 | return = -0.665
+Episode 041 | return = -0.524
+Episode 042 | return = -0.401
+Episode 043 | return = -0.461
+Episode 044 | return = -0.317
+Episode 045 | return = -0.220
+Episode 046 | return = -0.324
+Episode 047 | return = -0.211
+Episode 048 | return = -0.044
+Episode 049 | return = -0.461
+Episode 050 | return = -0.468
+
+=== Evaluation summary ===
+Episodes: 50
+Mean return: -0.377
+Std return:  0.236
+Min return:  -0.879
+Max return:  -0.016
+Success rate: 100.00%
+
+Test on Target
+Created object with mass: 5.0
+
+Episode 001 | return = -0.731
+Episode 002 | return = -0.659
+Episode 003 | return = -0.016
+Episode 004 | return = -0.878
+Episode 005 | return = -0.484
+Episode 006 | return = -0.030
+Episode 007 | return = -0.033
+Episode 008 | return = -0.648
+Episode 009 | return = -0.561
+Episode 010 | return = -0.028
+Episode 011 | return = -0.627
+Episode 012 | return = -0.259
+Episode 013 | return = -0.970
+Episode 014 | return = -0.703
+Episode 015 | return = -0.037
+Episode 016 | return = -0.443
+Episode 017 | return = -0.364
+Episode 018 | return = -0.789
+Episode 019 | return = -0.276
+Episode 020 | return = -0.211
+Episode 021 | return = -1.967
+Episode 022 | return = -0.472
+Episode 023 | return = -0.526
+Episode 024 | return = -0.674
+Episode 025 | return = -0.404
+Episode 026 | return = -0.605
+Episode 027 | return = -0.017
+Episode 028 | return = -0.200
+Episode 029 | return = -0.050
+Episode 030 | return = -1.012
+Episode 031 | return = -0.039
+Episode 032 | return = -0.413
+Episode 033 | return = -0.558
+Episode 034 | return = -1.075
+Episode 035 | return = -0.224
+Episode 036 | return = -0.489
+Episode 037 | return = -0.898
+Episode 038 | return = -0.712
+Episode 039 | return = -0.285
+Episode 040 | return = -1.019
+Episode 041 | return = -0.721
+Episode 042 | return = -0.725
+Episode 043 | return = -0.491
+Episode 044 | return = -0.355
+Episode 045 | return = -0.275
+Episode 046 | return = -0.396
+Episode 047 | return = -0.262
+Episode 048 | return = -0.044
+Episode 049 | return = -0.524
+Episode 050 | return = -0.542
+
+=== Evaluation summary ===
+Episodes: 50
+Mean return: -0.494
+Std return:  0.361
+Min return:  -1.967
+Max return:  -0.016
+Success rate: 100.00%
+
+SAC on Target
+Test on Target
+Created object with mass: 5.0
+
+Episode 001 | return = -0.604
+Episode 002 | return = -0.531
+Episode 003 | return = -0.016
+Episode 004 | return = -0.785
+Episode 005 | return = -0.317
+Episode 006 | return = -0.030
+Episode 007 | return = -0.033
+Episode 008 | return = -0.530
+Episode 009 | return = -0.516
+Episode 010 | return = -0.028
+Episode 011 | return = -0.803
+Episode 012 | return = -0.299
+Episode 013 | return = -0.611
+Episode 014 | return = -0.710
+Episode 015 | return = -0.037
+Episode 016 | return = -0.512
+Episode 017 | return = -0.349
+Episode 018 | return = -0.612
+Episode 019 | return = -0.281
+Episode 020 | return = -0.209
+Episode 021 | return = -0.646
+Episode 022 | return = -0.435
+Episode 023 | return = -0.542
+Episode 024 | return = -0.488
+Episode 025 | return = -0.406
+Episode 026 | return = -0.360
+Episode 027 | return = -0.017
+Episode 028 | return = -0.252
+Episode 029 | return = -0.050
+Episode 030 | return = -0.775
+Episode 031 | return = -0.039
+Episode 032 | return = -0.350
+Episode 033 | return = -0.483
+Episode 034 | return = -0.792
+Episode 035 | return = -0.238
+Episode 036 | return = -0.445
+Episode 037 | return = -0.771
+Episode 038 | return = -0.713
+Episode 039 | return = -0.280
+Episode 040 | return = -0.984
+Episode 041 | return = -0.570
+Episode 042 | return = -0.527
+Episode 043 | return = -0.552
+Episode 044 | return = -0.352
+Episode 045 | return = -0.249
+Episode 046 | return = -0.449
+Episode 047 | return = -0.216
+Episode 048 | return = -0.044
+Episode 049 | return = -0.556
+Episode 050 | return = -0.450
+
+=== Evaluation summary ===
+Episodes: 50
+Mean return: -0.417
+Std return:  0.247
+Min return:  -0.984
+Max return:  -0.016
+Success rate: 100.00%
